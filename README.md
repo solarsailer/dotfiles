@@ -10,6 +10,6 @@ Personal dotfiles.
 
 ## Install
 
-``$ /path/to/repo/install.sh`
+`$ /path/to/repo/install.sh`
 
 
