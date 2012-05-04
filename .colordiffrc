@@ -1,0 +1,18 @@
+# Colordiff :
+# available colours are: white, yellow, green, blue,
+#                        cyan, red, magenta, black,
+#                        darkwhite, darkyellow, darkgreen,
+#                        darkblue, darkcyan, darkred,
+#                        darkmagenta, darkblack
+#
+# Can also specify 'none', 'normal' or 'off' which are all
+# aliases for the same thing, namely "don't colour highlight
+# this, use the default output colour"
+#
+
+# Like git : 
+plain=off
+newtext=green
+oldtext=red
+diffstuff=cyan
+cvsstuff=blue
