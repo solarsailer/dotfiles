@@ -1,15 +1,23 @@
+[user]
+  name = firstname lastname
+  email = mail@domain
+
+######################################
+# color                              #
+######################################
+
 [color]
   branch = auto
   diff = auto
   status = auto
 
 [color "branch"]
-  current = yellow reverse
+  current = yellow bold
   local = yellow
-  remote = green
+  remote = magenta
 
 [color "diff"]
-  meta = yellow bold
+  meta = cyan
   frag = magenta bold
   old = red bold
   new = green bold
@@ -18,3 +26,17 @@
   added = green
   changed = red
   untracked = yellow
+
+######################################
+# alias                              #
+######################################
+
+[alias]
+  s = status --short --branch
+  d = diff
+  dw = diff --word-diff
+  diffword = diff --word-diff
+
+######################################
+# tools (auto-generated)             #
+######################################
