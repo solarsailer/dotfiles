@@ -5,5 +5,5 @@ dotfiles
 * Symlink .bash_profile :
 
 ```bash
-ln -sf .bash_profile ~/.bash_profile
+ln -sf .bash_profile ~
 ```
