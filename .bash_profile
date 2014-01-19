@@ -54,3 +54,7 @@ export PATH=/usr/local/sbin:$PATH
 
 # Set rbenv
 eval "$(rbenv init -)"
+
+######################################
+# tools (auto-generated)             #
+######################################
