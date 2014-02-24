@@ -48,7 +48,7 @@
   h = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %C(blue)%aN:%Creset %s%Creset' --abbrev-commit
 
 [mailmap]
-  file = /Users/ashen/dev/dotfiles/.mailmap
+  file = /path/to/.mailmap
 
 ######################################
 # tools (auto-generated)             #
