@@ -40,6 +40,9 @@ export PATH=/usr/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
+# Editor
+export EDITOR=nano
+
 ######################################
 # mac                                #
 ######################################
