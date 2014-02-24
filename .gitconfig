@@ -36,6 +36,7 @@
   d = diff
   dw = diff --word-diff
   diffword = diff --word-diff
+  history = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
 ######################################
 # tools (auto-generated)             #
