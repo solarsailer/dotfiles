@@ -32,11 +32,23 @@
 ######################################
 
 [alias]
+  # helpers
   s = status --short --branch
   d = diff
   dw = diff --word-diff
   diffword = diff --word-diff
+
+  # contrib
+  committers = shortlog -nse --no-merges
+
+  # * key - subject (time) <author>
   history = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+  # * key - author: subject
+  h = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %C(blue)%aN:%Creset %s%Creset' --abbrev-commit
+
+[mailmap]
+  file = /Users/ashen/dev/dotfiles/.mailmap
 
 ######################################
 # tools (auto-generated)             #
