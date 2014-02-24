@@ -5,5 +5,7 @@ dotfiles
 * Symlink .bash_profile :
 
 ```bash
-ln -sf .bash_profile ~
+cd ~
+ln -sf dev/dotfiles/.bash_profile .
+ln -sf dev/dotfiles/.nanorc .
 ```
