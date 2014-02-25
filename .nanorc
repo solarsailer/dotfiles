@@ -1,0 +1,48 @@
+# Need nano 2.26+
+
+# OSX, with [homebrew](# https://github.com/Homebrew/homebrew-dupes):
+# brew tap homebrew/dupes
+# brew install nano
+
+# Smooth scrolling instead of chunk-by-chunk.
+set smooth
+
+# Wrap
+set nowrap
+set softwrap
+
+# Indentation
+set autoindent
+set tabstospaces
+set tabsize 2
+
+# Smarthome (go to the first letter instead of the first space)
+set smarthome
+
+# Disable auto backup
+unset backup
+
+# Remove help
+set nohelp
+
+#
+# Key bindings
+#
+
+#bind ^S writeout main
+#bind ^O insert main
+
+#
+# Syntax highlighting
+#
+
+include "/usr/local/share/nano/css.nanorc"
+include "/usr/local/share/nano/html.nanorc"
+include "/usr/local/share/nano/java.nanorc"
+include "/usr/local/share/nano/man.nanorc"
+include "/usr/local/share/nano/objc.nanorc"
+include "/usr/local/share/nano/php.nanorc"
+include "/usr/local/share/nano/python.nanorc"
+include "/usr/local/share/nano/ruby.nanorc"
+include "/usr/local/share/nano/sh.nanorc"
+include "/usr/local/share/nano/xml.nanorc"
