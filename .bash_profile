@@ -26,6 +26,9 @@ alias la='ls -a'
 alias ll='ls -1'
 alias lla='ls -1a'
 
+# helpers
+alias remove_ds_store='find . -name .DS_Store -print0 | xargs rm -v'
+
 # old: name@hostname ~ $
 # export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
 
