@@ -1,1 +1,15 @@
+# Mac
+
 .DS_Store
+
+# Vim
+
+*.un~
+*.swp
+*.netrwhist
+
+# Fish
+
+fish_history
+fishd.*
+*.menu

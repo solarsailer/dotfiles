@@ -51,6 +51,17 @@ export EDITOR=nano
 ######################################
 
 ######################################
+# go                                 #
+######################################
+
+# Binaries.
+export PATH=/usr/local/go/bin:$PATH
+
+# Workspace.
+export GOPATH=$HOME/dev/go
+export PATH=$GOPATH/bin:$PATH
+
+######################################
 # git                                #
 ######################################
 

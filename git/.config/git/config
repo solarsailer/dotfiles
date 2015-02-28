@@ -1,6 +1,9 @@
-[user]
-  name = firstname lastname
-  email = mail@domain
+# To set the name and the email, create a .gitconfig file in your $HOME folder.
+# Then, copy the two lines below in the .gitconfig:
+
+#[user]
+#  name = First Last
+#  email = mail@domain
 
 ######################################
 # color                              #
@@ -46,9 +49,6 @@
 
   # * key - author: subject
   h = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %C(blue)%aN:%Creset %s%Creset' --abbrev-commit
-
-[mailmap]
-  file = /path/to/.mailmap
 
 ######################################
 # tools (auto-generated)             #
