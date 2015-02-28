@@ -17,3 +17,6 @@ Set fish as default shell:
 
 * Add `/usr/local/bin/fish` to `/etc/shells` (just need to there, at the end, nothing more)
 * Run: `chsh -s /usr/local/bin/fish`
+
+
+Thanks to [Peter Hajas](https://github.com/peterhajas/dotfiles) for the inspiration.
