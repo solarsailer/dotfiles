@@ -18,12 +18,12 @@ set nocompatible
 " Disable modelines (because exploits)
 set modelines=0
 
-"""""""""""""""""""""""""" 
+""""""""""""""""""""""""""
 " Cosmetic customizations
 """"""""""""""""""""""""""
 
 set background=dark
-colorscheme solarized
+colorscheme tomorrow-night
 
 " Tabs.
 set tabstop=2
@@ -37,7 +37,7 @@ set textwidth=100
 set formatoptions=qrn1
 
 " Do not show a color column.
-"set colorcolumn=100 
+"set colorcolumn=100
 
 " Sane vim (thanks steve losh).
 set encoding=utf-8
@@ -103,6 +103,13 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 
+"""""""""
+" Airline
+"""""""""
+
+let g:airline_powerline_fonts = 1
+set noshowmode " disable mode when airline is on
+
 """""
 " GUI
 """""
@@ -111,7 +118,7 @@ vnoremap <tab> %
 if has('gui_running')
     " GUI Vim
 
-    set guifont=Menlo\ Regular:h14
+    set guifont=Menlo\ Regular\ for\ Powerline:h14
 
     " Remove all the UI cruft
     set go-=T
