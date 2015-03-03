@@ -22,6 +22,10 @@ set modelines=0
 " Cosmetic customizations
 """"""""""""""""""""""""""
 
+" Hide startup message.
+" +=I add the I flag which disable the message.
+set shortmess+=I
+
 set background=dark
 colorscheme tomorrow-night
 
@@ -74,6 +78,9 @@ inoremap <right> <nop>
 " Change up/down to move one visual line at a time instead of one line text.
 nnoremap j gj
 nnoremap k gk
+
+" Remap `jj` to escape to exit the Insert mode quickly.
+inoremap jj <ESC>
 
 """""""""""""
 " Leader key.
