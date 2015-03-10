@@ -5,7 +5,10 @@
 
   "IgnoredCodeIssues": [
     "^Keyword 'private' is redundant. This is the default modifier.$",
-    ".* should not separate words with an underscore.*"
+    ".* should not separate words with an underscore.*",
+    ".* should have prefix '_'.*",
+    ".*'this.' is redundant and can be removed safely.*",
+    ".*Comparison with 'false' is redundant.*"
   ],
 
   "TestCommands": {
