@@ -19,6 +19,12 @@ set nocompatible
 set modelines=0
 
 """"""""""""""""""""""""""
+" Shell (to prevent bug with fish shell)
+""""""""""""""""""""""""""
+
+set shell=/bin/bash
+
+""""""""""""""""""""""""""
 " Cosmetic customizations
 """"""""""""""""""""""""""
 
