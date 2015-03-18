@@ -22,3 +22,12 @@
 [submodule "vim/.vim/bundle/ctrlp.vim"]
 	path = vim/.vim/bundle/ctrlp.vim
 	url = git@github.com:kien/ctrlp.vim.git
+[submodule "vim/.vim/bundle/vim-dispatch"]
+	path = vim/.vim/bundle/vim-dispatch
+	url = git@github.com:tpope/vim-dispatch.git
+[submodule "vim/.vim/bundle/syntastic"]
+	path = vim/.vim/bundle/syntastic
+	url = git@github.com:scrooloose/syntastic.git
+[submodule "vim/.vim/bundle/omnisharp-vim"]
+	path = vim/.vim/bundle/omnisharp-vim
+	url = git@github.com:OmniSharp/omnisharp-vim.git
