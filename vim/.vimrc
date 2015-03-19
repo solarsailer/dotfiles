@@ -32,6 +32,10 @@ set shell=/bin/bash
 " +=I add the I flag which disable the message.
 set shortmess+=I
 
+" If those two lines would work with Tomorrow-Night, it would display a nice-looking separator…
+set fillchars=vert:│,fold:─
+hi VertSplit ctermbg=242 ctermfg=242 guibg=#6c6c6c guifg=#6c6c6c cterm=NONE gui=NONE
+
 set background=dark
 colorscheme tomorrow-night
 
@@ -116,5 +120,8 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 
+""""""""""""""""""
 " Load settings.
+""""""""""""""""""
+
 source ~/.vim/settings.vim
