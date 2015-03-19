@@ -1,8 +1,19 @@
 #!/usr/bin/env bash
 
+echo "Installing Homebrew..."
+
+# Install homebrew if necessary.
+if which brew 2>/dev/null 1>/dev/null; then
+  echo "Homebrew already installed."
+else
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"  
+fi
+
 # 
 # Install command-line packages.
 # 
+
+echo "Installing Homebrew packages..."
 
 brew install stow
 brew install fish
@@ -20,13 +31,14 @@ brew install the_silver_searcher # ag
 brew install httpie # http
 brew install cloc
 
-# MacVim.
-# (Installation via brew and not cask because brew configure the mvim executable for shell use.)
+# MacVim (installation via brew instead of cask because brew configure the mvim executable for shell use.)
 brew install macvim
 
 #
 # Install binaries (full-fledged app).
 #
+
+echo "Installing Homebrew casks..."
 
 # Install Caskroom.
 brew install caskroom/cask/brew-cask
@@ -42,3 +54,4 @@ brew cask install spotify
 brew cask install bartender
 brew cask install vlc
 
+echo "Homebrew done."
