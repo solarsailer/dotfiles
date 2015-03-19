@@ -53,5 +53,6 @@ brew cask install droplr
 brew cask install spotify
 brew cask install bartender
 brew cask install vlc
+brew cask install imageoptim
 
 echo "Homebrew done."
