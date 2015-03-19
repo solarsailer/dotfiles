@@ -3,8 +3,8 @@ dotfiles
 
 ```bash
 cd dotfiles
-chmod a+x update.sh
-sh update.sh
+chmod a+x install.sh
+sh install.sh
 ```
 
 # Configuration
