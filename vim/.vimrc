@@ -85,8 +85,8 @@ inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
-" Remap `jj` to escape to exit the Insert mode quickly.
-inoremap jj <ESC>
+" Remap `jk` to escape to exit the Insert mode quickly.
+inoremap jk <ESC>
 
 """""""""""""
 " Leader key.
