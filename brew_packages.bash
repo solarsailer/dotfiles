@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# 
+# Install brew packages.
+# 
+
 brew install stow
 brew install fish
 
