@@ -1,5 +1,17 @@
 #!/usr/bin/env bash
 
+#
+# Filesystem layout.
+#
+
+cd ~
+mkdir lib/
+mkdir dev/
+
+#
+# Configure defaults.
+#
+
 # Set the save dialog to be in extended mode by default.
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
