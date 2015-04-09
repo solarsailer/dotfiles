@@ -8,7 +8,8 @@
     ".* should not separate words with an underscore.*",
     ".* should have prefix '_'.*",
     ".*'this.' is redundant and can be removed safely.*",
-    ".*Comparison with 'false' is redundant.*"
+    ".*Comparison with 'false' is redundant.*",
+    ".*has the same with.*"
   ],
 
   "TestCommands": {
