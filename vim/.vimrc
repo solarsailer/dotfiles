@@ -1,127 +1,59 @@
-" ~/.vimrc
+" Bare minimum .vimrc
+" ###################
 
-" Disable filetype before pathogen.
-filetype off
-filetype plugin indent off
+" Everything else is loaded from the `settings/` folder.
 
-" Pathogen.
-execute pathogen#infect()
+" ------------------------------
 
-" Turn filetype detection, indent scripts and filetype plugins on
-" and syntax highlighting too.
-filetype plugin indent on
-syntax on
-
-" Remove Vim compatibility mode.
+" Use Vim settings, rather than Vi settings.
+" This must be first, because it changes other options as a side effect.
 set nocompatible
 
-" Disable modelines (because exploits)
+" Disable modelines (exploits, not useful).
 set modelines=0
 
-""""""""""""""""""""""""""
-" Shell (to prevent bug with fish shell)
-""""""""""""""""""""""""""
+" ------------------------------
+ 
+" Switch syntax highlighting on.
+syntax on
+ 
+" Enable file type detection and do language-dependent indenting.
+filetype plugin indent on
 
-set shell=/bin/bash
+" ------------------------------
 
-""""""""""""""""""""""""""
-" Cosmetic customizations
-""""""""""""""""""""""""""
+" Map leader to the space bar.
+let mapleader=" "
 
-" Hide startup message.
-" +=I add the I flag which disable the message.
-set shortmess+=I
+" Make backspace behave in a sane manner.
+set backspace=indent,eol,start
+ 
+" Show line numbers.
+set number
+ 
+" Allow hidden buffers, don't limit to 1 file per window/split.
+set hidden
 
-" If those two lines would work with Tomorrow-Night, it would display a nice-looking separator…
-set fillchars=vert:│,fold:─
-hi VertSplit ctermbg=242 ctermfg=242 guibg=#6c6c6c guifg=#6c6c6c cterm=NONE gui=NONE
+" ------------------------------
 
-set background=dark
-colorscheme tomorrow-night
+" Change encoding.
+set encoding=utf-8
 
-" Tabs.
+" ------------------------------
+
+" Tabs configuration.
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
 
-" Wrapping.
-set wrap
-set textwidth=100
-set formatoptions=qrn1
+" ------------------------------
 
-" Do not show a color column.
-"set colorcolumn=100
-
-" Sane vim (thanks steve losh).
-set encoding=utf-8
-set scrolloff=3
-set autoindent
+" Show modes & commands.
 set showmode
 set showcmd
-set hidden
-set wildmenu
-set wildmode=list:longest
-set visualbell
-set cursorline
-set ttyfast
-set ruler
-set backspace=indent,eol,start
-set laststatus=2
-set relativenumber
-set undofile
 
-"""""""""""
-" Bindings.
-"""""""""""
+" ------------------------------
 
-" Disable arrows.
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-
-" Change up/down to move one visual line at a time instead of one line text.
-nnoremap j gj
-nnoremap k gk
-
-" Remap `jk` to escape to exit the Insert mode quickly.
-inoremap jk <ESC>
-
-"""""""""""""
-" Leader key.
-"""""""""""""
-
-" change the mapleader from \ to ,
-let mapleader=","
-
-""""""""""""""""""
-" Leader bindings.
-""""""""""""""""""
-
-" Quickly edit/reload the vimrc file
-nnoremap <silent> <leader>ev :e $MYVIMRC<CR>
-nnoremap <silent> <leader>sv :so $MYVIMRC<CR>
-
-" Search.
-nnoremap / /\v
-vnoremap / /\v
-set ignorecase
-set smartcase
-set gdefault
-set incsearch
-set showmatch
-set hlsearch
-nnoremap <leader><space> :noh<cr>
-nnoremap <tab> %
-vnoremap <tab> %
-
-""""""""""""""""""
 " Load settings.
-""""""""""""""""""
-
 source ~/.vim/settings.vim
