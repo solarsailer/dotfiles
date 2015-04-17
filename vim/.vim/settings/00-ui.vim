@@ -18,6 +18,9 @@ set wrap
 " Show line numbers.
 set number
 
+" Always show the status bar.
+set laststatus=2
+
 " Disable short message.
 set shortmess+=I
 
