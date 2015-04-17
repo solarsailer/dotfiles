@@ -13,6 +13,11 @@ set nocompatible
 set modelines=0
 
 " ------------------------------
+
+" Force to bash (useful when using fish shell).
+set shell=/bin/bash
+
+" ------------------------------
  
 " Switch syntax highlighting on.
 syntax on
