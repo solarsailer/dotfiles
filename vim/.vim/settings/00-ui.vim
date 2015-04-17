@@ -64,14 +64,14 @@ if has('gui_running')
 
   " Hide toolbar.
   set go-=T
-  
+
   " Hide left-hand scrollbar.
   set go-=l
   set go-=L
 
   " Hide right-hand scrollbar.
   set go-=r
-  set go-=R  
+  set go-=R
 else
 
 endif
