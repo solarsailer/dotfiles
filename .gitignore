@@ -4,6 +4,7 @@
 
 # Vim
 
+*/.vim/bundle/**
 *.un~
 *.swp
 *.netrwhist
