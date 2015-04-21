@@ -193,6 +193,10 @@ nnoremap <C-tab>   :bn<CR>
 inoremap <C-S-tab> <Esc>:bp<CR>i
 inoremap <C-tab>   <Esc>:bn<CR>i
 
+" Command+w kills a buffer like a chrome-tab.
+nnoremap <D-w> :bd<CR>
+inoremap <D-w> :bd<CR>
+
 " #################################################################################
 " Search.
 " #################################################################################
