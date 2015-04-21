@@ -19,6 +19,7 @@ set PATH /usr/bin        $PATH
 set PATH /usr/sbin       $PATH
 set PATH /usr/local/bin  $PATH
 set PATH /usr/local/sbin $PATH
+set PATH ~/.bin          $PATH
 
 ######################################
 # go
