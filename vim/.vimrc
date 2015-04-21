@@ -35,8 +35,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/vimfiler.vim'
 
-"vim-repeat
-"vim-surround
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
 
 " ----------------------------- {
 call vundle#end()
