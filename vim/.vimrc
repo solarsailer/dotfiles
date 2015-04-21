@@ -293,6 +293,10 @@ nnoremap <d-p> :Unite file_rec/async<cr>
 
 let g:vimfiler_as_default_explorer = 1
 "let g:vimfiler_tree_leaf_icon = "⋮"
-"let g:vimfiler_tree_opened_icon = "▼"
-"let g:vimfiler_tree_closed_icon = "▷"
+"let g:vimfiler_tree_opened_icon = '▼'
+"let g:vimfiler_tree_closed_icon = '▷'
 let g:vimfiler_quick_look_command = 'qlmanage -p'
+
+" No wait quick look.
+autocmd FileType vimfiler nmap <buffer> <nowait><Space> <Plug>(vimfiler_quick_look)
+
