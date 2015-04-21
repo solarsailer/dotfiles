@@ -6,12 +6,12 @@ echo "Installing Homebrew..."
 if which brew 2>/dev/null 1>/dev/null; then
   echo "Homebrew already installed."
 else
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"  
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# 
+#
 # Install command-line packages.
-# 
+#
 
 echo "Installing Homebrew packages..."
 
@@ -31,8 +31,8 @@ brew install the_silver_searcher # ag
 brew install httpie # http
 brew install cloc
 
-# MacVim (installation via brew instead of cask because brew configure the mvim executable for shell use.)
-brew install macvim
+# MacVim (installation via brew instead of cask because brew configure the mvim executable for shell use).
+brew install macvim --with-lua --override-system-vim
 
 #
 # Install binaries (full-fledged app).
