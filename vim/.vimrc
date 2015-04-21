@@ -33,6 +33,7 @@ Plugin 'bling/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
 "Plugin 'OmniSharp/omnisharp-vim'
 Plugin 'Shougo/unite.vim'
+Plugin 'Shougo/vimfiler.vim'
 
 "vim-repeat
 "vim-surround
@@ -281,3 +282,13 @@ set noshowmode
 " -------------------------------------------------------
 
 nnoremap <d-p> :Unite file_rec/async<cr>
+
+" -------------------------------------------------------
+" Vimfiler.
+" -------------------------------------------------------
+
+let g:vimfiler_as_default_explorer = 1
+"let g:vimfiler_tree_leaf_icon = "⋮"
+"let g:vimfiler_tree_opened_icon = "▼"
+"let g:vimfiler_tree_closed_icon = "▷"
+let g:vimfiler_quick_look_command = 'qlmanage -p'
