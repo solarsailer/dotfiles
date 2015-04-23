@@ -22,6 +22,9 @@ brew install fish
 brew install imagemagick
 brew install gifsicle
 
+# Toolchain.
+brew install cmake
+
 # Ruby.
 brew install rbenv
 brew install ruby-build
