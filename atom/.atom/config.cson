@@ -11,9 +11,5 @@
     fontFamily: "Menlo"
     fontSize: 14
     invisibles: {}
-  core:
-    themes: [
-      "one-dark-ui"
-      "one-dark-syntax"
-    ]
+  core: {}
   "autocomplete-plus": {}
