@@ -33,6 +33,7 @@ brew install ruby-build
 brew install the_silver_searcher # ag
 brew install httpie # http
 brew install cloc
+brew install trash
 
 # MacVim (installation via brew instead of cask because brew configure the mvim executable for shell use).
 brew install macvim --with-lua --override-system-vim
