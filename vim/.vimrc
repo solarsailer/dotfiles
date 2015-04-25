@@ -85,6 +85,12 @@ set title
 " Always wrap text.
 set wrap
 
+" Break after a word, not inside.
+set linebreak
+
+" After a break, indent the line correctly.
+set breakindent
+
 " Show line numbers.
 set number
 
@@ -167,7 +173,9 @@ inoremap jk <ESC>
 
 " Change up/down to move one visual line at a time instead of one line text.
 nnoremap j gj
+nnoremap gj j
 nnoremap k gk
+nnoremap gk k
 
 " -------------------------------------------------------
 " Arrows.
