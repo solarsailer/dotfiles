@@ -178,6 +178,31 @@ nnoremap k gk
 nnoremap gk k
 
 " -------------------------------------------------------
+" Bind alt/cmd+del/backspace/left/right in command line mode.
+" -------------------------------------------------------
+
+" Cmd+Left & Cmd+Right move the cursor to the start or end of the line,
+" respectively.
+cnoremap <d-left> <c-b>
+cnoremap <d-right> <c-e>
+
+" Cmd/Alt+backspace delete to the start of the line or the previous word, respectively.
+cnoremap <a-backspace> <c-w>
+cnoremap <d-backspace> <c-u>
+
+" Mapping for Vim in shell. Alt is not working correctly, so we bind to the
+" result of calling alt+key.
+if !has('gui_running')
+  " Move one word left with Alt+Left.
+  cnoremap <esc>b <s-left>
+
+  " Move on word right <ith Alt+Right.
+  cnoremap <esc>f <s-right>
+endif
+
+" TODO: delete word/line forward.
+
+" -------------------------------------------------------
 " Arrows.
 " -------------------------------------------------------
 
