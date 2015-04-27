@@ -1,2 +1,26 @@
 #!/bin/sh
-qlmanage -p "$@" >& /dev/null &
+
+# Inspired by: http://furbo.org/2014/09/03/the-terminal/
+# And: https://github.com/morgant/tools-osx/blob/master/src/ql by Morgan Aldridge (@morgant).
+
+function usage() {
+	echo "Usage: ql [options] files"
+  echo ""
+  echo "Options:"
+  echo "  -k  kill all Quick Look processes"
+	echo "  -h  print these usage instructions"
+}
+
+if [ $# -gt 0 ]; then
+  if [ "$1" = "-h" ]; then
+    shift
+		usage
+  elif [ "$1" = "-k" ]; then
+    killall qlmanage
+  else
+    qlmanage -p "$@" >& /dev/null &
+  fi
+else
+  printf "No file was specified to be viewed with Quick Look.\n\n"
+	usage
+fi
