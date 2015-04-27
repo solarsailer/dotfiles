@@ -38,6 +38,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 
+" TODO: use `trash` command with vim-vinegar and netrw.
+
 " ----------------------------- {
 call vundle#end()
 " ----------------------------- }
