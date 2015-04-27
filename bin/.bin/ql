@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Inspired by: http://furbo.org/2014/09/03/the-terminal/
 # And: https://github.com/morgant/tools-osx/blob/master/src/ql by Morgan Aldridge (@morgant).
