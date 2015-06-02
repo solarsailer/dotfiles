@@ -22,23 +22,25 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " ----------------------------- }
 
+" Vundle will handle itself.
+Plugin 'gmarik/Vundle.vim'
+
+" Color schemes.
 Plugin 'chriskempson/base16-vim'
-Plugin 'Shougo/vimproc.vim'
+Plugin 'altercation/vim-colors-solarized'
+
+" Vim tweaking.
 Plugin 'bling/vim-airline'
-"Plugin 'tpope/vim-vinegar'
 "Plugin 'tpope/vim-dispatch'
 "Plugin 'scrooloose/syntastic'
 "Plugin 'scrooloose/nerdtree'
 "Plugin 'kien/ctrlp.vim'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 "Plugin 'OmniSharp/omnisharp-vim'
-"Plugin 'Shougo/unite.vim'
-"Plugin 'Shougo/vimfiler.vim'
 
+Plugin 'tpope/vim-vinegar'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
-
-" TODO: use `trash` command with vim-vinegar and netrw.
 
 " ----------------------------- {
 call vundle#end()
@@ -103,8 +105,11 @@ set laststatus=2
 set shortmess+=I
 
 " Color scheme
-set background=dark
-colorscheme base16-railscasts "heroku
+"set background=dark
+"colorscheme base16-railscasts "heroku
+
+set background=light
+colorscheme solarized
 
 " -------------------------------------------------------
 " Tabs.
@@ -273,6 +278,12 @@ autocmd BufWritePre * :call Preserve("%s/\\s\\+$//e")
 " #################################################################################
 " Plugins.
 " #################################################################################
+
+" -------------------------------------------------------
+" Netrw.
+" -------------------------------------------------------
+
+let g:netrw_localrmdir = 'trash'
 
 " -------------------------------------------------------
 " Airline.
