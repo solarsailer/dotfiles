@@ -123,7 +123,7 @@ before layers configuration."
    ;; If non nil a progress bar is displayed when spacemacs is loading. This
    ;; may increase the boot time on some systems and emacs builds, set it to
    ;; nil ;; to boost the loading time.
-   dotspacemacs-loading-progress-bar t
+   dotspacemacs-loading-progress-bar nil
 
    ;; If non nil the frame is fullscreen when Emacs starts up.
    ;; (Emacs 24.4+ only)
