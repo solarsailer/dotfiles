@@ -9,7 +9,8 @@
     ".* should have prefix '_'.*",
     ".*'this.' is redundant and can be removed safely.*",
     ".*Comparison with 'false' is redundant.*",
-    ".*has the same with.*"
+    ".*has the same with.*",
+    ".*Parameter can be IComparable.*"
   ],
 
   "TestCommands": {
