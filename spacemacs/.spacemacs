@@ -183,7 +183,13 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
+
+  ;; Disable the right option key on a mac keyboard.
+  ;; Cannot type {}/| & other special characters otherwise.
   (setq mac-right-option-modifier nil)
+
+  ;; Change the powerline separator.
+  (setq powerline-default-separator 'arrow)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
