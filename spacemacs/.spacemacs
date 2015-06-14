@@ -190,6 +190,10 @@ layers configuration."
   ;; Indentation: 2 soft-tab (space).
   (setq-default tab-width 2 indent-tabs-mode nil)
 
+  ;; Whitespace normalization.
+  (setq whitespace-action '(auto-cleanup))
+  (setq whitespace-style '(trailing))
+
   ;; Disable the right option key on a mac keyboard.
   ;; Cannot type {}/| & other special characters otherwise.
   (setq mac-right-option-modifier nil)
@@ -200,4 +204,3 @@ layers configuration."
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
- 
