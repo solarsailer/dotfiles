@@ -21,6 +21,7 @@
      ;; auto-completion
      ;; better-defaults
      emacs-lisp
+     osx
      ;; (git :variables
      ;;      git-gutter-use-fringe t)
      ;; markdown
@@ -182,6 +183,7 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
+  (setq mac-right-option-modifier nil)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
