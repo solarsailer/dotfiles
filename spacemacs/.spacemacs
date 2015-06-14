@@ -184,6 +184,12 @@ before layers configuration."
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
 
+  ;; Show lines.
+  (global-linum-mode)
+
+  ;; Indentation: 2 soft-tab (space).
+  (setq-default tab-width 2 indent-tabs-mode nil)
+
   ;; Disable the right option key on a mac keyboard.
   ;; Cannot type {}/| & other special characters otherwise.
   (setq mac-right-option-modifier nil)
@@ -194,3 +200,4 @@ layers configuration."
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
+ 
