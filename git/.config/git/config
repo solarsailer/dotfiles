@@ -50,6 +50,9 @@
   # * key - author: subject
   h = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %C(blue)%aN:%Creset %s%Creset' --abbrev-commit
 
+  # Find a specific commit
+  search = "!f() { git --no-pager log --color --pretty=format:'%Cred%H%Creset -%C(yellow)%d%Creset %C(blue)%aN:%Creset %s%Creset' --regexp-ignore-case --grep=\"$@\"; }; f"
+
 ######################################
 # tools (auto-generated)             #
 ######################################
