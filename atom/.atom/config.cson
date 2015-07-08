@@ -9,7 +9,6 @@
     userId: "3ab37150493049e1dafb8910618fc7e19b5ce00e"
   editor:
     fontFamily: "Menlo"
-    fontSize: 14
     invisibles: {}
   core:
     themes: [
@@ -17,3 +16,4 @@
       "one-light-syntax"
     ]
   "autocomplete-plus": {}
+  linter: {}
