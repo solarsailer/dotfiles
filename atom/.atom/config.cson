@@ -1,19 +1,12 @@
 "*":
   "exception-reporting":
-    userId: "c4eca1fa-ba32-0c73-a120-8271f3d581dd"
-  "release-notes":
-    viewedVersion: "0.94.0"
+    userId: "b907a5d6-f8db-fdb9-dff4-38a5b28395df"
   welcome:
     showOnStartup: false
-  metrics:
-    userId: "3ab37150493049e1dafb8910618fc7e19b5ce00e"
+  core: {}
   editor:
-    fontFamily: "Menlo"
     invisibles: {}
-  core:
-    themes: [
-      "one-dark-ui"
-      "one-light-syntax"
-    ]
-  "autocomplete-plus": {}
-  linter: {}
+    fontFamily: "Menlo"
+    lineHeight: 1.25
+    preferredLineLength: 100
+    softWrap: true
