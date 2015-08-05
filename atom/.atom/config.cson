@@ -28,3 +28,5 @@
   # Packages prefs.
   "one-dark-ui": {}
   emmet: {}
+  "tree-view":
+    hideIgnoredNames: true
