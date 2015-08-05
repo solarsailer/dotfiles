@@ -1,0 +1,50 @@
+# Re-enable emmet ONLY for HTML.
+'atom-text-editor[data-grammar="text html basic"]:not([mini])':
+  'tab': 'emmet:expand-abbreviation-with-tab'
+
+# Re-enable some emmet keybindings.
+'.platform-darwin atom-text-editor:not([mini])':
+
+  # -------------------------------------------------------
+  # HTML actions: cmd-shift-e
+  # -------------------------------------------------------
+
+  # Abbreviation.
+  'cmd-shift-e e': 'emmet:expand-abbreviation'
+  'cmd-shift-e i': 'emmet:interactive-expand-abbreviation'
+
+  # Working with tags.
+  'cmd-shift-e w': 'emmet:wrap-with-abbreviation'
+  'cmd-shift-e d': 'emmet:remove-tag'
+  'cmd-shift-e r': 'emmet:update-tag'
+  'cmd-shift-e s': 'emmet:split-join-tag'
+  'cmd-shift-e j': 'emmet:split-join-tag'
+  'cmd-shift-e m': 'emmet:merge-lines'
+
+  # Balance.
+  'cmd-shift-e up'  : 'emmet:balance-outward'
+  'cmd-shift-e down': 'emmet:balance-inward'
+  'ctrl-o': 'emmet:balance-outward'
+  'ctrl-i': 'emmet:balance-inward'
+
+  # -------------------------------------------------------
+  # Image actions: cmd-shift-i
+  # -------------------------------------------------------
+
+  'cmd-shift-i s': 'emmet:update-image-size'
+  'cmd-shift-i d': 'emmet:encode-decode-data-url'
+
+  # -------------------------------------------------------
+  # Math actions: cmd-shift-m
+  # -------------------------------------------------------
+
+  'cmd-shift-m': 'emmet:evaluate-math-expression'
+
+  'cmd-ctrl-alt-shift-right': 'emmet:increment-number-by-10'
+  'cmd-ctrl-alt-shift-left' : 'emmet:decrement-number-by-10'
+  'cmd-ctrl-alt-shift-up'   : 'emmet:increment-number-by-1'
+  'cmd-ctrl-alt-shift-down' : 'emmet:decrement-number-by-1'
+  'cmd-ctrl-alt-right'      : 'emmet:increment-number-by-01'
+  'cmd-ctrl-alt-left'       : 'emmet:decrement-number-by-01'
+  'cmd-ctrl-alt-up'         : 'emmet:increment-number-by-1'
+  'cmd-ctrl-alt-down'       : 'emmet:decrement-number-by-1'
