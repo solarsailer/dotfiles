@@ -22,3 +22,6 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 # Open a new document in TextEdit (& other iCloud-backed app) directly,
 # instead of presenting the document picker.
 defaults write -g NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false
+
+# Set the default view mode of the Finder to Column.
+defaults write com.apple.Finder FXPreferredViewStyle clmv
