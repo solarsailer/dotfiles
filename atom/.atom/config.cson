@@ -10,3 +10,5 @@
     lineHeight: 1.25
     preferredLineLength: 100
     softWrap: true
+  "one-dark-ui": {}
+  emmet: {}
