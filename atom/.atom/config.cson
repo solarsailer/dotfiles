@@ -3,11 +3,8 @@
     userId: "b907a5d6-f8db-fdb9-dff4-38a5b28395df"
   welcome:
     showOnStartup: false
-
-  # Core prefs.
-  core: {}
-
-  # Editor prefs.
+  core:
+    audioBeep: false
   editor:
     invisibles: {}
     fontFamily: "Menlo"
@@ -16,16 +13,9 @@
     softWrap: true
     softTabs: true
     tabLength: 2
-
-  # Whitespaces configuration.
   whitespace:
-    # One new line at end of file.
     ensureSingleTrailingNewline: true
-
-    # No trailing whitespaces.
     removeTrailingWhitespace: true
-
-  # Packages prefs.
   "one-dark-ui": {}
   emmet: {}
   "tree-view":
