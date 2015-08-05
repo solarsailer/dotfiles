@@ -6,7 +6,7 @@
 '.platform-darwin atom-text-editor:not([mini])':
 
   # -------------------------------------------------------
-  # HTML actions: cmd-shift-e
+  # Emmet - HTML actions: cmd-shift-e
   # -------------------------------------------------------
 
   # Abbreviation.
@@ -28,14 +28,14 @@
   'ctrl-i': 'emmet:balance-inward'
 
   # -------------------------------------------------------
-  # Image actions: cmd-shift-i
+  # Emmet - Image actions: cmd-shift-i
   # -------------------------------------------------------
 
   'cmd-shift-i s': 'emmet:update-image-size'
   'cmd-shift-i d': 'emmet:encode-decode-data-url'
 
   # -------------------------------------------------------
-  # Math actions: cmd-shift-m
+  # Emmet - Math actions: cmd-shift-m
   # -------------------------------------------------------
 
   'cmd-shift-m': 'emmet:evaluate-math-expression'
