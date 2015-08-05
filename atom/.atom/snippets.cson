@@ -1,0 +1,91 @@
+# -------------------------------------------------------
+# Multi-languages.
+# -------------------------------------------------------
+
+# Hashmark region:
+'.source.ruby, .source.puppet, .source.shell, .source.yaml, .source.coffee, .source.cson, .text':
+  'code region':
+    'prefix': 'region'
+    'body': """
+# -------------------------------------------------------
+# ${1:Region}
+# -------------------------------------------------------
+    """
+
+# Double-slash region:
+'.source.sass, .source.js, .source.cs':
+  'code region':
+    'prefix': 'region'
+    'body': """
+// -------------------------------------------------------
+// ${1:Region}
+// -------------------------------------------------------
+    """
+
+# -------------------------------------------------------
+# C#.
+# -------------------------------------------------------
+
+'.source.cs':
+
+  # C# region pragma:
+  '#region':
+    'prefix': 'csregion'
+    'body': """
+#region ${1:Region}
+
+$2
+
+#endregion
+    """
+
+# -------------------------------------------------------
+# HTML.
+# -------------------------------------------------------
+
+'.text.html':
+
+  # Basic boilerplate.
+  'HTML Layout':
+    'prefix': 'layout'
+    'body': """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${1:Title}</title>
+</head>
+<body>
+  <div class="page" id="page">
+
+    <!-- header -->
+    <header class="page-header">
+    </header>
+
+    <!-- content -->
+    <div class="page-content">
+      ${2:Content}
+    </div>
+
+    <!-- footer -->
+    <footer class="page-footer">
+    </footer>
+
+  </div>
+
+  <script type="text/javascript">
+    // GA here.
+  </script>
+</body>
+</html>
+    """
+
+  # Comment wrapper.
+  'HTML Comment':
+    'prefix': 'region'
+    'body': """
+<!--
+${1:Region}
+-->
+    """
