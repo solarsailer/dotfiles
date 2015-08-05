@@ -27,7 +27,7 @@ Then, add it on Github.
 ```
 [user]
   name = Firstname Lastname
-  email = krokmou@berk.com 
+  email = krokmou@berk.com
 ```
 
 ## Stow configuration
@@ -40,6 +40,16 @@ Set fish as default shell:
 
 * Add `/usr/local/bin/fish` to `/etc/shells` (just need to there, at the end, nothing more)
 * Run: `chsh -s /usr/local/bin/fish`
+
+## Atom configuration
+
+Config, themes, snippets and etc. are synced normally.
+
+The packages are not synchronized. Install them once via:
+
+```
+apm stars --install
+```
 
 
 Thanks to [Peter Hajas](https://github.com/peterhajas/dotfiles) for the inspiration.
