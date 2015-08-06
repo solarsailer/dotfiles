@@ -1,6 +1,25 @@
+# Additional keybindings for editor.
+'atom-text-editor':
+
+  # Easier to use transpose.
+  'cmd-t': 'editor:transpose'
+
+  # Delete line.
+  'cmd-shift-backspace': 'editor:delete-line'
+  'cmd-shift-delete'   : 'editor:delete-line'
+
+'atom-text-editor:not([mini])':
+
+  # Easier to use select-all.
+  'cmd-g': 'find-and-replace:select-all'
+
+# ---
+
 # Re-enable emmet ONLY for HTML.
 'atom-text-editor[data-grammar="text html basic"]:not([mini])':
   'tab': 'emmet:expand-abbreviation-with-tab'
+
+# ----
 
 # Re-enable some emmet keybindings.
 '.platform-darwin atom-text-editor:not([mini])':
