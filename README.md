@@ -51,5 +51,8 @@ The packages are not synchronized. Install them once via:
 apm stars --install
 ```
 
+If the `ctrl+left/right/up/down` do not work, disable them in `Mission Control` and `Keyboards > Mission Control`.
+
+
 
 Thanks to [Peter Hajas](https://github.com/peterhajas/dotfiles) for the inspiration.
