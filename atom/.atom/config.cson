@@ -20,3 +20,9 @@
   emmet: {}
   "tree-view":
     hideIgnoredNames: true
+  "omnisharp-atom":
+    enableAdvancedFileNew: false
+    nagAdjustTreeView: false
+    nagAddExternalProjects: false
+    useIcons: false
+    useLeftLabelColumnForSuggestions: true
