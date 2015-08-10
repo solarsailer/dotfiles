@@ -36,3 +36,4 @@
     analytics: false
     css_preserve_newlines: true
     css_selector_separator_newline: true
+    js_space_after_anon_function: true
