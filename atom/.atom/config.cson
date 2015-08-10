@@ -29,3 +29,10 @@
   tabs:
     enableVcsColoring: true
     usePreviewTabs: true
+  "atom-beautify":
+    language_css_default_beautifier: "Pretty Diff"
+    language_scss_default_beautifier: "Pretty Diff"
+    beautifyEntireFileOnSave: false
+    analytics: false
+    css_preserve_newlines: true
+    css_selector_separator_newline: true
