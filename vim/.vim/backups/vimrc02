@@ -13,6 +13,40 @@ set modelines=0
 set shell=/bin/bash
 
 " -------------------------------------------------------
+" Vundle.
+" -------------------------------------------------------
+
+" ----------------------------- {
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" ----------------------------- }
+
+" Vundle will handle itself.
+Plugin 'gmarik/Vundle.vim'
+
+" Color schemes.
+Plugin 'chriskempson/base16-vim'
+Plugin 'altercation/vim-colors-solarized'
+
+" Vim tweaking.
+Plugin 'bling/vim-airline'
+"Plugin 'tpope/vim-dispatch'
+"Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'kien/ctrlp.vim'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'OmniSharp/omnisharp-vim'
+
+Plugin 'tpope/vim-vinegar'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+
+" ----------------------------- {
+call vundle#end()
+" ----------------------------- }
+
+" -------------------------------------------------------
 " Highlighting.
 " -------------------------------------------------------
 
@@ -71,6 +105,9 @@ set laststatus=2
 set shortmess+=I
 
 " Color scheme
+"set background=dark
+"colorscheme base16-railscasts "heroku
+
 set background=dark
 colorscheme heroku
 
@@ -106,7 +143,7 @@ set noerrorbells
 
 if has('gui_running')
   " Font.
-  set guifont=Menlo:h14
+  set guifont=Menlo\ Regular\ for\ Powerline:h14
 
   " Hide toolbar.
   set go-=T
@@ -237,3 +274,89 @@ endfunction
 
 " Automagically remove the trailing whitespaces after a save.
 autocmd BufWritePre * :call Preserve("%s/\\s\\+$//e")
+
+" #################################################################################
+" Plugins.
+" #################################################################################
+
+" -------------------------------------------------------
+" Netrw.
+" -------------------------------------------------------
+
+let g:netrw_localrmdir = 'trash'
+
+" -------------------------------------------------------
+" Airline.
+" -------------------------------------------------------
+
+" Use powerline patched fonts.
+let g:airline_powerline_fonts = 1
+
+" Disable the display mode of Vim since airline does it way better.
+set noshowmode
+
+" Layout {
+
+  let g:airline#extensions#default#layout = [
+      \ [ 'a', 'b', 'c' ],
+      \ [ 'warning' ]
+      \ ]
+  let g:airline_section_c = ''
+
+" }
+
+" Tabline {
+
+  " Show the buffer line when only one tab is used.
+  let g:airline#extensions#tabline#enabled = 1
+
+  " Change the separator for the tabline.
+  let g:airline#extensions#tabline#left_sep = ''
+  let g:airline#extensions#tabline#left_alt_sep = ''
+  let g:airline#extensions#tabline#right_sep = ''
+  let g:airline#extensions#tabline#right_alt_sep = ''
+
+  " Hide "buffers" in the right corner of the tabline.
+  let g:airline#extensions#tabline#show_tab_type = 0
+
+  " Show only the filename in the tabline.
+  let g:airline#extensions#tabline#fnamemod = ':t'
+
+" }
+
+" Syntastic {
+
+  let g:airline#extensions#syntastic#enabled = 1
+
+" }
+
+" Disable symbols in shell.
+if !has('gui_running')
+  " Disable tabline.
+  let g:airline#extensions#tabline#enabled = 0
+
+  " Hide powerline symbols.
+  let g:airline_left_sep = ''
+  let g:airline_left_alt_sep = ''
+  let g:airline_right_sep = ''
+  let g:airline_right_alt_sep = ''
+endif
+
+" -------------------------------------------------------
+" Unite.
+" -------------------------------------------------------
+
+nnoremap <d-p> :Unite file_rec/async<cr>
+
+" -------------------------------------------------------
+" Vimfiler.
+" -------------------------------------------------------
+
+let g:vimfiler_as_default_explorer = 1
+"let g:vimfiler_tree_leaf_icon = "⋮"
+"let g:vimfiler_tree_opened_icon = '▼'
+"let g:vimfiler_tree_closed_icon = '▷'
+let g:vimfiler_quick_look_command = 'qlmanage -p'
+
+" No wait quick look.
+autocmd FileType vimfiler nmap <buffer> <nowait><Space> <Plug>(vimfiler_quick_look)
