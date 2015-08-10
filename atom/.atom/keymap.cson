@@ -63,6 +63,11 @@
   'ctrl-backspace'  : 'editor:delete-to-beginning-of-subword',
   'ctrl-delete'     : 'editor:delete-to-end-of-subword'
 
+  # Atom-Beautify.
+  'ctrl-f': 'atom-beautify:beautify-editor'
+
+# ---
+
 'atom-text-editor:not([mini])':
 
   # Easier to use select-all.
