@@ -1,3 +1,16 @@
+# Disable those movement/selection keybindings. Use arrows or Vim instead.
+'body':
+  'ctrl-p': 'unset!'
+  'ctrl-n': 'unset!'
+  'ctrl-b': 'unset!'
+  'ctrl-f': 'unset!'
+  'ctrl-P': 'unset!'
+  'ctrl-N': 'unset!'
+  'ctrl-F': 'unset!'
+  'ctrl-B': 'unset!'
+  'ctrl-h': 'unset!'
+  'ctrl-d': 'unset!'
+
 # Additional keybindings for editor.
 'atom-text-editor':
 
@@ -15,6 +28,20 @@
   'ctrl-shift-right': 'editor:select-to-next-subword-boundary',
   'ctrl-backspace'  : 'editor:delete-to-beginning-of-subword',
   'ctrl-delete'     : 'editor:delete-to-end-of-subword'
+
+  # Disable emacs keybindings (alt is necessary for special symbols anyway).
+  'alt-f'     : 'unset!'
+  'alt-ctrl-f': 'unset!'
+  'alt-F'     : 'unset!'
+  'alt-ctrl-F': 'unset!'
+  'alt-b'     : 'unset!'
+  'alt-ctrl-b': 'unset!'
+  'alt-B'     : 'unset!'
+  'alt-ctrl-B': 'unset!'
+  'alt-h'     : 'unset!'
+  'alt-ctrl-h': 'unset!'
+  'alt-d'     : 'unset!'
+  'alt-ctrl-d': 'unset!'
 
 'atom-text-editor:not([mini])':
 
