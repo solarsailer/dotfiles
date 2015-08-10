@@ -26,3 +26,6 @@
     nagAddExternalProjects: false
     useIcons: false
     useLeftLabelColumnForSuggestions: true
+  tabs:
+    enableVcsColoring: true
+    usePreviewTabs: true
