@@ -30,10 +30,10 @@
     enableVcsColoring: true
     usePreviewTabs: true
   "atom-beautify":
-    language_css_default_beautifier: "Pretty Diff"
-    language_scss_default_beautifier: "Pretty Diff"
     beautifyEntireFileOnSave: false
     analytics: false
-    css_preserve_newlines: true
-    css_selector_separator_newline: true
     js_space_after_anon_function: true
+    language_scss_default_beautifier: "CSScomb"
+    language_css_default_beautifier: "CSScomb"
+    language_sass_default_beautifier: "CSScomb"
+    language_less_default_beautifier: "CSScomb"
