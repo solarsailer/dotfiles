@@ -33,7 +33,11 @@
     beautifyEntireFileOnSave: false
     analytics: false
     js_space_after_anon_function: true
-    language_scss_default_beautifier: "CSScomb"
     language_css_default_beautifier: "CSScomb"
+    language_css_beautify_on_save: true
+    language_scss_default_beautifier: "CSScomb"
+    language_scss_beautify_on_save: true
     language_sass_default_beautifier: "CSScomb"
+    language_sass_beautify_on_save: true
     language_less_default_beautifier: "CSScomb"
+    language_less_beautify_on_save: true
