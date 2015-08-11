@@ -5,6 +5,9 @@
     showOnStartup: false
   core:
     audioBeep: false
+    disabledPackages: [
+      "background-tips"
+    ]
   editor:
     invisibles: {}
     fontFamily: "Menlo"
