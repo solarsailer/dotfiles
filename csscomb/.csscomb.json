@@ -32,6 +32,15 @@
   "sort-order-fallback": "abc",
   "sort-order": [
     [
+      "$import"
+    ],
+    [
+      "$variable"
+    ],
+    [
+      "$include"
+    ],
+    [
       "position",
       "z-index",
       "top",
