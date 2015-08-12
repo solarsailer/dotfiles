@@ -56,11 +56,11 @@
   'cmd-shift-delete'   : 'editor:delete-line'
 
   # Subwords with ctrl only.
-  'ctrl-left'       : 'editor:move-to-previous-subword-boundary',
-  'ctrl-right'      : 'editor:move-to-next-subword-boundary',
-  'ctrl-shift-left' : 'editor:select-to-previous-subword-boundary',
-  'ctrl-shift-right': 'editor:select-to-next-subword-boundary',
-  'ctrl-backspace'  : 'editor:delete-to-beginning-of-subword',
+  'ctrl-left'       : 'editor:move-to-previous-subword-boundary'
+  'ctrl-right'      : 'editor:move-to-next-subword-boundary'
+  'ctrl-shift-left' : 'editor:select-to-previous-subword-boundary'
+  'ctrl-shift-right': 'editor:select-to-next-subword-boundary'
+  'ctrl-backspace'  : 'editor:delete-to-beginning-of-subword'
   'ctrl-delete'     : 'editor:delete-to-end-of-subword'
 
   # Atom-Beautify.
@@ -75,11 +75,19 @@
 
 # ---
 
-# Re-enable emmet ONLY for HTML.
-'atom-text-editor[data-grammar="text html basic"]:not([mini])':
+# Re-enable emmet ONLY for HTML & ERB.
+'atom-text-editor[data-grammar="text html basic"]:not([mini]), atom-text-editor[data-grammar~="erb"]:not([mini])':
   'tab': 'emmet:expand-abbreviation-with-tab'
 
 # ----
+
+'.platform-darwin atom-text-editor':
+   # Override bracket-matcher keybinding.
+  'ctrl-backspace': 'editor:delete-to-beginning-of-subword'
+  # Reset to another binding.
+  'ctrl-shift-backspace': 'bracket-matcher:remove-matching-brackets'
+
+# ---
 
 # Re-enable some emmet keybindings.
 '.platform-darwin atom-text-editor:not([mini])':
