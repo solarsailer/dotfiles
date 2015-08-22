@@ -31,7 +31,6 @@
     useLeftLabelColumnForSuggestions: true
   tabs:
     enableVcsColoring: true
-    usePreviewTabs: true
   "atom-beautify":
     beautifyEntireFileOnSave: false
     analytics: false
