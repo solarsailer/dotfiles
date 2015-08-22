@@ -60,6 +60,9 @@
 [push]
   default = simple
 
+[pull]
+  rebase = preserve
+
 ######################################
 # tools (auto-generated)             #
 ######################################
