@@ -58,7 +58,7 @@
 ######################################
 
 [push]
-	default = simple
+  default = simple
 
 ######################################
 # tools (auto-generated)             #
