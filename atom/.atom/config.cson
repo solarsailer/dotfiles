@@ -43,6 +43,8 @@
     language_sass_beautify_on_save: true
     language_less_default_beautifier: "CSScomb"
     language_less_beautify_on_save: true
+  "go-plus":
+    goPath: "~/dev/go"
   "spell-check": {}
   "fuzzy-finder": {}
 ".fish.source":
