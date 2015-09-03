@@ -25,10 +25,10 @@ set PATH ~/.bin          $PATH
 # go
 ######################################
 
-set PATH   /usr/local/go/bin $PATH
+set    PATH   /usr/local/go/bin $PATH
 
-set GOPATH $HOME/dev/go
-set PATH   $GOPATH/bin       $PATH
+set -x GOPATH $HOME/dev/go
+set    PATH   $GOPATH/bin       $PATH
 
 ######################################
 # rbenv
