@@ -47,6 +47,7 @@
     goPath: "~/dev/go"
   "spell-check": {}
   "fuzzy-finder": {}
+  linter: {}
 ".fish.source":
   editor:
     preferredLineLength: 100
