@@ -1,0 +1,107 @@
+// Theme default colors.
+@import 'colors';
+
+// @mono-1: hsl(220, 14%, 71%) //default
+// @mono-2: hsl(220,  9%, 55%)
+// @mono-3: hsl(220, 10%, 40%)
+//
+// @hue-1   hsl(187, 47%, 55%) //cyan
+// @hue-2   hsl(207, 82%, 66%) //blue
+// @hue-3   hsl(286, 60%, 67%) //purple
+// @hue-4   hsl( 95, 38%, 62%) //green
+//
+// @hue-5   hsl(355, 65%, 65%) //red 1
+// @hue-5-2 hsl(  5, 48%, 51%) //red 2
+//
+// @hue-6   hsl( 29, 54%, 61%) //orange 1
+// @hue-6-2 hsl( 39, 67%, 69%) //orange 2
+
+// -------------------------------------------------------
+// Redefine Go syntax highlighting.
+// -------------------------------------------------------
+
+atom-text-editor::shadow .go
+{
+    .variable.other
+    {
+        color: @mono-1;
+    }
+
+    // -------------------------------------------------------
+    // String.
+    // -------------------------------------------------------
+
+    .punctuation.string
+    {
+        color: @hue-4 !important;
+    }
+
+    .string.raw
+    {
+        color: saturate(@hue-4, 30%);
+    }
+
+    // -------------------------------------------------------
+    // Keywords.
+    // -------------------------------------------------------
+
+    .keyword.operator.address
+    {
+        color: @color;
+        background-color: fade(@color, 15%);
+
+        @color: rgb(244, 106, 155);
+    }
+
+    .keyword.operator.logical
+    {
+        color: @hue-2;
+        background-color: fade(@hue-2, 10%);
+    }
+
+    .keyword.operator.comparison
+    {
+        color: @hue-6-2;
+        background-color: fade(@hue-6-2, 12%);
+    }
+
+    .keyword.operator.assignment
+    {
+        color: @hue-5;
+        background-color: fade(@hue-5, 15%);
+    }
+
+    .keyword.operator.arithmetic
+    {
+        color: @mono-2;
+    }
+
+    // -------------------------------------------------------
+    // Types.
+    // -------------------------------------------------------
+
+    .storage
+    {
+        color: fade(@hue-3, 80%);
+    }
+
+    .storage.string
+    {
+        color: fade(@hue-4, 80%);
+    }
+
+    .storage.boolean
+    {
+        color: fade(@hue-6-2, 80%);
+    }
+
+    .storage.numeric
+    {
+        color: fade(@hue-6, 80%);
+    }
+
+    .storage.error
+    {
+        color: fade(@hue-5-2, 80%);
+    }
+}
