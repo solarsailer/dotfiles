@@ -13,7 +13,7 @@
     """
 
 # Double-slash region:
-'.source.sass, .source.scss, .source.js, .source.cs':
+'.source.sass, .source.scss, .source.less, .source.js, .source.cs, .source.go':
   'code region':
     'prefix': 'region'
     'body': """
