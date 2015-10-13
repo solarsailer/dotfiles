@@ -29,6 +29,9 @@ brew install cmake
 brew install rbenv
 brew install ruby-build
 
+# Git
+brew install tig
+
 # Helpers.
 brew install the_silver_searcher # ag
 brew install httpie # http
