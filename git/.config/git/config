@@ -59,6 +59,9 @@
   # * key - author: subject
   h = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %C(blue)%aN:%Creset %s%Creset' --abbrev-commit
 
+  # Show last commit details.
+  last = "!f() { git --no-pager show HEAD; };f"
+
   # -------------------------------------------------------
   # Enhanced.
   # -------------------------------------------------------
