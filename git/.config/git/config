@@ -46,6 +46,9 @@
   # contrib
   committers = shortlog -nse --no-merges
 
+  # sync
+  sync = !git pull --rebase=preserve && git push
+
   # -------------------------------------------------------
   # Log.
   # -------------------------------------------------------
