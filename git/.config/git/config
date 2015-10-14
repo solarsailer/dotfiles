@@ -49,6 +49,9 @@
   # sync
   sync = !git pull --rebase=preserve && git push
 
+  # amend
+  amend = commit --amend -c HEAD
+
   # -------------------------------------------------------
   # Log.
   # -------------------------------------------------------
