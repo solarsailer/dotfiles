@@ -79,6 +79,9 @@
 [pull]
   rebase = preserve
 
+[merge]
+  conflictstyle = diff3
+
 ######################################
 # tools (auto-generated)             #
 ######################################
