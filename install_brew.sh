@@ -50,18 +50,22 @@ echo "Installing Homebrew casks..."
 # Install Caskroom.
 brew install caskroom/cask/brew-cask
 
+# Install packages.
+brew cask install node
+brew cask install go
+
 # Install apps.
-brew cask install google-chrome
-brew cask install dropbox
-brew cask install 1password
-brew cask install iterm2
-brew cask install slack
-brew cask install alfred
-brew cask install droplr
-brew cask install spotify
-brew cask install bartender
-brew cask install vlc
-brew cask install imageoptim
-brew cask install paparazzi!
+# brew cask install google-chrome
+# brew cask install dropbox
+# brew cask install 1password
+# brew cask install iterm2
+# brew cask install slack
+# brew cask install alfred
+# brew cask install droplr
+# brew cask install spotify
+# brew cask install bartender
+# brew cask install vlc
+# brew cask install imageoptim
+# brew cask install paparazzi!
 
 echo "Homebrew done."
