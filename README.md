@@ -38,7 +38,7 @@ Then, add it on Github.
 
 Set fish as default shell:
 
-* Add `/usr/local/bin/fish` to `/etc/shells` (just need to there, at the end, nothing more)
+* Add `/usr/local/bin/fish` to `/etc/shells` (just need to be there, at the end, nothing more)
 * Run: `chsh -s /usr/local/bin/fish`
 
 ## Atom configuration
@@ -51,7 +51,7 @@ The packages are not synchronized. Install them once via:
 apm stars --install
 ```
 
-If the `ctrl+left/right/up/down` do not work, disable them in `Mission Control` and `Keyboards > Mission Control`.
+If the `ctrl+left/right/up/down` do not work, disable them in `Mission Control` and `Keyboards >> Mission Control`.
 
 ## Laptop configuration
 
