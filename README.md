@@ -53,6 +53,19 @@ apm stars --install
 
 If the `ctrl+left/right/up/down` do not work, disable them in `Mission Control` and `Keyboards > Mission Control`.
 
+## Laptop configuration
 
+Change the standby delay time for faster wake-up after sleep:
 
-Thanks to [Peter Hajas](https://github.com/peterhajas/dotfiles) for the inspiration.
+```
+# 3600s (1h) * 6h = 21600s
+sudo pmset -a standbydelay 21600
+```
+
+Check the result with `pmset -g`.
+
+Why? [Read that](http://www.cultofmac.com/221392/quick-hack-speeds-up-retina-macbooks-wake-from-sleep-os-x-tips/).
+
+---
+
+Thanks to [Peter Hajas](https://github.com/peterhajas/dotfiles) and [OSX for Hackers](https://gist.github.com/brandonb927/3195465#file-osx-for-hackers-sh-L619) for the inspiration.
