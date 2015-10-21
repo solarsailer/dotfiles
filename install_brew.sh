@@ -62,5 +62,6 @@ brew cask install spotify
 brew cask install bartender
 brew cask install vlc
 brew cask install imageoptim
+brew cask install paparazzi!
 
 echo "Homebrew done."
