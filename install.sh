@@ -1,5 +1,6 @@
 #!/bin/sh
 
-bash install_brew.bash
-bash install_dotfiles.bash
-bash install_osx.bash
+bash install_brew.sh
+bash install_dotfiles.sh
+bash install_osx.sh
+bash install_dock.sh
