@@ -28,8 +28,16 @@ defaults write -g NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false
 # Quit the Printer app when the print jobs are done.
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
+# -------------------------------------------------------
+# Keyboard.
+# -------------------------------------------------------
+
 # Full Keyboard Access: change the tab behavior to work on every field.
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+# Deactivate smart quotes and dash.
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled  -bool false
 
 # -------------------------------------------------------
 # Finder.
