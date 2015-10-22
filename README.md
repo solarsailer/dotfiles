@@ -66,6 +66,13 @@ Check the result with `pmset -g`.
 
 Why? [Read that](http://www.cultofmac.com/221392/quick-hack-speeds-up-retina-macbooks-wake-from-sleep-os-x-tips/).
 
+## Configure the dock and change the computer name
+
+Finally, run:
+
+- `install_dock.sh`
+- `change_computer_name NAME`
+
 ---
 
 Thanks to [Peter Hajas](https://github.com/peterhajas/dotfiles) and [OSX for Hackers](https://gist.github.com/brandonb927/3195465#file-osx-for-hackers-sh-L619) for the inspiration.
