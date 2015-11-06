@@ -37,6 +37,12 @@ brew install the_silver_searcher # ag
 brew install httpie # http
 brew install cloc
 brew install trash
+brew install multimarkdown
+brew install wakeonlan
+
+# Databases.
+brew install redis
+brew install sqlite
 
 # MacVim (installation via brew instead of cask because brew configure the mvim executable for shell use).
 brew install macvim --with-lua --with-override-system-vim
