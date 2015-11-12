@@ -66,6 +66,10 @@ Check the result with `pmset -g`.
 
 Why? [Read that](http://www.cultofmac.com/221392/quick-hack-speeds-up-retina-macbooks-wake-from-sleep-os-x-tips/).
 
+## Change Keyboard
+
+Choose an alternative keyboard in `@keyboards` and install it.
+
 ## Configure the dock and change the computer name
 
 Finally, run:
