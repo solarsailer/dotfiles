@@ -48,8 +48,6 @@
   ci = commit
   co = checkout
   br = branch
-  df = diff
-  dw = diff --word-diff
 
   # contrib
   committers = shortlog -nse --no-merges
@@ -59,6 +57,17 @@
 
   # amend
   amend = commit --amend -c HEAD
+
+  # -------------------------------------------------------
+  # Diff.
+  # -------------------------------------------------------
+
+  diffstaged = diff --staged
+  diffsplit  = icdiff
+
+  df  = diff
+  dw  = diff --word-diff
+  ds  = icdiff
 
   # -------------------------------------------------------
   # Log.
