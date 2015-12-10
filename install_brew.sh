@@ -29,8 +29,9 @@ brew install cmake
 brew install rbenv
 brew install ruby-build
 
-# Git
+# VCS, diff, merge.
 brew install tig
+brew install icdiff # better difftool
 
 # Helpers.
 brew install the_silver_searcher # ag
