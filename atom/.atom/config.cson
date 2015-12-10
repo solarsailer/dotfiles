@@ -23,6 +23,7 @@
   emmet: {}
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   "omnisharp-atom":
     enableAdvancedFileNew: false
     nagAdjustTreeView: false
