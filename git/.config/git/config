@@ -31,14 +31,6 @@
   untracked = yellow
 
 ######################################
-# merge & diff                       #
-######################################
-
-[merge]
-  tool = vimdiff
-  conflictstyle = diff3
-
-######################################
 # alias                              #
 ######################################
 
@@ -103,6 +95,7 @@
   rebase = preserve
 
 [merge]
+  tool = vimdiff
   conflictstyle = diff3
 
 ######################################
