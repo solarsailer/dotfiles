@@ -9,9 +9,16 @@ else
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-#
-# Install command-line packages.
-#
+echo "Installing Homebrew Cask..."
+
+# Install Caskroom.
+brew install caskroom/cask/brew-cask
+
+echo "Installing environments..."
+
+# Install packages.
+brew cask install node
+brew cask install go
 
 echo "Installing Homebrew packages..."
 
@@ -50,18 +57,7 @@ brew install sqlite
 # MacVim (installation via brew instead of cask because brew configure the mvim executable for shell use).
 brew install macvim --with-lua --with-override-system-vim
 
-#
-# Install binaries (full-fledged app).
-#
-
-echo "Installing Homebrew casks..."
-
-# Install Caskroom.
-brew install caskroom/cask/brew-cask
-
-# Install packages.
-brew cask install node
-brew cask install go
+echo "Installing Homebrew Cask apps..."
 
 # Install apps.
 # brew cask install google-chrome
