@@ -40,6 +40,8 @@ brew install cloc
 brew install trash
 brew install multimarkdown
 brew install wakeonlan
+brew install hub
+brew install ccat
 
 # Databases.
 brew install redis
