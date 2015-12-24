@@ -1,0 +1,35 @@
+diff -ru RichText.mdimporter/Contents/Info.plist Markdown.mdimporter/Contents/Info.plist
+--- RichText.mdimporter/Contents/Info.plist	2015-11-23 16:14:12.000000000 +0200
++++ Markdown.mdimporter/Contents/Info.plist	2015-11-23 16:10:03.000000000 +0200
+@@ -13,15 +13,8 @@
+ 			<string>MDImporter</string>
+ 			<key>LSItemContentTypes</key>
+ 			<array>
+-				<string>public.rtf</string>
+-				<string>public.html</string>
+-				<string>public.xml</string>
+-				<string>public.plain-text</string>
+-				<string>com.apple.traditional-mac-plain-text</string>
+-				<string>com.apple.rtfd</string>
+-				<string>com.apple.webarchive</string>
+-				<string>org.oasis-open.opendocument.text</string>
+-				<string>org.openxmlformats.wordprocessingml.document</string>
++				<string>net.daringfireball.markdown</string>
++				<string>net.multimarkdown.text</string>
+ 			</array>
+		</dict>
+	</array>
+@@ -30,11 +22,11 @@
+ 	<key>CFBundleGetInfoString</key>
+ 	<string>1.0, Copyright (c) 2004-2010 Apple Inc.</string>
+ 	<key>CFBundleIdentifier</key>
+-	<string>com.apple.MDImporter.RichText</string>
++	<string>com.apple.MDImporter.Markdown</string>
+ 	<key>CFBundleInfoDictionaryVersion</key>
+ 	<string>6.0</string>
+ 	<key>CFBundleName</key>
+-	<string>Rich Text Sniffer</string>
++	<string>Markdown Sniffer</string>
+ 	<key>CFBundleShortVersionString</key>
+ 	<string>6.9</string>
+ 	<key>CFBundleSupportedPlatforms</key>
