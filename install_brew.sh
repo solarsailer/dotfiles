@@ -57,6 +57,14 @@ brew install sqlite
 # MacVim (installation via brew instead of cask because brew configure the mvim executable for shell use).
 brew install macvim --with-lua --with-override-system-vim
 
+echo "Installing Homebrew Cask plugins..."
+
+brew cask install qlmarkdown
+brew cask install qlcolorcode
+brew cask install qlstephen
+brew cask install quicklook-csv
+brew cask install quicklook-json
+
 echo "Installing Homebrew Cask apps..."
 
 # Install apps.
