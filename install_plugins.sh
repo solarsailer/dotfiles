@@ -8,7 +8,15 @@ BASEDIR=$(dirname $0) && cd $BASEDIR
 # Markdown spotlight importer.
 # -------------------------------------------------------
 
-# See: https://gist.github.com/solarsailer/0ebfd8366e3f3c8d9e82
+# Problem: by default, OS X doesn't index the content of markdown files.
+# Which is kind of unfortunate, because that's really useful with Alfred.
+# So, let's add an importer.
+#
+# A Markdown file is just a text file, after all. We just re-use the RichText
+# importer and customize it for Markdown (ie., recognize Markdown format).
+# Bonus: this method does not require to bypass SIP.
+
+# Source: https://gist.github.com/breiter/1d3d7db645fd4a6e5c57
 
 # Create a copy of the system `RichText.mdimporter`.
 cp -r /System/Library/Spotlight/RichText.mdimporter .
