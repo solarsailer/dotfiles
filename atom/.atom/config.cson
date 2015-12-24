@@ -50,6 +50,11 @@
   "spell-check": {}
   "fuzzy-finder": {}
   linter: {}
+  jumpy:
+    fontSize: 1
+    highContrast: true
+  "markdown-preview":
+    useGitHubStyle: true
 ".fish.source":
   editor:
     preferredLineLength: 100
