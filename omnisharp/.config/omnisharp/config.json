@@ -10,7 +10,8 @@
     ".*'this.' is redundant and can be removed safely.*",
     ".*Comparison with 'false' is redundant.*",
     ".*has the same with.*",
-    ".*Parameter can be IComparable.*"
+    ".*Parameter can be IComparable.*",
+    ".*Initializing field by default value is redundant.*"
   ],
 
   "TestCommands": {
