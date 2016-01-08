@@ -8,6 +8,7 @@
     disabledPackages: [
       "background-tips"
     ]
+    destroyEmptyPanes: false
   editor:
     invisibles: {}
     fontFamily: "Menlo"
