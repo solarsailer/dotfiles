@@ -67,12 +67,13 @@
 
   # simple log
   l = log --oneline --decorate --max-count=15
+  ll = log --color --max-count=15 --abbrev-commit --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %Cgreen(%cr)%Creset %C(bold blue)<%an>%Creset'
 
   # * key - subject (time) <author>
-  history = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  history = log --color --graph --abbrev-commit --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset'
 
   # * key - author: subject
-  h = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %C(blue)%aN:%Creset %s%Creset' --abbrev-commit
+  h = log --color --graph --abbrev-commit --pretty=format:'%C(yellow)%h%Creset%C(yellow)%d%Creset %s%Creset' 
 
   # Show last commit details.
   last = "!f() { git --no-pager show HEAD; };f"
