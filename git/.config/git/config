@@ -73,7 +73,7 @@
   history = log --color --graph --abbrev-commit --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset'
 
   # * key - author: subject
-  h = log --color --graph --abbrev-commit --pretty=format:'%C(yellow)%h%Creset%C(yellow)%d%Creset %s%Creset' 
+  h = log --color --graph --abbrev-commit --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s%Creset'
 
   # Show last commit details.
   last = "!f() { git --no-pager show HEAD; };f"
