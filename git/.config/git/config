@@ -10,24 +10,26 @@
 ######################################
 
 [color]
-  branch = auto
-  diff = auto
-  status = auto
+  ui          = auto
+  branch      = auto
+  diff        = auto
+  interactive = auto
+  status      = auto
 
 [color "branch"]
   current = yellow bold
-  local = yellow
-  remote = magenta
+  local   = yellow
+  remote  = magenta
 
 [color "diff"]
   meta = cyan
   frag = magenta bold
-  old = red bold
-  new = green bold
+  old  = red bold
+  new  = green bold
 
 [color "status"]
-  added = green
-  changed = red
+  added     = green
+  changed   = red
   untracked = yellow
 
 ######################################
