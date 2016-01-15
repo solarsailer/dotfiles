@@ -38,3 +38,9 @@ set    PATH   $GOPATH/bin       $PATH
 set PATH $HOME/.rbenv/bin   $PATH
 set PATH $HOME/.rbenv/shims $PATH
 rbenv rehash >/dev/null ^&1
+
+######################################
+# cheat
+######################################
+
+set -x CHEATCOLORS true
