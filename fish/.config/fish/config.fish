@@ -22,7 +22,7 @@ set PATH /usr/local/sbin $PATH
 set PATH ~/.bin          $PATH
 
 ######################################
-# go
+# Go
 ######################################
 
 set    PATH   /usr/local/go/bin $PATH
@@ -35,6 +35,6 @@ set    PATH   $GOPATH/bin       $PATH
 # rbenv
 ######################################
 
-set PATH $HOME/.rbenv/bin $PATH
+set PATH $HOME/.rbenv/bin   $PATH
 set PATH $HOME/.rbenv/shims $PATH
 rbenv rehash >/dev/null ^&1
