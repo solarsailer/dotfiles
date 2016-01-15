@@ -49,6 +49,7 @@ brew install multimarkdown
 brew install wakeonlan
 brew install hub
 brew install ccat
+brew install cheat # cheatsheet manager
 
 # Databases.
 brew install redis
