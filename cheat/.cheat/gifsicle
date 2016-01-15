@@ -1,0 +1,6 @@
+# Resize a gif.
+#
+# For the size, you can specify: WIDTHxHEIGHT
+# You can omit a dimension with `_`, like: 100x_ or _x100
+# It will be proportional this way.
+gifsicle --resize WIDTHxHEIGHT < original.gif > resized.gif
