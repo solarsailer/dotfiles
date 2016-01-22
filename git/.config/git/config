@@ -98,8 +98,15 @@
   rebase = preserve
 
 [merge]
-  tool = vimdiff
+  # Add the `common ancestor` markers.
   conflictstyle = diff3
+
+  # Use opendiff/FileMerge as the mergetool.
+  tool = opendiff
+
+[mergetool "opendiff"]
+  # Custom wrapper around opendiff to clean logs and wait for exit.
+  path = mergetool-opendiff
 
 ######################################
 # tools (auto-generated)             #

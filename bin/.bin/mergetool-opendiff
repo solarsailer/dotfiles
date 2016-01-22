@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Inspired by: https://github.com/mikemcquaid/scripts/blob/master/git-mergetool-opendiff
+
+# Script to be used with git mergetool to handle opendiff nicely.
+if [ $# != 6 ]
+then
+  echo "ERROR: Don't call this script directly; use 'git mergetool' instead."
+  exit
+fi
+
+# Kill all instances of FileMerge already running.
+ps x | grep FileMerge | grep -v grep | cut -d' ' -f1 | xargs kill
+
+# Pipe output from opendiff to make it wait for FileMerge to exit.
+# Also hide FileMerge's useless logs (only from stderr
+# - we need stdout to wait for FileMerge with `| cat`).
+opendiff "$@" 2>/dev/null | cat
