@@ -14,11 +14,21 @@ echo "Installing Homebrew Cask..."
 # Install Caskroom.
 brew install caskroom/cask/brew-cask
 
+# -------------------------------------------------------
+# Environments.
+# -------------------------------------------------------
+
 echo "Installing environments..."
 
-# Install packages.
+brew install go
+
+echo "Installing environments with Cask..."
+
 brew cask install node
-brew cask install go
+
+# -------------------------------------------------------
+# Packages.
+# -------------------------------------------------------
 
 echo "Installing Homebrew packages..."
 
