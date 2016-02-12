@@ -1,61 +1,56 @@
 "*":
-  "exception-reporting":
-    userId: "b907a5d6-f8db-fdb9-dff4-38a5b28395df"
-  welcome:
-    showOnStartup: false
-  core:
-    audioBeep: false
-    disabledPackages: [
-      "background-tips"
-    ]
-    destroyEmptyPanes: false
-  editor:
-    invisibles: {}
-    fontFamily: "Menlo"
-    lineHeight: 1.25
-    preferredLineLength: 100
-    softWrap: true
-    softTabs: true
-    tabLength: 2
-  whitespace:
-    ensureSingleTrailingNewline: true
-    removeTrailingWhitespace: true
-  "one-dark-ui": {}
-  emmet: {}
-  "tree-view":
-    hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
-  "omnisharp-atom":
-    enableAdvancedFileNew: false
-    nagAdjustTreeView: false
-    nagAddExternalProjects: false
-    useIcons: false
-    useLeftLabelColumnForSuggestions: true
-  tabs:
-    enableVcsColoring: true
-    usePreviewTabs: true
   "atom-beautify":
-    beautifyEntireFileOnSave: false
     analytics: false
+    beautifyEntireFileOnSave: false
     js_space_after_anon_function: true
     language_css_default_beautifier: "CSScomb"
-    language_css_beautify_on_save: true
-    language_scss_default_beautifier: "CSScomb"
-    language_scss_beautify_on_save: true
-    language_sass_default_beautifier: "CSScomb"
-    language_sass_beautify_on_save: true
     language_less_default_beautifier: "CSScomb"
-    language_less_beautify_on_save: true
+    language_less_disabled: true
+    language_sass_beautify_on_save: true
+    language_sass_default_beautifier: "CSScomb"
+    language_scss_beautify_on_save: true
+    language_scss_default_beautifier: "CSScomb"
+  core:
+    audioBeep: false
+    destroyEmptyPanes: false
+    disabledPackages: [
+      "background-tips"
+      "vim-mode"
+    ]
+  editor:
+    fontFamily: "Menlo"
+    invisibles: {}
+    lineHeight: 1.25
+    preferredLineLength: 100
+    softTabs: true
+    softWrap: true
+    tabLength: 2
+  emmet: {}
+  "exception-reporting":
+    userId: "b907a5d6-f8db-fdb9-dff4-38a5b28395df"
+  "fuzzy-finder": {}
   "go-plus":
     goPath: "~/dev/go"
-  "spell-check": {}
-  "fuzzy-finder": {}
-  linter: {}
   jumpy:
     fontSize: 1
     highContrast: true
+  linter: {}
+  "linter-jshint": {}
   "markdown-preview":
     useGitHubStyle: true
+  "one-dark-ui": {}
+  "spell-check": {}
+  tabs:
+    enableVcsColoring: true
+    usePreviewTabs: true
+  "tree-view": {}
+  "vim-mode":
+    useSmartcaseForSearch: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: true
+    removeTrailingWhitespace: true
 ".fish.source":
   editor:
     preferredLineLength: 100
