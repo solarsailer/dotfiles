@@ -53,6 +53,7 @@ brew install icdiff # better difftool
 # Helpers.
 brew install the_silver_searcher # ag
 brew install httpie # http
+brew install jq # json processor
 brew install cloc
 brew install trash
 brew install multimarkdown
