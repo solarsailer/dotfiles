@@ -61,6 +61,7 @@ brew install wakeonlan
 brew install hub
 brew install ccat
 brew install cheat # cheatsheet manager
+brew install youtube-dl
 
 # Databases.
 brew install redis
