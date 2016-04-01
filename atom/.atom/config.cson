@@ -4,6 +4,7 @@
     beautifyEntireFileOnSave: false
     js_space_after_anon_function: true
     language_css_default_beautifier: "CSScomb"
+    language_js_beautify_on_save: true
     language_less_default_beautifier: "CSScomb"
     language_less_disabled: true
     language_sass_beautify_on_save: true
@@ -43,7 +44,9 @@
   tabs:
     enableVcsColoring: true
     usePreviewTabs: true
-  "tree-view": {}
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   "vim-mode":
     useSmartcaseForSearch: true
   welcome:
