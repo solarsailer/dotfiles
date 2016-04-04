@@ -56,6 +56,7 @@ brew install httpie # http
 brew install jq # json processor
 brew install cloc
 brew install trash
+brew install ranger # file browser
 brew install multimarkdown
 brew install wakeonlan
 brew install hub
