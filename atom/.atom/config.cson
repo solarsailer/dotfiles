@@ -1,16 +1,63 @@
 "*":
   "atom-beautify":
-    analytics: false
-    beautifyEntireFileOnSave: false
-    js_space_after_anon_function: true
-    language_css_default_beautifier: "CSScomb"
-    language_js_beautify_on_save: true
-    language_less_default_beautifier: "CSScomb"
-    language_less_disabled: true
-    language_sass_beautify_on_save: true
-    language_sass_default_beautifier: "CSScomb"
-    language_scss_beautify_on_save: true
-    language_scss_default_beautifier: "CSScomb"
+    apex: {}
+    arduino: {}
+    c: {}
+    cfml: {}
+    coffeescript: {}
+    cpp: {}
+    cs: {}
+    css:
+      default_beautifier: "CSScomb"
+    d: {}
+    ejs: {}
+    erb: {}
+    fortran: {}
+    general:
+      _analyticsUserId: "971e04b4-d2da-4126-8ea0-83109ab09b7e"
+      analytics: false
+      beautifyEntireFileOnSave: false
+    gherkin: {}
+    handlebars: {}
+    html: {}
+    jade: {}
+    java: {}
+    js:
+      beautify_on_save: true
+      space_after_anon_function: true
+    json: {}
+    jsx: {}
+    latex: {}
+    less:
+      default_beautifier: "CSScomb"
+      disabled: true
+    marko: {}
+    mustache: {}
+    objectivec: {}
+    pawn: {}
+    perl: {}
+    php: {}
+    python: {}
+    riot: {}
+    ruby: {}
+    rust: {}
+    sass:
+      beautify_on_save: true
+      default_beautifier: "CSScomb"
+    scss:
+      beautify_on_save: true
+      default_beautifier: "CSScomb"
+    spacebars: {}
+    sql: {}
+    svg: {}
+    swig: {}
+    tss: {}
+    twig: {}
+    typescript: {}
+    vala: {}
+    visualforce: {}
+    xml: {}
+    xtemplate: {}
   core:
     audioBeep: false
     destroyEmptyPanes: false
@@ -35,7 +82,8 @@
   jumpy:
     fontSize: 1
     highContrast: true
-  linter: {}
+  linter:
+    showErrorPanel: false
   "linter-jshint": {}
   "markdown-preview":
     useGitHubStyle: true
