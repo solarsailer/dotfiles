@@ -54,6 +54,7 @@ brew install icdiff # better difftool
 brew install the_silver_searcher # ag
 brew install httpie # http
 brew install jq # json processor
+brew install fzf # fuzzy finder
 brew install cloc
 brew install trash
 brew install ranger # file browser
