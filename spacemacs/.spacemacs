@@ -24,7 +24,7 @@ values."
      version-control
 
      ;; Languages.
-     go
+     (go :variables gofmt-command "goimports")
      markdown
      emacs-lisp
 
