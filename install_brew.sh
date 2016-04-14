@@ -80,6 +80,10 @@ brew cask install qlstephen
 brew cask install quicklook-csv
 brew cask install quicklook-json
 
+echo "Install Homebrew Cask packages..."
+
+brew cask install vagrant
+
 echo "Installing Homebrew Cask apps..."
 
 # Install apps.
