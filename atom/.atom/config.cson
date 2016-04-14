@@ -19,11 +19,13 @@
       beautifyEntireFileOnSave: false
     gherkin: {}
     handlebars: {}
-    html: {}
+    html:
+      end_with_newline: true
+      indent_size: 2
+      wrap_attributes_indent_size: 2
     jade: {}
     java: {}
     js:
-      beautify_on_save: true
       space_after_anon_function: true
     json: {}
     jsx: {}
@@ -82,8 +84,7 @@
   jumpy:
     fontSize: 1
     highContrast: true
-  linter:
-    showErrorPanel: false
+  linter: {}
   "linter-jshint": {}
   "markdown-preview":
     useGitHubStyle: true
