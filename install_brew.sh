@@ -99,5 +99,6 @@ echo "Installing Homebrew Cask apps..."
 # brew cask install vlc
 # brew cask install imageoptim
 # brew cask install paparazzi!
+# brew cask install virtualbox
 
 echo "Homebrew done."
