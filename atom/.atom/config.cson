@@ -20,6 +20,7 @@
     gherkin: {}
     handlebars: {}
     html:
+      default_beautifier: "Pretty Diff"
       end_with_newline: true
       indent_size: 2
       wrap_attributes_indent_size: 2
