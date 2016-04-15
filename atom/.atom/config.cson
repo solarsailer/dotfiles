@@ -63,6 +63,7 @@
     xtemplate: {}
   core:
     audioBeep: false
+    automaticallyUpdate: false
     destroyEmptyPanes: false
     disabledPackages: [
       "background-tips"
