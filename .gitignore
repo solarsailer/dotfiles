@@ -15,3 +15,6 @@ fish_history
 fish_read_history
 fishd.*
 *.menu
+
+# Atom
+blob-store
