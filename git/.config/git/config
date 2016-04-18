@@ -56,12 +56,9 @@
   # Diff.
   # -------------------------------------------------------
 
-  diffstaged = diff --staged
-  diffsplit  = icdiff
-
-  df  = diff
+  d   = diff
   dw  = diff --word-diff
-  ds  = icdiff
+  ds  = diff --staged
 
   # -------------------------------------------------------
   # Log.
