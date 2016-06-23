@@ -83,6 +83,7 @@
   "fuzzy-finder": {}
   "go-plus":
     goPath: "~/dev/go"
+  "go-signature-statusbar": {}
   jumpy:
     fontSize: 1
     highContrast: true
