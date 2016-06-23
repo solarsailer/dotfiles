@@ -1,2 +1,4 @@
 # Open the file in the Finder.
 bind generic = @open --reveal %(file)
+
+set wrap-lines = yes
