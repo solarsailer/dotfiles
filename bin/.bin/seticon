@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+
+import Cocoa
+import sys
+
+if len(sys.argv) <= 2:
+    sys.exit("usage: seticon icon_file target_file")
+
+# Arguments.
+icns = Cocoa.NSImage.alloc().initWithContentsOfFile_(sys.argv[1].decode('utf-8'))
+target = sys.argv[2].decode('utf-8')
+
+# Clean any icon before.
+# Otherwise, if an icon is already applied, it will fail. I don't know why.
+workspace = Cocoa.NSWorkspace.sharedWorkspace()
+workspace.setIcon_forFile_options_(None, target, 0)
+workspace.setIcon_forFile_options_(icns, target, 0) or sys.exit("unable to set icon")
