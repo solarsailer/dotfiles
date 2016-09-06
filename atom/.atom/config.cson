@@ -63,7 +63,6 @@
     xtemplate: {}
   core:
     audioBeep: false
-    automaticallyUpdate: false
     destroyEmptyPanes: false
     disabledPackages: [
       "background-tips"
@@ -88,7 +87,8 @@
     fontSize: 1
     highContrast: true
   linter: {}
-  "linter-jshint": {}
+  "linter-jshint":
+    disableWhenNoJshintrcFileInPath: true
   "markdown-preview":
     useGitHubStyle: true
   "one-dark-ui": {}
