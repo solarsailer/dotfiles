@@ -4,7 +4,12 @@
 # Node.
 # -------------------------------------------------------
 
-sudo npm install -g tldr
+# Check if `npm config get prefix` returns `/usr/local`.
+# https://docs.npmjs.com/getting-started/fixing-npm-permissions
+sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
+
+npm install -g npm # The latest version of NPM is not included in the node package, so update it.
+npm install -g tldr
 
 # -------------------------------------------------------
 # Ruby.
