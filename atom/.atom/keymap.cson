@@ -20,6 +20,16 @@
   'ctrl-h': 'unset!'
   'ctrl-d': 'unset!'
 
+  # -------------------------------------------------------
+  # Disable MRU tabs… sigh.
+  # http://blog.atom.io/2016/04/12/atom-1-7-and-1-8-beta.html
+  # -------------------------------------------------------
+
+  'ctrl-tab ^ctrl': 'unset!'
+  'ctrl-tab': 'pane:show-next-item'
+  'ctrl-shift-tab ^ctrl': 'unset!'
+  'ctrl-shift-tab': 'pane:show-previous-item'
+
 # -------------------------------------------------------
 # Keybindings for editor.
 # -------------------------------------------------------
