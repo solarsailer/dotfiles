@@ -1,3 +1,6 @@
 # Execute a shell command directly in fish.
 sh -c "command"
 bash -c "command"
+
+# Loop on all png files, then resize and convert to jpg thumbnails.
+for f in *.png; convert $f -resize 500x250 preview-(string replace '.png' '' $f).jpg; end
