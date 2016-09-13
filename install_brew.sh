@@ -38,6 +38,7 @@ brew install fish
 # Image.
 brew install imagemagick
 brew install gifsicle
+brew install apngasm
 
 # Toolchain.
 brew install cmake
