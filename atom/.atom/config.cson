@@ -68,6 +68,9 @@
       "background-tips"
       "vim-mode"
     ]
+    packagesWithKeymapsDisabled: [
+      "standard-formatter"
+    ]
   editor:
     fontFamily: "Menlo"
     invisibles: {}
@@ -93,6 +96,8 @@
     useGitHubStyle: true
   "one-dark-ui": {}
   "spell-check": {}
+  "standard-formatter":
+    formatOnSave: true
   tabs:
     enableVcsColoring: true
     usePreviewTabs: true
