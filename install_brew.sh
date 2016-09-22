@@ -20,11 +20,12 @@ brew tap caskroom/cask
 
 echo "Installing environments..."
 
-brew cask install go
+brew install go
 
 echo "Installing environments with Cask..."
 
-brew cask install node
+# Unavailable… Download from the official site instead.
+#brew cask install node
 
 # -------------------------------------------------------
 # Packages.
@@ -80,6 +81,7 @@ brew cask install qlcolorcode
 brew cask install qlstephen
 brew cask install quicklook-csv
 brew cask install quicklook-json
+brew cask install wkhtmltopdf
 
 echo "Install Homebrew Cask packages..."
 
