@@ -76,7 +76,7 @@ brew install macvim --with-lua --with-override-system-vim
 
 echo "Installing Homebrew Cask plugins..."
 
-brew cask install qlmarkdown
+brew cask install ttscoff-mmd-quicklook # alternative: qlmarkdown
 brew cask install qlcolorcode
 brew cask install qlstephen
 brew cask install quicklook-csv
