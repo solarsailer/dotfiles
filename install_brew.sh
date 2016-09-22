@@ -12,7 +12,7 @@ fi
 echo "Installing Homebrew Cask..."
 
 # Install Caskroom.
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
 
 # -------------------------------------------------------
 # Environments.
@@ -20,7 +20,7 @@ brew install caskroom/cask/brew-cask
 
 echo "Installing environments..."
 
-brew install go
+brew cask install go
 
 echo "Installing environments with Cask..."
 
