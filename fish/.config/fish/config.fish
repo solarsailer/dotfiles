@@ -52,3 +52,9 @@ alias l "cd ~/lib/dotfiles"
 alias c "cd ~/dev/"
 alias d "cd ~/Desktop/"
 alias n "cd ~/Dropbox/Notes"
+
+######################################
+# iTerm shell integration.
+######################################
+
+test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
