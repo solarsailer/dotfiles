@@ -65,6 +65,51 @@ html {
 }
     """
 
+  # Link's LVHA:
+  'LVHA':
+    'prefix': 'lvha'
+    'body': """
+a {
+  color: ${1:rgb(200, 0, 0)};
+}
+
+a:visited {
+  color: ${2:rgb(50, 0, 0)};
+}
+
+a:hover {
+  /* Lighter color. */
+  color: ${3:rgb(250, 0, 0)};
+}
+
+a:active,
+a:focus {
+  /* Darker color. */
+  color: ${4:rgb(150, 0, 0)};
+}
+    """
+
+  # Clearfix:
+  'Clearfix':
+    'prefix': 'clearfix'
+    'body': """
+/**
+ * Clearfix:
+ * 1. Opera bug.
+ * 2. Use `block` instead of `table` to preserve margin-collapsing.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix::after {
+  clear: both;
+}
+    """
+
   # Default rules for CSS:
   'Globals':
     'prefix': 'globals'
