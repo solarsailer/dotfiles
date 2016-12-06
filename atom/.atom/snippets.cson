@@ -1,110 +1,202 @@
-# -------------------------------------------------------
-# Multi-languages.
-# -------------------------------------------------------
+# --------------------------------------------------------------
+# Multi
+# --------------------------------------------------------------
 
-# Hashmark region:
+# Hashmark section:
 '.source.ruby, .source.puppet, .source.shell, .source.yaml, .source.coffee, .source.cson, .text':
-  'code region':
-    'prefix': 'region'
+  'Section':
+    'prefix': 'section'
     'body': """
-# -------------------------------------------------------
-# ${1:Region}
-# -------------------------------------------------------
+# --------------------------------------------------------------
+# ${1:Title}
+# --------------------------------------------------------------
     """
 
-# Double-slash region:
-'.source.sass, .source.scss, .source.less, .source.js, .source.cs, .source.go':
-  'code region':
-    'prefix': 'region'
+# Double-slash section:
+'.source.sass, .source.less, .source.js, .source.cs, .source.go':
+  'Section':
+    'prefix': 'section'
     'body': """
-// -------------------------------------------------------
-// ${1:Region}
-// -------------------------------------------------------
+// -------------------------------------------------------------
+// ${1:Title}
+// -------------------------------------------------------------
     """
 
-# -------------------------------------------------------
-# C#.
-# -------------------------------------------------------
+# --------------------------------------------------------------
+# CSS
+# --------------------------------------------------------------
 
-'.source.cs':
+'.source.css, .source.scss, .source.sass, .source.sass':
 
-  # C# region pragma:
-  '#region':
-    'prefix': 'csregion'
+  # CSS section:
+  'Section':
+    'prefix': 'section'
     'body': """
-#region ${1:Region}
-
-$2
-
-#endregion
+/* ---------------------------------------------------------- *\\\\
+ * ${1:# Title}
+\\\\* ---------------------------------------------------------- */
     """
 
-# -------------------------------------------------------
-# SCSS.
-# -------------------------------------------------------
-
-'.source.scss':
-
-  # Basic boilerplate:
-  'SCSS Layout':
+  # Basic file layout:
+  'File Layout':
     'prefix': 'layout'
     'body': """
-@charset "utf-8";
+@charset "UTF-8";
 
-// -------------------------------------------------------
-// ${1:Name}.
-// -------------------------------------------------------
+/* ---------------------------------------------------------- *\\\\
+ * ${1:# Title}
+\\\\* ---------------------------------------------------------- */
 
 $2
     """
 
-# -------------------------------------------------------
-# HTML.
-# -------------------------------------------------------
+  # Set to border-box as the default box model:
+  'Border Box By Default':
+    'prefix': 'borderbox'
+    'body': """
+html {
+  box-sizing: border-box;
+}
 
-'.text.html':
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+    """
 
-  # Basic boilerplate.
-  'HTML Layout':
-    'prefix': 'layout'
+  # Default rules for CSS:
+  'Globals':
+    'prefix': 'globals'
+    'body': """
+@charset "UTF-8";
+
+/* ---------------------------------------------------------- *\\\\
+ * # Globals
+\\\\* ---------------------------------------------------------- */
+
+/**
+ * Box-model:
+ * 1. Change default box-model to border-box.
+ * 2. All elements will inherit from the <html> box-model.
+ */
+
+html {
+  box-sizing: border-box; /* 1 */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* 2 */
+}
+
+/**
+ * Typography:
+ * 1. Change default typography (10px, 140% line-height, sans-serif).
+ * 2. Set a flexible font-size on the document (1.5em, ie. 15px).
+ */
+
+html {
+  font: 62.5%/1.4 Verdana, sans-serif; /* 1 */
+}
+
+body {
+  font-size: 1.5em; /* 2 */
+}
+
+/**
+ * Full-viewport body.
+ */
+
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/**
+ * Colors:
+ * 1. Content.
+ * 2. Overscroll.
+ * 3. Document background.
+ * 4. Selection.
+ */
+
+html {
+  color: black; /* 1 */
+  background: tomato; /* 2 */
+}
+
+body {
+  background: white; /* 3 */
+}
+
+::selection { /* 4 */
+  color: white;
+  background: tomato;
+}
+
+/* ---------------------------------------------------------- *\\\\
+ * # App
+\\\\* ---------------------------------------------------------- */
+
+$1
+    """
+
+# --------------------------------------------------------------
+# HTML
+# --------------------------------------------------------------
+
+'.text.html, .text.html .meta.scope.between-tag-pair, .text.html .punctuation.tag.begin':
+
+  # Override Atom's HTML snippet:
+  'HTML':
+    'prefix': 'html'
     'body': """
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${1:Title}</title>
-</head>
-<body>
-  <div class="page" id="page">
-
-    <!-- header -->
-    <header class="page-header">
-    </header>
-
-    <!-- content -->
-    <div class="page-content">
-      ${2:Content}
-    </div>
-
-    <!-- footer -->
-    <footer class="page-footer">
-    </footer>
-
-  </div>
-
-  <script type="text/javascript">
-    // GA here.
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${1}</title>
+  </head>
+  <body>
+    ${2}
+  </body>
 </html>
     """
 
-  # Comment wrapper.
-  'HTML Comment':
-    'prefix': 'region'
+  # Page structure:
+  'Page':
+    'prefix': 'page'
     'body': """
-<!--
-${1:Region}
--->
+<div class="page" id="page">
+  <header class="page-header" id="page_header">
+  </header>
+
+  <main class="page-content" id="page_content" role="main">
+    ${2}
+  </main>
+
+  <footer class="page-footer" id="page_footer">
+  </footer>
+</div>
+
+<script>
+  ${1:// GA}
+</script>
     """
+
+  # Overrides:
+  'Link':
+    'prefix': 'link'
+    'body': '<link rel="${1:stylesheet}" href="${2:master.css}">$0'
+
+  'Script':
+    'prefix': 'script'
+    'body': '<script src="${1:master.js}"></script>$2'
+
+  'Script With Code':
+    'prefix': 'scriptcode'
+    'body': '<script>\n\t$1\n</script>'
