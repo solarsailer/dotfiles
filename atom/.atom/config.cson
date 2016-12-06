@@ -9,6 +9,7 @@
     cs: {}
     css:
       default_beautifier: "CSScomb"
+      disabled: true
     d: {}
     ejs: {}
     erb: {}
@@ -88,7 +89,6 @@
     fontFamily: "Menlo"
     invisibles: {}
     lineHeight: 1.25
-    preferredLineLength: 100
     softTabs: true
     softWrap: true
     tabLength: 2
