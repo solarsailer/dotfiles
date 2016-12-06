@@ -46,7 +46,6 @@
     rust: {}
     sass:
       beautify_on_save: true
-      default_beautifier: "CSScomb"
     scss:
       beautify_on_save: true
       default_beautifier: "CSScomb"
@@ -67,10 +66,24 @@
     disabledPackages: [
       "background-tips"
       "vim-mode"
+      "autocomplete-go"
+      "builder-go"
+      "go-config"
+      "go-debug"
+      "go-get"
+      "go-plus"
+      "go-signature-statusbar"
+      "godoc"
+      "gofmt"
+      "gometalinter-linter"
+      "gorename"
+      "navigator-godef"
+      "tester-go"
     ]
     packagesWithKeymapsDisabled: [
       "standard-formatter"
     ]
+    telemetryConsent: "no"
   editor:
     fontFamily: "Menlo"
     invisibles: {}
