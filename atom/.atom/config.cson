@@ -87,9 +87,10 @@
     ]
     telemetryConsent: "no"
   editor:
-    fontFamily: "Menlo"
+    fontFamily: "Fira Code"
+    fontSize: 15
     invisibles: {}
-    lineHeight: 1.25
+    lineHeight: 1.45
     softTabs: true
     softWrap: true
     tabLength: 2
