@@ -83,6 +83,7 @@
     ]
     packagesWithKeymapsDisabled: [
       "standard-formatter"
+      "atom-beautify"
     ]
     telemetryConsent: "no"
   editor:
