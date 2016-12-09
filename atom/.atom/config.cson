@@ -88,9 +88,8 @@
     telemetryConsent: "no"
   editor:
     fontFamily: "Fira Code"
-    fontSize: 15
     invisibles: {}
-    lineHeight: 1.45
+    lineHeight: 1.4
     softTabs: true
     softWrap: true
     tabLength: 2
