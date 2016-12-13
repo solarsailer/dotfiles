@@ -66,20 +66,6 @@
     destroyEmptyPanes: false
     disabledPackages: [
       "background-tips"
-      "vim-mode"
-      "autocomplete-go"
-      "builder-go"
-      "go-config"
-      "go-debug"
-      "go-get"
-      "go-plus"
-      "go-signature-statusbar"
-      "godoc"
-      "gofmt"
-      "gometalinter-linter"
-      "gorename"
-      "navigator-godef"
-      "tester-go"
     ]
     packagesWithKeymapsDisabled: [
       "standard-formatter"
