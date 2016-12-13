@@ -70,6 +70,7 @@
     packagesWithKeymapsDisabled: [
       "standard-formatter"
       "atom-beautify"
+      "linter"
     ]
     telemetryConsent: "no"
   editor:
