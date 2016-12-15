@@ -29,7 +29,9 @@
     java: {}
     js:
       space_after_anon_function: true
-    json: {}
+    json:
+      default_beautifier: "Pretty Diff"
+      indent_size: 2
     jsx: {}
     latex: {}
     less:
@@ -59,7 +61,10 @@
     typescript: {}
     vala: {}
     visualforce: {}
-    xml: {}
+    xml:
+      indent_size: 2
+      wrap_attributes_indent_size: 2
+      wrap_line_length: 0
     xtemplate: {}
   core:
     audioBeep: false
