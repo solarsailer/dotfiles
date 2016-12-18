@@ -271,16 +271,65 @@ module.exports
 
     """
 
-  'Jasmine Suite':
-    'prefix': 'jasuite'
+  'Documentation':
+    'prefix': 'doc'
+    'body': """
+/**
+ * ${1:Description}
+ */
+    """
+
+  'React Module':
+    'prefix': 'rmodule'
+    'body': """
+import React from 'react'
+
+// -------------------------------------------------------------
+// Module.
+// -------------------------------------------------------------
+
+export default class ${1:ComponentName} extends React.Component {
+  render () {
+    return (
+      ${2:<div />}
+    )
+  }
+}
+
+    """
+
+  'React Component':
+    'prefix': 'rclass'
+    'body': """
+class ${1:ComponentName} extends React.Component {
+  render () {
+    return (
+      ${2:<div />}
+    )
+  }
+}
+    """
+
+  'React Pure Component':
+    'prefix': 'rpure'
+    'body': """
+function ${1:PureComponentName} (props) {
+  return (
+    ${2:<div />}
+  )
+}
+    """
+
+  'Suite':
+    'prefix': 'jsuite'
     'body': """
 describe('${1:Description}', () => {
   ${2}
 })
     """
 
-  'Jasmine Spec':
-    'prefix': 'jaspec'
+  'Spec':
+    'prefix': 'jspec'
     'body': """
 it('${1:should}', () => {
   ${2}
