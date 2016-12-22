@@ -1,7 +1,7 @@
 dotfiles
 ========
 
-# Configuration
+# Bootstrap
 
 ## SSH key
 
@@ -13,6 +13,17 @@ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
 Then, add it on Github.
+
+## Launch
+
+```bash
+cd ~
+mkdir code
+git clone git@github.com:solarsailer/dotfiles.git
+./bootstrap.bash
+```
+
+# Configuration
 
 ## Git configuration
 
