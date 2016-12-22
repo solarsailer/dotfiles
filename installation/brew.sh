@@ -10,11 +10,6 @@ else
   brew update
 fi
 
-echo "Installing Homebrew Cask..."
-
-# Install Caskroom.
-brew tap caskroom/cask
-
 # -------------------------------------------------------
 # Environments.
 # -------------------------------------------------------
@@ -70,35 +65,5 @@ brew install sqlite
 
 # MacVim (installation via brew instead of cask because brew configure the mvim executable for shell use).
 brew install macvim --with-lua --with-override-system-vim
-
-echo "Installing Homebrew Cask plugins..."
-
-brew cask install ttscoff-mmd-quicklook # alternative: qlmarkdown
-brew cask install qlcolorcode
-brew cask install qlstephen
-brew cask install quicklook-csv
-brew cask install quicklook-json
-brew cask install wkhtmltopdf
-
-echo "Install Homebrew Cask packages..."
-
-brew cask install vagrant
-
-echo "Installing Homebrew Cask apps..."
-
-# Install apps.
-# brew cask install google-chrome
-# brew cask install dropbox
-# brew cask install 1password
-# brew cask install iterm2
-# brew cask install slack
-# brew cask install alfred
-# brew cask install droplr
-# brew cask install spotify
-# brew cask install bartender
-# brew cask install vlc
-# brew cask install imageoptim
-# brew cask install paparazzi!
-# brew cask install virtualbox
 
 echo "Homebrew done."
