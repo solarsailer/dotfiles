@@ -5,12 +5,11 @@
 #
 
 cd ~
-mkdir lib/
-mkdir dev/
+mkdir Code/
 
-# -------------------------------------------------------
+# --------------------------------------------------------------
 # Globals.
-# -------------------------------------------------------
+# --------------------------------------------------------------
 
 # Set the Save & Print dialogs to be in extended mode by default.
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -28,9 +27,9 @@ defaults write -g NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false
 # Quit the Printer app when the print jobs are done.
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
-# -------------------------------------------------------
+# --------------------------------------------------------------
 # Keyboard.
-# -------------------------------------------------------
+# --------------------------------------------------------------
 
 # Full Keyboard Access: change the tab behavior to work on every field.
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
@@ -39,9 +38,9 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled  -bool false
 
-# -------------------------------------------------------
+# --------------------------------------------------------------
 # Finder.
-# -------------------------------------------------------
+# --------------------------------------------------------------
 
 # Show all extensions by default.
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -73,9 +72,9 @@ defaults write com.apple.finder ShowHardDrivesOnDesktop         -bool false
 defaults write com.apple.finder ShowMountedServersOnDesktop     -bool false
 defaults write com.apple.finder ShowRemovableMediaOnDesktop     -bool false
 
-# -------------------------------------------------------
+# --------------------------------------------------------------
 # Dock.
-# -------------------------------------------------------
+# --------------------------------------------------------------
 
 # Auto-hide.
 defaults write com.apple.dock autohide -bool true
@@ -93,23 +92,23 @@ defaults write com.apple.dock largesize -int 72
 # Hide dot indicators.
 defaults write com.apple.dock "show-process-indicators" -bool false
 
-# -------------------------------------------------------
+# --------------------------------------------------------------
 # Dashboard.
-# -------------------------------------------------------
+# --------------------------------------------------------------
 
 # Deactivate dashboard.
 defaults write com.apple.dashboard "dashboard-enabled-state" -int 1
 
-# -------------------------------------------------------
+# --------------------------------------------------------------
 # Messages.
-# -------------------------------------------------------
+# --------------------------------------------------------------
 
 # Do not convert text-emojis to real images.
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticEmojiSubstitutionEnablediMessage" -bool false
 
-# -------------------------------------------------------
+# --------------------------------------------------------------
 # TextEdit.
-# -------------------------------------------------------
+# --------------------------------------------------------------
 
 # Set to Plain Text by default.
 defaults write com.apple.TextEdit RichText -int 0
