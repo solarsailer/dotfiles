@@ -1,12 +1,14 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 set -e
 
-BASEDIR=$(dirname $0) && cd $BASEDIR
+# Move one level-up.
+BASEDIR=$(dirname $0)
+cd $BASEDIR/..
 
-# -------------------------------------------------------
+# --------------------------------------------------------------
 # Markdown spotlight importer.
-# -------------------------------------------------------
+# --------------------------------------------------------------
 
 # Problem: by default, OS X doesn't index the content of markdown files.
 # Which is kind of unfortunate, because that's really useful with Alfred.
