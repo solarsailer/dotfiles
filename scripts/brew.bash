@@ -57,6 +57,7 @@ brew install hub
 brew install ccat
 brew install cheat # cheatsheet manager
 brew install youtube-dl
+brew install dockutil
 
 # Databases.
 brew install redis
@@ -65,4 +66,4 @@ brew install sqlite
 # MacVim (installation via brew instead of cask because brew configure the mvim executable for shell use).
 brew install macvim --with-lua --with-override-system-vim
 
-echo "Brew> Done."
+echo "Brew> Done.\n"
