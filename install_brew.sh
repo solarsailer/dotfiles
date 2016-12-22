@@ -20,12 +20,8 @@ brew tap caskroom/cask
 
 echo "Installing environments..."
 
+brew install node
 brew install go
-
-echo "Installing environments with Cask..."
-
-# Unavailable… Download from the official site instead.
-#brew cask install node
 
 # -------------------------------------------------------
 # Packages.
