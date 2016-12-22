@@ -49,4 +49,4 @@ echo "Cask> Installing apps…"
 # brew cask install paparazzi!
 # brew cask install virtualbox
 
-echo "Cask> Done."
+echo "Cask> Done.\n"
