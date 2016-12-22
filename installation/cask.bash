@@ -4,9 +4,13 @@
 # Installation.
 # --------------------------------------------------------------
 
-echo "Installing Homebrew Cask..."
+echo "Tapping Cask…"
 
-brew tap caskroom/cask
+if [[ `brew tap` == *"caskroom/cask"* ]]; then
+  echo "Cask already tapped."
+else
+  brew tap caskroom/cask
+fi
 
 # --------------------------------------------------------------
 # Casks.
@@ -21,17 +25,16 @@ brew cask install quicklook-csv
 brew cask install quicklook-json
 brew cask install wkhtmltopdf
 
-echo "Cask> Install packages…"
+echo "Cask> Installing packages…"
 
 brew cask install vagrant
 
-echo "Cask> Install services…"
+echo "Cask> Installing services…"
 
 brew cask install markdown-service-tools
 
 echo "Cask> Installing apps…"
 
-# Install apps.
 # brew cask install google-chrome
 # brew cask install dropbox
 # brew cask install 1password
@@ -45,3 +48,5 @@ echo "Cask> Installing apps…"
 # brew cask install imageoptim
 # brew cask install paparazzi!
 # brew cask install virtualbox
+
+echo "Cask> Done."

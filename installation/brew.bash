@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
-echo "Installing Homebrew..."
+# --------------------------------------------------------------
+# Installation.
+# --------------------------------------------------------------
 
-# Install homebrew if necessary.
+echo "Installing Brew…"
+
 if which brew 2>/dev/null 1>/dev/null; then
   echo "Homebrew already installed."
 else
@@ -11,19 +14,15 @@ else
 fi
 
 # -------------------------------------------------------
-# Environments.
+# Brewing.
 # -------------------------------------------------------
 
-echo "Installing environments..."
+echo "Brew> Installing environments…"
 
 brew install node
 brew install go
 
-# -------------------------------------------------------
-# Packages.
-# -------------------------------------------------------
-
-echo "Installing Homebrew packages..."
+echo "Brew> Installing packages…"
 
 brew install stow
 brew install fish
@@ -66,4 +65,4 @@ brew install sqlite
 # MacVim (installation via brew instead of cask because brew configure the mvim executable for shell use).
 brew install macvim --with-lua --with-override-system-vim
 
-echo "Homebrew done."
+echo "Brew> Done."
