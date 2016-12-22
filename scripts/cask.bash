@@ -4,7 +4,7 @@
 # Installation.
 # --------------------------------------------------------------
 
-echo "Tapping Cask…"
+echo "Cask> Tapping…"
 
 if [[ `brew tap` == *"caskroom/cask"* ]]; then
   echo "Cask already tapped."

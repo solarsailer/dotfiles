@@ -4,7 +4,7 @@
 # Installation.
 # --------------------------------------------------------------
 
-echo "Installing Brew…"
+echo "Brew> Installing…"
 
 if which brew 2>/dev/null 1>/dev/null; then
   echo "Homebrew already installed."
