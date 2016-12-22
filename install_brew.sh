@@ -6,7 +6,8 @@ echo "Installing Homebrew..."
 if which brew 2>/dev/null 1>/dev/null; then
   echo "Homebrew already installed."
 else
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  brew update
 fi
 
 echo "Installing Homebrew Cask..."
