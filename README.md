@@ -1,12 +1,6 @@
 dotfiles
 ========
 
-```bash
-cd dotfiles
-chmod a+x install.sh
-sh install.sh
-```
-
 # Configuration
 
 ## SSH key
@@ -14,7 +8,7 @@ sh install.sh
 Generate a new key:
 
 ```
-ssh-keygen -t rsa -C "krokmou@berk.com"
+ssh-keygen -t rsa -b 4096 -C "krokmou@berk.com"
 pbcopy < ~/.ssh/id_rsa.pub
 ```
 
