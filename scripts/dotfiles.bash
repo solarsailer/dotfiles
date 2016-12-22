@@ -1,20 +1,39 @@
 #!/usr/bin/env bash
 
-# Note:
-# `stow` target the parent dir by default.
-# In my case, I usually put my dotfiles into a lib/ folder inside my $HOME.
-# Moreover, I also have a `.stow-global-ignore` for stow.
-# So, first thing first: restow stow.
-# Restow means `DELETE` the stow package, then `STOW` (install) it.
+# We are in the scripts/ folder, so move one level up.
+BASEDIR=$(dirname $0)
+cd $BASEDIR/..
 
-echo "Configuring stow..."
+# --------------------------------------------------------------
+# Stow.
+# --------------------------------------------------------------
+
+echo "Stow> Linking dotfiles…"
+
+# Note:
+# `stow` targets the parent dir by default.
+#
+# In my case, I usually put my dotfiles into a subfolder (lib/, dev/, etc.)
+# inside my $HOME.
+#
+# I also have a `.stow-global-ignore` for `stow`, which needs a re-link.
+#
+# So, first thing first: `restow stow`
+#.
+# Restow means `DELETE` the link, then `STOW` (lin) it again.
 stow --target=$HOME -R stow
 
-# echo "Restowing all apps..."
-# for dir in */
-# do
-#     echo Unstowing $dir
-#     stow -D $dir
-#     echo Restowing $dir
-#     stow $dir
-# done
+# Base links:
+stow -R atom
+stow -R bash
+stow -R bin
+stow -R cheat
+stow -R csscomb
+stow -R fish
+stow -R git
+stow -R tig
+stow -R vim
+
+echo "Stow> Necessary dotfiles linked. Add the others manually."
+
+echo "Stow> Done.\n"
