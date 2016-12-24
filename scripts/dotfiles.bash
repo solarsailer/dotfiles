@@ -36,4 +36,4 @@ stow -R vim
 
 echo "Stow> Necessary dotfiles linked. Add the others manually."
 
-echo "Stow> Done.\n"
+echo "Stow> Done."

@@ -23,4 +23,4 @@ dockutil --add '' --type spacer --section apps
 
 dockutil --add '~/Downloads' --sort datemodified --view auto --display stack
 
-echo "Dock> Done.\n"
+echo "Dock> Done."

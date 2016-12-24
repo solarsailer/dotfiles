@@ -59,4 +59,4 @@ brew cask install imageoptim
 brew cask install namechanger
 brew cask install virtualbox
 
-echo "Cask> Done.\n"
+echo "Cask> Done."
