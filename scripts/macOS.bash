@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Remove the "Last login" line in terminal applications.
+touch ~/.hushlogin
+
 # --------------------------------------------------------------
 # Globals.
 # --------------------------------------------------------------
