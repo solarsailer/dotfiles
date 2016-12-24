@@ -90,7 +90,7 @@
     userId: "b907a5d6-f8db-fdb9-dff4-38a5b28395df"
   "fuzzy-finder": {}
   "go-plus":
-    goPath: "~/dev/go"
+    goPath: "~/Code/go"
   "go-signature-statusbar": {}
   jumpy:
     fontSize: 1

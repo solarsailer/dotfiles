@@ -58,7 +58,7 @@ export EDITOR=nano
 export PATH=/usr/local/go/bin:$PATH
 
 # Workspace.
-export GOPATH=$HOME/dev/go
+export GOPATH=$HOME/Code/go
 export PATH=$GOPATH/bin:$PATH
 
 ######################################

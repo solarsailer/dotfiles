@@ -25,7 +25,7 @@ set PATH ~/.bin          $PATH
 # Go
 ######################################
 
-set -x GOPATH $HOME/dev/go
+set -x GOPATH $HOME/Code/go
 set -x GOHOME $GOPATH/src/github.com/solarsailer
 set    PATH   $GOPATH/bin       $PATH
 
