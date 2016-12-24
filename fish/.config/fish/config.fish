@@ -47,8 +47,8 @@ set -x CHEATCOLORS true
 # --------------------------------------------------------------
 
 alias h "cd ~"
-alias l "cd ~/lib/dotfiles"
-alias c "cd ~/dev/"
+alias l "cd ~/Code/dotfiles"
+alias c "cd ~/Code/"
 alias d "cd ~/Desktop/"
 alias n "cd ~/Dropbox/Notes"
 
