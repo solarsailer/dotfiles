@@ -96,6 +96,12 @@ defaults write com.apple.dock "show-process-indicators" -bool false
 defaults write com.apple.dashboard "dashboard-enabled-state" -int 1
 
 # --------------------------------------------------------------
+# Safari.
+# --------------------------------------------------------------
+
+defaults write com.apple.Safari ShowStatusBar -boolean true
+
+# --------------------------------------------------------------
 # Messages.
 # --------------------------------------------------------------
 
