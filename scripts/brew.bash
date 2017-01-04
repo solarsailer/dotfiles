@@ -58,6 +58,7 @@ brew install ccat
 brew install cheat # cheatsheet manager
 brew install youtube-dl
 brew install dockutil
+brew install heroku
 
 # Databases.
 brew install redis
