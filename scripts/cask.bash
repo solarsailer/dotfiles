@@ -35,28 +35,43 @@ brew cask install markdown-service-tools
 
 echo "Cask> Installing apps…"
 
+# Essential.
 brew cask install dropbox
-brew cask install google-chrome
-brew cask install firefox
 brew cask install 1password
-brew cask install atom
-brew cask install iterm2
-brew cask install sketch
-brew cask install origami
-brew cask install slack
 brew cask install alfred
 brew cask install spotify
-brew cask install taskpaper
+
+# Browsers.
+brew cask install google-chrome
+brew cask install firefox
+
+# Code.
+brew cask install atom
 brew cask install dash
+
+# Terminal.
+brew cask install iterm2
+brew cask install hyper
+
+# Design.
+brew cask install sketch
+brew cask install origami
+
+# Communication.
+brew cask install slack
+
+# Others.
+brew cask install taskpaper
 brew cask install vlc
 brew cask install bartender
 brew cask install paparazzi
-# brew cask install moom
 brew cask install hazel
 brew cask install choosy
 brew cask install daisydisk
 brew cask install imageoptim
 brew cask install namechanger
 brew cask install virtualbox
+brew cask install selfcontrol
+# brew cask install moom
 
 echo "Cask> Done."
