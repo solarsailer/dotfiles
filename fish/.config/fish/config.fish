@@ -25,16 +25,30 @@ set PATH ~/.bin          $PATH
 # Go
 # --------------------------------------------------------------
 
-set -x GOPATH $HOME/Code/go
-set -x GOHOME $GOPATH/src/github.com/solarsailer
-set    PATH   $GOPATH/bin       $PATH
+if test -e $HOME/Code/go
+  set -x GOPATH $HOME/Code/go
+  set -x GOHOME $GOPATH/src/github.com/solarsailer
+
+  # Add to path.
+  set PATH $GOPATH/bin $PATH
+end
+
+# --------------------------------------------------------------
+# Fastlane
+# --------------------------------------------------------------
+
+if test -e $HOME/.fastlane/bin
+  set PATH $HOME/.fastlane/bin $PATH
+end
 
 # --------------------------------------------------------------
 # rbenv
 # --------------------------------------------------------------
 
-set PATH $HOME/.rbenv/shims $PATH
-rbenv rehash >/dev/null ^&1
+if test -e $HOME/.rbenv/shims
+  set PATH $HOME/.rbenv/shims $PATH
+  rbenv rehash >/dev/null ^&1
+end
 
 # --------------------------------------------------------------
 # cheat
