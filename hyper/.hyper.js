@@ -97,7 +97,8 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     'hyper-statusline',
-    'hyperlinks'
+    'hyperlinks',
+    'hyperterm-atom-dark'
   ],
 
   // in development, you can create a directory under
