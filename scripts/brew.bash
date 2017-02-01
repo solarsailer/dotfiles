@@ -59,6 +59,7 @@ brew install cheat # cheatsheet manager
 brew install youtube-dl
 brew install dockutil
 brew install heroku
+brew install mas
 
 # Databases.
 brew install redis
