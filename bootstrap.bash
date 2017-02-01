@@ -13,6 +13,7 @@ pushd scripts
 
 ./brew.bash
 ./cask.bash
+./mas.bash
 ./dock.bash
 ./dotfiles.bash
 ./macOS.bash
