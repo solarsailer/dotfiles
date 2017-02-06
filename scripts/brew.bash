@@ -24,6 +24,9 @@ brew install go
 
 echo "Brew> Installing packages…"
 
+# Latest version of git with HTML documentation.
+brew install git
+
 brew install stow
 brew install fish
 
