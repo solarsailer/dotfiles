@@ -105,6 +105,9 @@
   # Custom wrapper around opendiff to clean logs and wait for exit.
   path = mergetool-opendiff
 
+[help]
+	format = html
+
 ######################################
 # tools (auto-generated)             #
 ######################################
