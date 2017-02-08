@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Confirmation. Brrr. It's scary.
+printf '\e[31mAre you sure to `reset --hard` this repository?\e[0m [y/N] '
+
+read -r input
+
+# If `yes` or `y` or `Y`, `git reset --hard` the repository.
+case "$input" in
+  [yY][eE][sS]|[yY])
+    git reset --hard
+    ;;
+  *)
+    ;;
+esac
