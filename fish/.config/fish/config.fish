@@ -71,7 +71,7 @@ set -x CHEATCOLORS true
 # Move fisherman {functions,completions,conf.d} to another folder.
 # ie., a folder inside the `fisherman` config folder, named `fish`
 # like our custom fish folder (where this config is).
-set -U fish_path $HOME/.config/fisherman/fish
+set -U fish_path $HOME/.config/fisher
 
 # Add functions and completions to the builtin fish variables.
 # **Warning**: we add them **at the end**, otherwise they will
