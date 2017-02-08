@@ -34,6 +34,11 @@ stow -R git
 stow -R tig
 stow -R vim
 
+# Warning: `--no-folding` is mandatory for fisherman.
+# fisherman **will not work** if the _whole folder_ is symlinked.
+# We only need to link the `fishfile`. Everything else must be ignored.
+stow -R fisherman --no-folding
+
 echo "Stow> Necessary dotfiles linked. Add the others manually."
 
 echo "Stow> Done."
