@@ -63,6 +63,28 @@ set PATH (yarn global bin) $PATH
 set -x CHEATCOLORS true
 
 # --------------------------------------------------------------
+# Fisherman.
+# --------------------------------------------------------------
+
+# From: https://github.com/fisherman/fisherman/issues/340
+
+# Move fisherman {functions,completions,conf.d} to another folder.
+# ie., a folder inside the `fisherman` config folder, named `fish`
+# like our custom fish folder (where this config is).
+set -U fish_path $HOME/.config/fisherman/fish
+
+# Add functions and completions to the builtin fish variables.
+# **Warning**: we add them **at the end**, otherwise they will
+# take precedence on our custom functions and completions.
+set fish_function_path $fish_function_path $fish_path/functions
+set fish_complete_path $fish_complete_path $fish_path/completions
+
+# And source the conf.d files.
+for file in $fish_path/conf.d/*.fish
+  source $file
+end
+
+# --------------------------------------------------------------
 # Alias.
 # --------------------------------------------------------------
 
