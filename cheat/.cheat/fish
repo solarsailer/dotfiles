@@ -2,5 +2,23 @@
 sh -c "command"
 bash -c "command"
 
+# ---
+
 # Loop on all png files, then resize and convert to jpg thumbnails.
 for f in *.png; convert $f -resize 500x250 preview-(string replace '.png' '' $f).jpg; end
+
+# ---
+
+# Use argument names in a function.
+# It's way more precise than using $argv and an index.
+function test_func --argument-names arg1 arg2 arg3
+  echo $arg3
+end
+
+test_func foo bar 42 # => 42
+
+# Shorthand syntax:
+function test_func_2 -a data
+  echo $data
+end
+
