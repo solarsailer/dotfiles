@@ -3,7 +3,7 @@
 # --------------------------------------------------------------
 
 # Hashmark section:
-'.source.ruby, .source.puppet, .source.shell, .source.yaml, .source.coffee, .source.cson, .text':
+'.source.ruby, .source.puppet, .source.shell, .source.yaml, .source.fish, .source.coffee, .source.cson, .text':
   'Section':
     'prefix': 'section'
     'body': """
