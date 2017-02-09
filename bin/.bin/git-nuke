@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Confirmation. Brrr. It's scary.
-printf '\e[31mAre you sure to `reset --hard` this repository?\e[0m [y/N] '
+printf '\e[31mAre you sure to completely reset this repository to its HEAD?\e[0m [y/N] '
 
 read -r input
 
@@ -9,6 +9,7 @@ read -r input
 case "$input" in
   [yY][eE][sS]|[yY])
     git reset --hard
+    git clean -fd
     ;;
   *)
     ;;
