@@ -21,8 +21,6 @@ function add_gitignore
 *.swp
 *.vi
 *~
-*.sass-cache
-npm-debug.log
 
 # OS/Editor.
 .DS_Store
@@ -30,10 +28,15 @@ npm-debug.log
 .project
 .settings
 .tmproj
+.env
+*.sass-cache
 nbproject
 Thumbs.db
 
 # Packages.
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 node_modules/
 bower_components/
   " >> $name
