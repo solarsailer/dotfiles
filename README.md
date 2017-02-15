@@ -37,7 +37,7 @@ git clone git@github.com:solarsailer/dotfiles.git
 
 ## Stow configuration
 
-* Stow is configured to use "../.." as the default target. That means that you should put the dotfiles in a folder in your home. Like "$HOME/lib/dotfiles".
+* Stow is configured to use "../.." as the default target. That means that you should put the dotfiles in a folder in your home. Like "$HOME/Code/dotfiles".
 
 ## Fish configuration
 
@@ -45,6 +45,13 @@ Set fish as default shell:
 
 * Add `/usr/local/bin/fish` to `/etc/shells` (just need to be there, at the end, nothing more)
 * Run: `chsh -s /usr/local/bin/fish`
+
+Then:
+
+```
+fish_theme_classic # "install" the theme
+fisher # install dependencies through fisher.
+```
 
 ## Atom configuration
 
@@ -59,6 +66,8 @@ apm stars --install
 If the `ctrl+left/right/up/down` do not work, disable them in `Mission Control` and `Keyboards >> Mission Control`.
 
 ## Laptop configuration
+
+(Not necessary I think)
 
 Change the standby delay time for faster wake-up after sleep:
 
