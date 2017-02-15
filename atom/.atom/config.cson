@@ -51,6 +51,7 @@
       beautify_on_save: true
     scss:
       beautify_on_save: true
+      configPath: "~/.csscomb.json"
       default_beautifier: "CSScomb"
     spacebars: {}
     sql: {}
