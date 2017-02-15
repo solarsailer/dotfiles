@@ -10,7 +10,7 @@
 function ask -d "Ask for confirmation"
   while read --prompt __prompt --local input
     switch $input
-      case Y
+      case Y y
         return 0
       case '' N n
         return 1
@@ -22,5 +22,5 @@ function __prompt
   set_color red
   echo -n "Do you want to continue?"
   set_color normal
-  echo -n " (Y/n) "
+  echo -n " [y/N] "
 end
