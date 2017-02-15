@@ -1,6 +1,18 @@
 # This is a copy of some universal variables from the fishd file.
 # The colors define the overall look of the shell.
 
+# Special code guess:
+# `555`, `005fd7` -> color hexa code
+#
+# \x3d -> `=`
+# (used for --background=color, for example)
+#
+# \x2d -> `-`
+# (used for --bold, for example)
+#
+# \x1e -> `^^`
+# (Doesn't seem useful, ie. `005fd7\x1epurple` seems to be `005fd7`)
+
 # --------------------------------------------------------------
 # Theme (colors).
 # --------------------------------------------------------------
