@@ -1,4 +1,6 @@
 function fish_title -d "Terminal window's title"
   # Replace `$HOME` with `~`.
-  echo (pwd | sed "s|$HOME|~|")
+  echo -n (pwd | sed "s|$HOME|~|")
+
+  echo " — "(whoami)"@"(hostname -s)
 end
