@@ -8,8 +8,9 @@
     cpp: {}
     cs: {}
     css:
+      beautify_on_save: true
+      configPath: "~/.csscomb.json"
       default_beautifier: "CSScomb"
-      disabled: true
     d: {}
     ejs: {}
     erb: {}
