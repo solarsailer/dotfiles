@@ -54,7 +54,13 @@ end
 # Yarn.
 # --------------------------------------------------------------
 
-set PATH (yarn global bin) $PATH
+if test -e $HOME/.config/yarn/global/node_modules/.bin
+  set PATH $HOME/.config/yarn/global/node_modules/.bin $PATH
+
+  # The bin command is not returning the correct value currently.
+  # Should be fix later with a new version of Yarn.
+  # set PATH (yarn global bin) $PATH
+end
 
 # --------------------------------------------------------------
 # cheat
