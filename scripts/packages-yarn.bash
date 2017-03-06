@@ -19,5 +19,6 @@ yarn global add serve
 yarn global add browser-sync
 yarn global add prettier
 yarn global add tldr
+yarn global add fkill-cli
 
 echo "Yarn> Done."
