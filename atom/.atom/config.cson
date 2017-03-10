@@ -84,6 +84,7 @@
     fontFamily: "Fira Code"
     invisibles: {}
     lineHeight: 1.4
+    showCursorOnSelection: false
     softTabs: true
     softWrap: true
     tabLength: 2
