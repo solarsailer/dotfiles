@@ -55,7 +55,7 @@ brew cask install hyper
 
 # Design.
 brew cask install sketch
-brew cask install origami
+brew cask install origami-studio
 
 # Communication.
 brew cask install slack
