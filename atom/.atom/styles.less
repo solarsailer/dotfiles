@@ -36,94 +36,79 @@
 // Redefine Go syntax highlighting.
 // -------------------------------------------------------
 
-atom-text-editor::shadow .go
-{
-    .variable.other
-    {
-        color: @mono-1;
-    }
+atom-text-editor.editor .syntax--go {
+  .syntax--variable.syntax--other {
+    color: @mono-1;
+  }
 
-    // -------------------------------------------------------
-    // String.
-    // -------------------------------------------------------
+  // -------------------------------------------------------
+  // String.
+  // -------------------------------------------------------
 
-    .punctuation.terminator
-    {
-        color: @hue-5-2;
-        background-color: fade(@hue-5, 10%);
-    }
+  .syntax--punctuation.syntax--terminator {
+    color: @hue-5-2;
+    background-color: fade(@hue-5, 10%);
+  }
 
-    .punctuation.string
-    {
-        color: @hue-4 !important;
-    }
+  .syntax--punctuation.syntax--string {
+    color: @hue-4 !important;
+  }
 
-    .string.raw
-    {
-        color: saturate(@hue-4, 30%);
-    }
+  .syntax--string.syntax--raw {
+    color: saturate(@hue-4, 30%);
+  }
 
-    // -------------------------------------------------------
-    // Keywords.
-    // -------------------------------------------------------
+  // -------------------------------------------------------
+  // Keywords.
+  // -------------------------------------------------------
 
-    .keyword.operator.address
-    {
-        color: @color;
-        background-color: fade(@color, 15%);
+  .syntax--keyword.syntax--operator.syntax--address {
+    color: @color;
+    background-color: fade(@color, 15%);
 
-        @color: rgb(244, 106, 155);
-    }
+    @color: rgb(244, 106, 155);
+  }
 
-    .keyword.operator.logical
-    {
-        color: @hue-2;
-        background-color: fade(@hue-2, 10%);
-    }
+  .syntax--keyword.syntax--operator.syntax--logical {
+    color: @hue-2;
+    background-color: fade(@hue-2, 10%);
+  }
 
-    .keyword.operator.comparison
-    {
-        color: @hue-6-2;
-        background-color: fade(@hue-6-2, 12%);
-    }
+  .syntax--keyword.syntax--operator.syntax--comparison {
+    color: @hue-6-2;
+    background-color: fade(@hue-6-2, 12%);
+  }
 
-    .keyword.operator.assignment
-    {
-        color: @hue-5;
-        background-color: fade(@hue-5, 15%);
-    }
+  .syntax--keyword.syntax--operator.syntax--assignment {
+    color: @hue-5;
+    background-color: fade(@hue-5, 15%);
+  }
 
-    .keyword.operator.arithmetic
-    {
-        color: @mono-2;
-    }
+  .syntax--keyword.syntax--operator.syntax--arithmetic {
+    color: @mono-2;
+  }
 
-    // -------------------------------------------------------
-    // Types.
-    // -------------------------------------------------------
+  // -------------------------------------------------------
+  // Types.
+  // -------------------------------------------------------
 
-    .storage
-    {
-        color: fade(@hue-3, 80%);
-    }
+  .syntax--storage {
+    color: fade(@hue-3, 80%);
+  }
 
-    .storage.string
-    {
-        color: fade(@hue-4, 80%);
-    }
+  .syntax--storage.syntax--string {
+    color: fade(@hue-4, 80%);
+  }
 
-    .storage.boolean
-    {
-        color: fade(@hue-6-2, 80%);
-    }
+  .syntax--storage.syntax--boolean {
+    color: fade(@hue-6-2, 80%);
+  }
 
-    .storage.numeric
-    {
-        color: fade(@hue-6, 80%);
-    }
+  .syntax--storage.syntax--numeric {
+    color: fade(@hue-6, 80%);
+  }
 
-    .storage.error
-    {
-        color: fade(@hue-5-2, 80%);
-    }
+  .syntax--storage.syntax--error {
+    color: fade(@hue-5-2, 80%);
+  }
 }
