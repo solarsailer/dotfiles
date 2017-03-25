@@ -63,6 +63,7 @@ brew install youtube-dl
 brew install dockutil
 brew install heroku
 brew install mas
+brew install subliminal # SubtitleS.
 
 # Databases.
 brew install redis
