@@ -33,6 +33,7 @@ stow -R fish
 stow -R git
 stow -R tig
 stow -R vim
+stow -R vscode
 
 # Warning: `--no-folding` is mandatory for fisherman.
 # fisherman **will not work** if the _whole folder_ is symlinked.
