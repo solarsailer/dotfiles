@@ -2,9 +2,19 @@
   // Editor.
   "editor.fontFamily": "Fira Code, Menlo",
   "editor.fontSize": 14,
+  "editor.fontLigatures": true,
   "editor.lineHeight": 19.6,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
+  "editor.roundedSelection": false,
+  "editor.detectIndentation": false,
+  "editor.scrollBeyondLastLine": false,
+
+  // Files.
+  "files.eol": "\n",
+  "files.encoding": "utf8",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
 
   // Workbench.
   "workbench.welcome.enabled": false,
