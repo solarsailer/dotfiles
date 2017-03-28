@@ -1,13 +1,15 @@
 {
-  "editor.fontFamily": "Menlo",
+  // Editor.
+  "editor.fontFamily": "Fira Code, Menlo",
   "editor.fontSize": 14,
+  "editor.lineHeight": 19.6,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
-  "editor.detectIndentation": false,
-  "editor.roundedSelection": false,
-  "editor.wrappingColumn": 80,
-  "editor.wrappingIndent": "same",
-  "files.encoding": "utf8",
-  "files.eol": "\n",
-  "files.trimTrailingWhitespace": true
+
+  // Workbench.
+  "workbench.welcome.enabled": false,
+  "workbench.iconTheme": "file-icons",
+
+  // Misc.
+  "csharp.suppressDotnetInstallWarning": true
 }

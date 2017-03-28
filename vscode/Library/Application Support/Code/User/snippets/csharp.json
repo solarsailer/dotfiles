@@ -1,0 +1,13 @@
+{
+	"Region": {
+		"prefix": "csregion",
+		"description": "Add C# Region",
+		"body": [
+			"#region ${1:Region}",
+			"",
+			"$2",
+			"",
+			"#endregion"
+		]
+	}
+}
