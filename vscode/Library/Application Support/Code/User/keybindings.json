@@ -1,8 +1,32 @@
-// Place your key bindings in this file to overwrite the defaults
 [
   {
     "key": "ctrl+backspace",
-    "command": "deleteWordStartLeft",
-    "when": "editorTextFocus"
+    "command": "deleteWordLeft",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+delete",
+    "command": "deleteWordRight",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+cmd+down",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+cmd+up",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+shift+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+shift+u",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
   }
 ]
