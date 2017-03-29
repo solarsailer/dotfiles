@@ -28,5 +28,13 @@
     "key": "cmd+shift+u",
     "command": "editor.action.copyLinesUpAction",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.previousEditor"
   }
 ]
