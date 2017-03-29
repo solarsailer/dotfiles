@@ -1,6 +1,16 @@
 {
+  "Section": {
+    "prefix": "section",
+    "description": "Comment Section",
+    "body": [
+      "// -------------------------------------------------------------",
+      "// ${1:Title}",
+      "// -------------------------------------------------------------"
+    ]
+  },
+
   "Region": {
-    "prefix": "csregion",
+    "prefix": "region",
     "description": "Add C# Region",
     "body": [
       "#region ${1:Region}",
@@ -8,6 +18,44 @@
       "$2",
       "",
       "#endregion"
+    ]
+  },
+
+  "Regions": {
+    "prefix": "layout",
+    "description": "Basic Regions",
+    "body": [
+      "#region Members",
+      "#endregion",
+      "",
+      "#region Constructors",
+      "#endregion",
+      "",
+      "#region Methods",
+      "#endregion",
+      "",
+      "#region Properties",
+      "#endregion"
+    ]
+  },
+
+  "MonoBehaviour": {
+    "prefix": "newbehaviour",
+    "description": "New Unity MonoBehaviour",
+    "body": [
+      "// Copyright © 2014 Pixelnest Studio",
+      "// This file is subject to the terms and conditions defined in",
+      "// file 'LICENSE.md', which is part of this source code package.",
+      "using UnityEngine;",
+      "using System.Collections;",
+      "",
+      "namespace Pixelnest.Steredenn",
+      "{",
+      "  public class ${1:ClassName} : MonoBehaviour",
+      "  {",
+      "    $2",
+      "  }",
+      "}"
     ]
   }
 }
