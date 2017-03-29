@@ -21,5 +21,6 @@
   "workbench.iconTheme": "file-icons",
 
   // Misc.
+  "editor.codeLens": false,
   "csharp.suppressDotnetInstallWarning": true
 }
