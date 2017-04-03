@@ -340,6 +340,14 @@ function ${1:PureComponentName} (props) {
 }
     """
 
+  'Styled-JSX':
+    'prefix': 'jsx'
+    'body': """
+<style jsx>{`
+  $1
+`}</style>
+    """
+
   'Suite':
     'prefix': 'jsuite'
     'body': """
