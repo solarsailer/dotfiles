@@ -45,6 +45,7 @@ brew install ruby-build
 # VCS, diff, merge.
 brew install tig
 brew install icdiff # better difftool
+brew install diff-so-fancy # pretty diff
 
 # Helpers.
 brew install the_silver_searcher # ag
