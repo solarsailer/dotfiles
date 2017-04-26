@@ -104,7 +104,11 @@
   "markdown-preview":
     useGitHubStyle: true
   "one-dark-ui": {}
-  "spell-check": {}
+  "spell-check":
+    locales: [
+      "en-US"
+      "fr-FR"
+    ]
   "standard-formatter":
     formatOnSave: true
   tabs:
