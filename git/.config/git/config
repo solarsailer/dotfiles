@@ -52,6 +52,11 @@
   # amend
   amend = commit --amend -c HEAD
 
+  # https://blog.scottnonnenberg.com/better-git-configuration/
+  prune = fetch --prune
+  undo = reset --soft HEAD^
+  stash-all = stash save --include-untracked
+
   # -------------------------------------------------------
   # Diff.
   # -------------------------------------------------------
