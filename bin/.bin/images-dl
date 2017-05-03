@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# From/Inspired by this answer:
+# https://apple.stackexchange.com/questions/121649/how-to-download-a-webpages-all-images-at-once
+
+set -e
+
+URL=$1
+
+if [ -z "$URL" ]; then
+  echo "No URL was provided"
+  exit 0
+fi
+
+# List of supported formats.
+FORMATS=".jpg,.jpeg,.png,.gif"
+
+wget "$URL" --page-requisites -A $FORMATS --span-hosts --no-directories
