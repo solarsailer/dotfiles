@@ -48,6 +48,7 @@ brew install icdiff # better difftool
 brew install diff-so-fancy # pretty diff
 
 # Helpers.
+brew install pv # pipe viewer
 brew install the_silver_searcher # ag
 brew install httpie # http
 brew install jq # json processor
