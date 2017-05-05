@@ -21,6 +21,7 @@ yarn global add browser-sync
 yarn global add prettier
 yarn global add tldr
 yarn global add fkill-cli
+yarn global add pkg # node packager
 yarn global add np # npm publish, simplified
 
 echo "Yarn> Done."
