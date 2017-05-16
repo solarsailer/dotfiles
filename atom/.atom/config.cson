@@ -103,7 +103,8 @@
     disableWhenNoJshintrcFileInPath: true
   "markdown-preview":
     useGitHubStyle: true
-  "one-dark-ui": {}
+  "one-dark-ui":
+    hideDockButtons: true
   "spell-check":
     locales: [
       "en-US"
