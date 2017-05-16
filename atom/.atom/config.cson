@@ -80,6 +80,7 @@
       "linter"
     ]
     telemetryConsent: "no"
+    titleBar: "custom-inset"
   editor:
     fontFamily: "Fira Code"
     invisibles: {}
