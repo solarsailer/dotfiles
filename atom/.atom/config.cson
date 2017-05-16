@@ -103,6 +103,9 @@
   linter: {}
   "linter-jshint":
     disableWhenNoJshintrcFileInPath: true
+  "linter-ui-default":
+    showPanel: true
+    useBusySignal: false
   "markdown-preview":
     useGitHubStyle: true
   "one-dark-ui":
