@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+set -e
+
+ASSET=$1
+
+# If no file provided, stop.
+if [ -z "$ASSET" ]; then
+  echo "No file provided"
+  exit 0
+fi
+
+# If not a file, stop.
+if [ ! -f "$ASSET" ]; then
+  echo "Not a file"
+  exit 0
+fi
+
+# If the file does not end by meta
+# OR
+# if there is not associated .meta file,
+# stop.
+if [ ${ASSET: -5} != ".meta" -a ! -f "$ASSET.meta" ]; then
+  echo "Not a Unity asset (no .meta found)"
+  exit 0
+fi
+
+ACTUAL_ASSET=$ASSET
+
+if [ ${ASSET: -5} != ".meta" ]; then
+  ACTUAL_ASSET=$ASSET.meta
+fi
+
+GUID=$(awk '/guid/ {print $2}' $ACTUAL_ASSET)
+
+git grep $GUID
