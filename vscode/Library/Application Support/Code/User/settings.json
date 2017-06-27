@@ -16,6 +16,7 @@
   // Declutter editor.
   "editor.codeLens": false,
   "editor.minimap.enabled": false,
+  "editor.renderIndentGuides": false,
 
   // Files.
   "files.eol": "\n",
