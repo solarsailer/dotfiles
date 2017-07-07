@@ -71,6 +71,10 @@
   core:
     audioBeep: false
     automaticallyUpdate: false
+    customFileTypes:
+      "text.html.basic": [
+        "cshtml"
+      ]
     destroyEmptyPanes: false
     disabledPackages: [
       "background-tips"
