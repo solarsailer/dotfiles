@@ -113,6 +113,8 @@ alias f "cd ~/Code/dotfiles"
 alias c "cd ~/Code/"
 alias d "cd ~/Desktop/"
 
+alias tree "tree -C -I 'node_modules|bower_components'"
+
 # --------------------------------------------------------------
 # iTerm shell integration.
 # --------------------------------------------------------------

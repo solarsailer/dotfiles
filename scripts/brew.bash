@@ -54,6 +54,7 @@ brew install httpie # http
 brew install jq # json processor
 brew install fzf # fuzzy finder
 brew install cloc
+brew install tree # tree viewer
 brew install trash
 brew install ranger # file browser
 brew install multimarkdown
