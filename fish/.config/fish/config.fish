@@ -63,6 +63,15 @@ if test -e $HOME/.config/yarn/global/node_modules/.bin
 end
 
 # --------------------------------------------------------------
+# Dotnet
+# --------------------------------------------------------------
+
+# Installed with `brew cask install dotnet`.
+if test -d /usr/local/share/dotnet
+  set PATH /usr/local/share/dotnet $PATH
+end
+
+# --------------------------------------------------------------
 # cheat
 # --------------------------------------------------------------
 
