@@ -14,6 +14,7 @@ apm install color-picker
 apm install pigments
 apm install merge-conflicts
 apm install jumpy
+apm install editorconfig
 
 # General purpose tool.
 apm install atom-beautify
