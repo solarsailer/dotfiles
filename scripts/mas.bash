@@ -17,5 +17,6 @@ mas install 557168941  # Tweetbot
 mas install 735066709  # Pixel Winch
 mas install 918207447  # Annotate
 mas install 1166066070 # Bumpr
+mas install 457622435  # Yoink
 
 echo "MAS> Done."
