@@ -73,5 +73,6 @@ brew cask install namechanger
 brew cask install virtualbox
 brew cask install selfcontrol
 brew cask install kap
+brew cask install numi
 
 echo "Cask> Done."
