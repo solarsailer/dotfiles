@@ -67,6 +67,7 @@ brew install dockutil
 brew install heroku
 brew install mas
 brew install subliminal # SubtitleS.
+brew install platypus # CLI for creating mac apps from scripts
 
 # Databases.
 brew install redis

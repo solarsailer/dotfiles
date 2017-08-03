@@ -74,5 +74,6 @@ brew cask install virtualbox
 brew cask install selfcontrol
 brew cask install kap
 brew cask install numi
+brew cask install platypus # GUI for creating mac apps from scripts
 
 echo "Cask> Done."
