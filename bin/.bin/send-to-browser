@@ -1,0 +1,74 @@
+#!/usr/bin/env bash
+
+# Version 1.0.0
+
+# This script dispatches some URL to Chrome and the others to Safari.
+# **This is only for macOS**.
+#
+# The rules are simple:
+# - `localhost` or IP addresses will be send to Chrome.
+# - URL matching URLs found in `~/.browserrc` will be send to Chrome.
+# - The rest will be send to Safari.
+
+# --------------------------------------------------------------
+# Default browser.
+# --------------------------------------------------------------
+
+# This script can be bundled in an Application and used as a Default Browser.
+#
+# You will need `platypus`.
+#
+# 1. Install the Platypus CLI with `brew install platypus`.
+# 2. Then, run the `create-custom-browser` script of this folder.
+# 3. Run the new app.
+# 4. Finally, Change the default browser in:
+#
+#   System Preferences->General->Default Web Browser
+
+# --------------------------------------------------------------
+# Script.
+# --------------------------------------------------------------
+
+# Grab the URL.
+URL="$1"
+
+function chrome() {
+  /usr/bin/open -a "/Applications/Google Chrome.app" "$1"
+}
+
+function safari() {
+  /usr/bin/open -a "/Applications/Safari.app" "$1"
+}
+
+# Exit if no URL.
+if [[ -z $URL ]]; then exit; fi
+
+# If protocol is either http or https:
+if [[ $URL =~ ^(http|https) ]]; then
+  # If the URL contains:
+  # - localhost
+  # - A URL like "0.0.0.0" or "192.168.1.42" or "127.0.0.1"
+  # Why? For web dev.
+  if [[ $URL =~ ^(http|https):\/\/(localhost|[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*) ]]; then
+    chrome $URL
+    exit
+  fi
+
+  # Get the URL without its protocol:
+  URL_WITHOUT_PROTOCOL=${URL#http*://}
+
+  # This grep is a little bit special.
+  # * `-q` makes it quiet.
+  # * `-f` uses pattern in a file instead of a string (~/.browserrc).
+  # * `<<<` provides a string instead of a file to grep.
+  #
+  # It's a kind of reverse grep:
+  # It searches in a string with patterns from a file.
+  # Instead of searching a string in a file.
+  if grep -qf ~/.browserrc <<< "$URL_WITHOUT_PROTOCOL"; then
+    chrome $URL
+    exit
+  fi
+fi
+
+safari $1
