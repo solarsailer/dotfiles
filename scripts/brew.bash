@@ -68,6 +68,7 @@ brew install heroku
 brew install mas
 brew install subliminal # SubtitleS.
 brew install platypus # CLI for creating mac apps from scripts
+brew install nativefier # Convert website to native app
 
 # Databases.
 brew install redis
