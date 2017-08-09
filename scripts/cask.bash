@@ -75,5 +75,6 @@ brew cask install selfcontrol
 brew cask install kap
 brew cask install numi
 brew cask install platypus # GUI for creating mac apps from scripts
+brew cask install mancy # Node GUI REPL
 
 echo "Cask> Done."
