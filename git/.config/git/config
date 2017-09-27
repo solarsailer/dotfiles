@@ -37,6 +37,10 @@
 ######################################
 
 [alias]
+  # git git git git git
+  # http://caiustheory.com/git-git-git-git-git/
+  git = !exec git
+
   # shortcuts
   s = status --short --branch
   ci = commit
@@ -116,6 +120,9 @@
 
 [help]
 	format = html
+
+  # Autocorrect after 5s.
+  autocorrect = 50
 
 ######################################
 # tools (auto-generated)             #
