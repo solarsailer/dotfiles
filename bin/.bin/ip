@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# By Brett Terpstra:
+# http://brettterpstra.com/2017/10/30/a-few-new-shell-tricks/
+
+# l(ist)ips Get local and WAN IP adddresses
+# $ lips
+#    Local IP: 10.0.1.4
+# External IP: 41.32.11.102
+
+lips() {
+  local ip=`ifconfig en0 | grep "inet " | grep -v 127.0.0.1 | awk '{print $2}'`
+  local locip extip
+
+  [ "$ip" != "" ] && locip=$ip || locip="inactive"
+
+  ip=`dig +short myip.opendns.com @resolver1.opendns.com`
+  [ "$ip" != "" ] && extip=$ip || extip="inactive"
+
+  printf '%11s: %s\n%11s: %s\n' "Local IP" $locip "External IP" $extip
+}
+
+lips
