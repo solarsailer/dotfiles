@@ -20,6 +20,7 @@ fi
 echo "Brew> Installing environments…"
 
 brew install node
+brew install yarn
 brew install go
 
 echo "Brew> Installing packages…"
@@ -34,6 +35,9 @@ brew install fish
 brew install imagemagick
 brew install gifsicle
 brew install apngasm
+
+# Sound.
+brew install lame
 
 # Toolchain.
 brew install cmake
@@ -66,9 +70,10 @@ brew install youtube-dl
 brew install dockutil
 brew install heroku
 brew install mas
-brew install subliminal # SubtitleS.
+brew install subliminal # Subtitles.
 brew install platypus # CLI for creating mac apps from scripts
 brew install nativefier # Convert website to native app
+brew install watchman
 
 # Databases.
 brew install redis
