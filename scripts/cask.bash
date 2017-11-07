@@ -28,6 +28,7 @@ brew cask install wkhtmltopdf
 echo "Cask> Installing packages…"
 
 brew cask install vagrant
+brew cask install dotnet-sdk
 
 echo "Cask> Installing services…"
 
@@ -47,6 +48,7 @@ brew cask install firefox
 
 # Code.
 brew cask install atom
+brew cask install visual-studio-code
 brew cask install dash
 
 # Terminal.
@@ -66,7 +68,6 @@ brew cask install vlc
 brew cask install bartender
 brew cask install paparazzi
 brew cask install hazel
-brew cask install choosy
 brew cask install daisydisk
 brew cask install imageoptim
 brew cask install namechanger
@@ -75,5 +76,13 @@ brew cask install selfcontrol
 brew cask install kap
 brew cask install numi
 brew cask install platypus # GUI for creating mac apps from scripts
+brew cask install fastlane
+brew cask install gifrocket
 
 echo "Cask> Done."
+
+# --------------------------------------------------------------
+# Archive.
+# --------------------------------------------------------------
+
+# brew cask install choosy # I use my CustomBrowser now.
