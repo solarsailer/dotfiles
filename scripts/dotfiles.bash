@@ -27,7 +27,7 @@ stow --target=$HOME -R stow
 stow -R atom
 stow -R bash
 stow -R bin
-stow -r browserrc
+stow -R browserrc
 stow -R cheat
 stow -R csscomb
 stow -R hyper
