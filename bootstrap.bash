@@ -23,3 +23,6 @@ pushd scripts
 popd
 
 echo "Bootstrap> Done."
+
+echo ""
+echo "You should restart your computer now!"
