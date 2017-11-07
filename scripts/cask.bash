@@ -71,13 +71,17 @@ brew cask install hazel
 brew cask install daisydisk
 brew cask install imageoptim
 brew cask install namechanger
-brew cask install virtualbox
 brew cask install selfcontrol
 brew cask install kap
 brew cask install numi
 brew cask install platypus # GUI for creating mac apps from scripts
-brew cask install fastlane
 brew cask install gifrocket
+
+# Tools.
+brew cask install fastlane
+
+# Might fail with SIP.
+brew cask install virtualbox
 
 echo "Cask> Done."
 
