@@ -3,7 +3,17 @@ dotfiles
 
 # Bootstrap
 
-## SSH key
+## Requirement: Xcode
+
+Install Xcode through the Mac App Store.
+
+Then, open the terminal and type:
+
+```
+sudo xcodebuild -license
+```
+
+## Create a SSH Key
 
 Generate a new key:
 
@@ -18,7 +28,8 @@ Then, add it on Github.
 
 ```bash
 cd ~
-mkdir code
+mkdir Code
+cd Code
 git clone git@github.com:solarsailer/dotfiles.git
 ./bootstrap.bash
 ```
