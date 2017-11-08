@@ -13,7 +13,7 @@ Then, open the terminal and type:
 sudo xcodebuild -license
 ```
 
-## Create a SSH Key
+## Requirement: SSH Key
 
 Generate a new key:
 
@@ -24,21 +24,29 @@ pbcopy < ~/.ssh/id_rsa.pub
 
 Then, add it on Github.
 
-## Launch
+## Ready?
 
 ```bash
 cd ~
 mkdir Code
 cd Code
+
 git clone git@github.com:solarsailer/dotfiles.git
+
 ./bootstrap.bash
 ```
 
 # Configuration
 
-## Git configuration
+## Stow
 
-* To set your git user.email & user.name, create manually a .gitconfig in your $HOME folder and copy those values there:
+Stow is configured to use "../.." as the default target. That means that you should put the dotfiles in a folder in your home. Like "$HOME/Code/dotfiles".
+
+If you have followed the previous instructions, it should already be there, making this step useless.
+
+## Git
+
+To set your git `user.email` & `user.name`, create a `.gitconfig` file manually in your `$HOME` folder and copy those values there:
 
 ```
 [user]
@@ -46,11 +54,7 @@ git clone git@github.com:solarsailer/dotfiles.git
   email = krokmou@berk.com
 ```
 
-## Stow configuration
-
-* Stow is configured to use "../.." as the default target. That means that you should put the dotfiles in a folder in your home. Like "$HOME/Code/dotfiles".
-
-## Fish configuration
+## Fish
 
 Set fish as default shell:
 
@@ -64,7 +68,13 @@ fish_theme_classic # "install" the theme
 fisher # install dependencies through fisher.
 ```
 
-## Atom configuration
+## Name
+
+```
+change_computer_name $NAME
+```
+
+## Atom
 
 Config, themes, snippets and etc. are synced normally.
 
@@ -76,31 +86,9 @@ apm stars --install
 
 If the `ctrl+left/right/up/down` do not work, disable them in `Mission Control` and `Keyboards >> Mission Control`.
 
-## Laptop configuration
-
-(Not necessary I think)
-
-Change the standby delay time for faster wake-up after sleep:
-
-```
-# 3600s (1h) * 6h = 21600s
-sudo pmset -a standbydelay 21600
-```
-
-Check the result with `pmset -g`.
-
-Why? [Read that](http://www.cultofmac.com/221392/quick-hack-speeds-up-retina-macbooks-wake-from-sleep-os-x-tips/).
-
 ## Change Keyboard
 
 Choose an alternative keyboard in `@keyboards` and install it.
-
-## Configure the dock and change the computer name
-
-Finally, run:
-
-- `install_dock.sh`
-- `change_computer_name NAME`
 
 ---
 
