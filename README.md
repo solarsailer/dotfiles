@@ -1,9 +1,9 @@
 dotfiles
 ========
 
-# Bootstrap
+## Bootstrap
 
-## Requirement: Xcode
+### Requirement: Xcode
 
 Install Xcode through the Mac App Store.
 
@@ -13,7 +13,7 @@ Then, open the terminal and type:
 sudo xcodebuild -license
 ```
 
-## Requirement: SSH Key
+### Requirement: SSH Key
 
 Generate a new key:
 
@@ -24,27 +24,29 @@ pbcopy < ~/.ssh/id_rsa.pub
 
 Then, add it on Github.
 
-## Ready?
+### Ready?
 
 ```bash
 cd ~
 mkdir Code
 cd Code
 
+# Repo.
 git clone git@github.com:solarsailer/dotfiles.git
 
+# Wait.
 ./bootstrap.bash
 ```
 
-# Configuration
+## Manual Configuration
 
-## Stow
+### Stow
 
 Stow is configured to use "../.." as the default target. That means that you should put the dotfiles in a folder in your home. Like "$HOME/Code/dotfiles".
 
 If you have followed the previous instructions, it should already be there, making this step useless.
 
-## Git
+### Git
 
 To set your git `user.email` & `user.name`, create a `.gitconfig` file manually in your `$HOME` folder and copy those values there:
 
@@ -54,7 +56,7 @@ To set your git `user.email` & `user.name`, create a `.gitconfig` file manually 
   email = krokmou@berk.com
 ```
 
-## Fish
+### Fish
 
 Set fish as default shell:
 
@@ -68,13 +70,13 @@ fish_theme_classic # "install" the theme
 fisher # install dependencies through fisher.
 ```
 
-## Name
+### Name
 
 ```
 change_computer_name $NAME
 ```
 
-## Atom
+### Atom
 
 Config, themes, snippets and etc. are synced normally.
 
@@ -86,9 +88,11 @@ apm stars --install
 
 If the `ctrl+left/right/up/down` do not work, disable them in `Mission Control` and `Keyboards >> Mission Control`.
 
-## Change Keyboard
+### Input Sources
 
 Choose an alternative keyboard in `@keyboards` and install it.
+
+Copy the `.keylayout` to `~/Library/Keyboard Layouts/`.
 
 ---
 
