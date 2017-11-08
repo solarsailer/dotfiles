@@ -50,6 +50,9 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 # Disable the warning after changing an extension.
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
+# Folders on top.
+defaults write com.apple.Finder _FXSortFoldersFirst -bool true
+
 # Change default location.
 # New window target:
 # Computer     : `PfCm`
@@ -59,8 +62,8 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 # Documents    : `PfDo`
 # All My Files : `PfAF`
 # Other…       : `PfLo`
-defaults write com.apple.finder NewWindowTarget     -string "PfHm"
-# defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
+defaults write com.apple.finder NewWindowTarget     -string "PfLo"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Dropbox/"
 
 # Hide everything on the Desktop.
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
@@ -129,3 +132,9 @@ defaults write com.apple.TextEdit NSFontSize -int 14
 # Ignore the 4px space reserved to the Dock.
 # Use "Ignore Menu Bar" to remove the menubar's reserved space.
 defaults write com.manytricks.Moom "Ignore Dock" -bool YES
+
+# --------------------------------------------------------------
+# Restart.
+# --------------------------------------------------------------
+
+killall Finder
