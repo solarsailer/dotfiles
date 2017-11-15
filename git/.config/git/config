@@ -74,8 +74,9 @@
   # -------------------------------------------------------
 
   # simple log
-  l = log --oneline --decorate --max-count=15
-  ll = log --color --max-count=15 --abbrev-commit --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %Cgreen(%cr)%Creset %C(bold blue)<%an>%Creset'
+  l = log --color --max-count=15 --abbrev-commit --pretty=format:'%C(yellow)%h%Creset %C(bold blue)%an%Creset%C(auto)%d%Creset %s %Cgreen(%cr)%Creset'
+  ll = log --oneline --decorate --max-count=15
+  lasts = "!git --no-pager log --color --max-count=10 --pretty=format:'%C(yellow)%H%Creset%C(auto)%d%Creset\n%C(bold blue)%an%Creset %s %Cgreen%cr%Creset\n%b'"
 
   # * key - subject (time) <author>
   history = log --color --graph --abbrev-commit --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset'
