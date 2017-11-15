@@ -94,7 +94,7 @@
   nuke = "!git-nuke"
 
   # Find a specific commit
-  search = "!f() { git --no-pager log --color --pretty=format:'%Cred%H%Creset -%C(yellow)%d%Creset %C(blue)%aN:%Creset %s%Creset' --regexp-ignore-case --grep=\"$@\"; }; f"
+  search = "!f() { git --no-pager log --color --pretty=format:'%C(yellow)%h%Creset %C(bold blue)%an%Creset %s %Cgreen(%cr)%Creset %C(dim normal)%H%Creset' --regexp-ignore-case --grep=\"$@\"; }; f"
 
   unity = "!git-find-unity-asset"
 
