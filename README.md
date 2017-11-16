@@ -88,6 +88,10 @@ apm stars --install
 
 If the `ctrl+left/right/up/down` do not work, disable them in `Mission Control` and `Keyboards >> Mission Control`.
 
+### Contact Card
+
+Sync your contact, then in the Contacts app, choose your contact card, click on the "Card" menu, then "Make this my card".
+
 ### Input Sources
 
 Choose an alternative keyboard in `@keyboards` and install it.
