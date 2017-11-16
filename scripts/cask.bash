@@ -61,6 +61,8 @@ brew cask install origami-studio
 
 # Communication.
 brew cask install slack
+brew cask install caprine
+brew cask install whatsapp
 
 # Others.
 brew cask install taskpaper
