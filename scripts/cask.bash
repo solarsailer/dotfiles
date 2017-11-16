@@ -49,6 +49,7 @@ brew cask install firefox
 # Code.
 brew cask install atom
 brew cask install visual-studio-code
+brew cask install sublime-text
 brew cask install dash
 
 # Terminal.
@@ -63,6 +64,7 @@ brew cask install origami-studio
 brew cask install slack
 brew cask install caprine
 brew cask install whatsapp
+brew cask install skype
 
 # Others.
 brew cask install taskpaper
@@ -78,6 +80,7 @@ brew cask install kap
 brew cask install numi
 brew cask install platypus # GUI for creating mac apps from scripts
 brew cask install gifrocket
+brew cask install hyperswitch
 
 # Tools.
 brew cask install fastlane
