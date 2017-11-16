@@ -15,6 +15,9 @@ apm install pigments
 apm install merge-conflicts
 apm install jumpy
 apm install editorconfig
+apm install expand-region
+apm install markdown-writer
+apm install teletype
 
 # General purpose tool.
 apm install atom-beautify
@@ -26,6 +29,7 @@ apm install language-fish-shell
 # Webdev.
 apm install emmet
 apm install linter-js-standard
+apm install linter-jsonlint
 apm install standard-formatter
 
 echo "Atom> Done."
