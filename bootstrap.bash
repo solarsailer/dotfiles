@@ -20,6 +20,13 @@ pushd scripts
 
 ./markdown-spotlight-importer.bash
 
+# Packages.
+./packages-atom.bash
+./packages-code.bash
+./packages-npm.bash
+./packages-yarn.bash
+./packages-ruby.bash
+
 popd
 
 echo "Bootstrap> Done."
