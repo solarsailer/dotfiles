@@ -19,6 +19,7 @@ mas install 918207447  # Annotate
 mas install 457622435  # Yoink
 mas install 1254981365 # Contrast
 mas install 407963104  # Pixelmator
+mas install 944693506  # Fileloupe
 mas install 409183694  # Keynote
 mas install 409201541  # Pages
 mas install 409203825  # Numbers
