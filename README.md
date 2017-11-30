@@ -29,6 +29,7 @@ Then, add it on Github.
 ```bash
 cd ~
 mkdir Code
+chmod 700 Code
 cd Code
 
 # Repo.
