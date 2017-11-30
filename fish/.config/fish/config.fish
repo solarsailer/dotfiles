@@ -112,6 +112,7 @@ alias h "cd ~"
 alias f "cd ~/Code/dotfiles"
 alias c "cd ~/Code/"
 alias d "cd ~/Desktop/"
+alias start "yarn run start"
 
 alias tree "tree -C -I 'node_modules|bower_components'"
 
