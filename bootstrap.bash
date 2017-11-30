@@ -11,6 +11,7 @@ echo "Bootstrap> Starting…"
 
 pushd scripts
 
+./folders.bash
 ./brew.bash
 ./cask.bash
 ./mas.bash
