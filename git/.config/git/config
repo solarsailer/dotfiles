@@ -46,6 +46,7 @@
   ci = commit
   co = checkout
   br = branch
+  aa = add -A
 
   # contrib
   committers = shortlog -nse --no-merges
