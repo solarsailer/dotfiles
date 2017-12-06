@@ -22,6 +22,7 @@ echo "Brew> Installing environments…"
 brew install node
 brew install yarn
 brew install go
+brew install mono
 
 echo "Brew> Installing packages…"
 
