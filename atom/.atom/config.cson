@@ -83,6 +83,7 @@
       "standard-formatter"
       "atom-beautify"
       "linter"
+      "prettier-atom"
     ]
     telemetryConsent: "no"
     titleBar: "custom-inset"
@@ -113,6 +114,13 @@
     useGitHubStyle: true
   "one-dark-ui":
     hideDockButtons: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+    prettierOptions:
+      bracketSpacing: false
+      semi: false
+      singleQuote: true
   "spell-check":
     locales: [
       "en-US"
