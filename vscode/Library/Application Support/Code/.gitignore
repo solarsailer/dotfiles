@@ -1,6 +1,7 @@
 Backups
 Cache
 CachedData
+CachedExtensions
 GPUCache
 Local Storage
 Cookies
@@ -8,3 +9,4 @@ Cookies-journal
 machineid
 Preferences
 storage.json
+logs
