@@ -94,7 +94,10 @@
 
   nuke = "!git-nuke"
 
-  # Find a specific commit
+  # Restore a file with its path. Example: `git restore Assets/Scenes/Trailer.unity`.
+  restore = "!f() { git checkout $(git rev-list -n 1 HEAD -- \"$1\")^ -- \"$1\"; }; f"
+
+  # Find a specific commit.
   search = "!f() { git --no-pager log --color --pretty=format:'%C(yellow)%h%Creset %C(bold blue)%an%Creset %s %Cgreen(%cr)%Creset %C(dim normal)%H%Creset' --regexp-ignore-case --grep=\"$@\"; }; f"
 
   unity = "!git-find-unity-asset"
