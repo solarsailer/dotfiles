@@ -24,6 +24,7 @@ brew cask install qlstephen
 brew cask install quicklook-csv
 brew cask install quicklook-json
 brew cask install wkhtmltopdf
+brew cask install colorpicker-developer
 
 echo "Cask> Installing packages…"
 
