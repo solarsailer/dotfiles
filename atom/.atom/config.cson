@@ -78,6 +78,7 @@
     destroyEmptyPanes: false
     disabledPackages: [
       "background-tips"
+      "prettier-atom"
     ]
     packagesWithKeymapsDisabled: [
       "standard-formatter"
