@@ -23,11 +23,39 @@
   "files.encoding": "utf8",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.next": true
+  },
 
   // Workbench.
-  "workbench.welcome.enabled": false,
+  "workbench.startupEditor": "none",
   "workbench.iconTheme": "file-icons",
 
   // Misc.
-  "csharp.suppressDotnetInstallWarning": true
+  "csharp.suppressDotnetInstallWarning": true,
+
+  // -----------------------------------------
+  // Languages.
+  // -----------------------------------------
+
+  // JS.
+  "[javascript]": {
+    "editor.formatOnSave": true,
+  },
+
+  // JSON.
+  "[json]": {
+    "editor.formatOnSave": true,
+  },
+
+  // -----------------------------------------
+  // Plugins.
+  // -----------------------------------------
+
+  // Prettier:
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.bracketSpacing": false,
+  "explorer.confirmDragAndDrop": false
 }
