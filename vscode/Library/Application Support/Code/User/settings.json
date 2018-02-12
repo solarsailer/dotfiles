@@ -15,7 +15,8 @@
 
   // Declutter editor.
   "editor.codeLens": false,
-  "editor.minimap.enabled": false,
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": false,
   "editor.renderIndentGuides": false,
 
   // Files.
@@ -57,5 +58,6 @@
   "prettier.semi": false,
   "prettier.singleQuote": true,
   "prettier.bracketSpacing": false,
-  "explorer.confirmDragAndDrop": false
+  "explorer.confirmDragAndDrop": false,
+  "workbench.statusBar.feedback.visible": false
 }
