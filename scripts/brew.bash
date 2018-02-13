@@ -57,6 +57,7 @@ brew install pv # pipe viewer
 brew install the_silver_searcher # ag
 brew install httpie # http
 brew install jq # json processor
+brew install pup # html processor
 brew install fzf # fuzzy finder
 brew install cloc
 brew install tree # tree viewer
