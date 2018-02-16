@@ -12,5 +12,6 @@ code --install-extension ms-vscode.csharp
 code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension esbenp.prettier-vscode
 code --install-extension jpoissonnier.vscode-styled-components
+code --install-extension pnp.polacode
 
 echo "Code> Done."
