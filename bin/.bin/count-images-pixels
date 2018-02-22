@@ -1,0 +1,64 @@
+#!/usr/bin/env bash
+
+TARGET_DIR=$1
+
+if [ ! -d "$TARGET_DIR" ]; then
+  echo "Error: cannot find '$TARGET_DIR' folder."
+  exit 0
+fi
+
+echo "Searching in '$TARGET_DIR'."
+echo ""
+
+function count_pixels {
+  identify -format "%[fx:w*h]" "$1" 2>/dev/null
+}
+
+function count_non_transparent_pixels {
+  identify -alpha extract -format "%[fx:round(mean*w*h)]" "$1" 2>/dev/null
+}
+
+FILES=$(find $TARGET_DIR -type f -name '*.png' -or -name '*.jpg' -or -name '*.jpeg')
+TOTAL_FILES=$(find $TARGET_DIR -type f -name '*.png' -or -name '*.jpg' -or -name '*.jpeg' | wc -l)
+TRIMMED_TOTAL_FILES=$(echo $TOTAL_FILES | awk '{$1=$1};1')
+
+echo "Found $TRIMMED_TOTAL_FILES images…"
+echo ""
+
+total=0
+total_with_transparency=0
+errors=0
+errors_with_transparency=0
+
+INTEGER_REGEX='^[0-9]+$'
+
+for i in $FILES; do
+  PIXELS=$(count_non_transparent_pixels $i)
+
+  # Get number of pixels (non-alpha).
+  if [[ "$PIXELS" =~ $INTEGER_REGEX ]]; then
+    total=$(($total + $PIXELS))
+
+  else
+    errors=$(($errors + 1))
+  fi
+
+  # Get number of pixels (with alpha).
+  PIXELS_WITH_TRANSPARENCY=$(count_pixels $i)
+
+  if [[ "$PIXELS_WITH_TRANSPARENCY" =~ $INTEGER_REGEX ]]; then
+    total_with_transparency=$(($total_with_transparency + $PIXELS_WITH_TRANSPARENCY))
+  else
+    errors_with_transparency=$(($errors_with_transparency + 1))
+  fi
+
+  echo "$total    $total_with_transparency"
+done
+
+echo "Total time: $SECONDS seconds."
+echo "Total errors: $errors, $errors_with_transparency."
+echo ""
+
+
+echo "Number of images: $TRIMMED_TOTAL_FILES."
+echo "Number of pixels: $total (out of $total_with_transparency)."
