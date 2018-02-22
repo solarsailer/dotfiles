@@ -51,8 +51,6 @@ for i in $FILES; do
   else
     errors_with_transparency=$(($errors_with_transparency + 1))
   fi
-
-  echo "$total    $total_with_transparency"
 done
 
 echo "Total time: $SECONDS seconds."
