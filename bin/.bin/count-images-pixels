@@ -15,7 +15,7 @@ function count_pixels {
 }
 
 function count_non_transparent_pixels {
-  identify -alpha extract -format "%[fx:round(mean*w*h)]" "$1" 2>/dev/null
+  identify -channel a -format "%[fx:round(w*h*mean)]" "$1" 2>/dev/null
 }
 
 FILES=$(find $TARGET_DIR -type f -name '*.png' -or -name '*.jpg' -or -name '*.jpeg')
