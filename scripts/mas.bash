@@ -23,5 +23,6 @@ mas install 944693506  # Fileloupe
 mas install 409183694  # Keynote
 mas install 409201541  # Pages
 mas install 409203825  # Numbers
+mas install 1351639930 # Gifski
 
 echo "MAS> Done."
