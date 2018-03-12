@@ -76,6 +76,7 @@ brew install subliminal # Subtitles.
 brew install platypus # CLI for creating mac apps from scripts
 brew install nativefier # Convert website to native app
 brew install watchman
+brew install just # task runner, like make but better.
 
 # Databases.
 brew install redis
