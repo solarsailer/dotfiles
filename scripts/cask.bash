@@ -69,6 +69,7 @@ brew cask install skype
 
 # Others.
 brew cask install taskpaper
+brew cask install deckset
 brew cask install vlc
 brew cask install bartender
 brew cask install paparazzi
