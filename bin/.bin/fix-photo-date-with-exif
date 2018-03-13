@@ -1,0 +1,43 @@
+#!/usr/bin/env php
+<?php
+$file = $argv[1];
+
+if ($file === NULL) {
+  echo "Error: no filepath provided as argument.";
+  return;
+}
+
+if (!file_exists($file)) {
+  echo "Error: provided file does not exist or is invalid.";
+  return;
+}
+
+echo "Fixing ".$argv[1]."…";
+
+// Simple: get the original date from the exif metadata and
+// touch the file to change its filesystem date values.
+//
+// Original script from:
+// https://www.macstories.net/tutorials/my-photo-management-workflow-early-2014/
+date_default_timezone_set("Europe/Paris");
+
+$date = exif_read_data($file, "EXIF");
+$date = $date["DateTimeOriginal"];
+
+echo "\nFound `".$date."`.";
+
+$time = date_parse_from_format("Y:m:d H:i:s", $date);
+$time = mktime(
+  $time["hour"],
+  $time["minute"],
+  $time["second"],
+  $time["month"],
+  $time["day"],
+  $time["year"]
+);
+
+touch($file, $time, $time);
+
+// All done!
+echo "\nDone.";
+?>
