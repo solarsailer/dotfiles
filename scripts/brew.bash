@@ -36,6 +36,7 @@ brew install fish
 brew install imagemagick
 brew install gifsicle
 brew install apngasm
+brew install exiftool
 
 # Sound.
 brew install lame
