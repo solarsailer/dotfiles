@@ -52,6 +52,7 @@ brew cask install atom
 brew cask install visual-studio-code
 brew cask install sublime-text
 brew cask install dash
+brew cask install gitup
 
 # Terminal.
 brew cask install iterm2
