@@ -126,8 +126,8 @@
 [help]
 	format = html
 
-  # Autocorrect after 5s.
-  autocorrect = 50
+  # Autocorrect after 1s.
+  autocorrect = 10
 
 ######################################
 # tools (auto-generated)             #
