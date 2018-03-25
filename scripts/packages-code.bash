@@ -13,5 +13,7 @@ code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension esbenp.prettier-vscode
 code --install-extension jpoissonnier.vscode-styled-components
 code --install-extension pnp.polacode
+code --install-extension cmstead.jsrefactor
+code --install-extension formulahendry.auto-rename-tag
 
 echo "Code> Done."
