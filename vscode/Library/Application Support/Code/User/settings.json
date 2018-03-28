@@ -15,7 +15,7 @@
 
   // Declutter editor.
   "editor.codeLens": false,
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": false,
   "editor.renderIndentGuides": false,
 
