@@ -37,6 +37,8 @@ end
 function __prompt_sub
   __show_newline
 
+  __ssh
+
   set_color green --bold
   echo -n (__current_folder)
   set_color normal
@@ -64,6 +66,18 @@ end
 # Get the current folder, and replace $HOME by a `~`. It's prettier.
 function __current_folder
   pwd | sed "s|$HOME|~|"
+end
+
+# --------------------------------------------------------------
+# SSH.
+# --------------------------------------------------------------
+
+function __ssh
+  if not test -z $SSH_CLIENT
+    set_color -o blue
+    echo -n (whoami)"@"(hostname -s)' '
+    set_color normal
+  end
 end
 
 # --------------------------------------------------------------
