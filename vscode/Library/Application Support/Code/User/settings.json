@@ -32,6 +32,7 @@
   // Workbench.
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "file-icons",
+  "workbench.statusBar.feedback.visible": false,
 
   // Misc.
   "csharp.suppressDotnetInstallWarning": true,
@@ -59,5 +60,4 @@
   "prettier.singleQuote": true,
   "prettier.bracketSpacing": false,
   "explorer.confirmDragAndDrop": false,
-  "workbench.statusBar.feedback.visible": false
 }
