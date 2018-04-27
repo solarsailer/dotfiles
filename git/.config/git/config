@@ -47,6 +47,7 @@
   co = checkout
   br = branch
   aa = add -A
+  ri = rebase -i
 
   # contrib
   committers = shortlog -nse --no-merges
