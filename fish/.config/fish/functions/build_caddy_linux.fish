@@ -3,7 +3,7 @@
 #
 # With this script, we get the source and build the latest release.
 # Building from source is not subjected to the restricted EULA.
-function build-caddy-linux -d "Build Caddy from source for Linux"
+function build_caddy_linux -d "Build Caddy from source for Linux"
   # --------------------------------------------------------------
   # Preconditions.
   # --------------------------------------------------------------
