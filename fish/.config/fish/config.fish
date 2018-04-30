@@ -116,6 +116,12 @@ alias start "yarn run start"
 
 alias tree "tree -C -I 'node_modules|bower_components'"
 
+# ls aliases.
+alias la  "ls -a"  # Show invisibles.
+alias ll  "ls -1"  # Show as list.
+alias lla "ls -1a" # Show invisibles as list.
+
+# ag aliases.
 alias agi "ag -l -i" # Print files containing pattern.
 alias agf "ag -g -i" # Find files matching pattern.
 
