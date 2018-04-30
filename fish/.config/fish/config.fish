@@ -116,6 +116,9 @@ alias start "yarn run start"
 
 alias tree "tree -C -I 'node_modules|bower_components'"
 
+alias agi "ag -l -i" # Print files containing pattern.
+alias agf "ag -g -i" # Find files matching pattern.
+
 # --------------------------------------------------------------
 # iTerm shell integration.
 # --------------------------------------------------------------
