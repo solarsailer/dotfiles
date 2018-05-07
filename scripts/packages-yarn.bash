@@ -12,6 +12,7 @@ yarn global add webpack
 yarn global add webpack-dev-server
 yarn global add brunch
 yarn global add gulp
+yarn global add parcel-bundler
 
 yarn global add jest
 
