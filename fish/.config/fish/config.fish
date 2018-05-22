@@ -116,6 +116,15 @@ alias start "yarn run start"
 
 alias tree "tree -C -I 'node_modules|bower_components'"
 
+# The linux `paste` command is just a way to concat files together.
+# Rename it, otherwise it's not clear at all on its purpose.
+# `command` is a way to use the true `paste`, even if we alias `paste` below.
+alias concat "command paste"
+
+# `pbpaste` is an actual clipboard management utility.
+# Use `paste` name (which is free now) for quick access.
+alias paste "pbpaste"
+
 # ls aliases.
 alias la  "ls -a"  # Show invisibles.
 alias ll  "ls -1"  # Show as list.
