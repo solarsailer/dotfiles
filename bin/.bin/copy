@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+# Code from Rémy Sharp:
+# https://remysharp.com/2018/04/25/how-i-copy-paste-in-the-terminal
+
+# Checks whether there's an argument being passed.
+if [ -t 0 ]; then
+  # If so, cat the file and pipe through copy.
+  cat $@ | pbcopy
+else
+  # Otherwise, pipe stdin into copy.
+  pbcopy < /dev/stdin
+fi
+
+# Then finally paste to stdout.
+pbpaste
+
+# ---
+
+# Copies and shows output from `ps`:
+#   $ ps | copy
+
+# Copies and shows contents of `blog-post.md` via `cat`:
+#   $ copy blog-post.md
