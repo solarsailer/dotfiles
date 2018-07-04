@@ -30,6 +30,7 @@ echo "Cask> Installing packages…"
 
 brew cask install vagrant
 brew cask install dotnet-sdk
+brew cask install docker
 
 echo "Cask> Installing services…"
 
