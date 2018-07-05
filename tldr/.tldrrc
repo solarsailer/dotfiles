@@ -1,0 +1,19 @@
+{
+  "themes": {
+    "simple": {
+      "commandName": "bold, underline",
+      "mainDescription": "bold",
+      "exampleDescription": "",
+      "exampleCode": "",
+      "exampleToken": "underline"
+    },
+    "solarsailer": {
+      "commandName": "bold, underline",
+      "mainDescription": "bold",
+      "exampleDescription": "",
+      "exampleCode": "yellow, bold",
+      "exampleToken": "yellow"
+    }
+  },
+  "theme": "solarsailer"
+}
