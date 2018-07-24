@@ -68,6 +68,7 @@ brew cask install slack
 brew cask install caprine
 brew cask install whatsapp
 brew cask install skype
+brew cask install discord
 
 # Others.
 brew cask install taskpaper
