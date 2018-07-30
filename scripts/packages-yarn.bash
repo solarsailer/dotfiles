@@ -24,6 +24,7 @@ yarn global add tldr
 yarn global add fkill-cli
 yarn global add pkg # node packager
 yarn global add np # npm publish, simplified
+yarn global add matcher-cli
 yarn global add emma-cli
 yarn global add speed-test
 
