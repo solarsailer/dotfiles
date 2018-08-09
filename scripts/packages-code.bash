@@ -15,5 +15,7 @@ code --install-extension jpoissonnier.vscode-styled-components
 code --install-extension pnp.polacode
 code --install-extension cmstead.jsrefactor
 code --install-extension formulahendry.auto-rename-tag
+code --install-extension eamodio.gitlens
+code --install-extension peterjausovec.vscode-docker
 
 echo "Code> Done."
