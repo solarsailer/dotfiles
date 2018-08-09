@@ -46,6 +46,21 @@
     "editor.formatOnSave": true,
   },
 
+  // JS React.
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+  },
+
+  // TypeScript.
+  "[typescript]": {
+    "editor.formatOnSave": true,
+  },
+
+  // TypeScript React.
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+  },
+
   // JSON.
   "[json]": {
     "editor.formatOnSave": true,
@@ -60,4 +75,9 @@
   "prettier.singleQuote": true,
   "prettier.bracketSpacing": false,
   "explorer.confirmDragAndDrop": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
 }
