@@ -1,4 +1,5 @@
 function add_pkg
+  # Create file.
   set name 'package.json'
 
   if test -e $name
@@ -11,21 +12,33 @@ function add_pkg
 
   touch $name
 
-  echo '{'                                                       >> $name
-  echo '  "name": "",'                                           >> $name
-  echo '  "version": "0.0.0",'                                   >> $name
-  echo '  "description": "A description.",'                      >> $name
-  echo '  "license": "MIT",'                                     >> $name
-  echo '  "repository": "https://github.com/solarsailer/repo/",' >> $name
-  echo '  "author": {'                                           >> $name
-  echo '    "name": "Matthieu Oger",'                            >> $name
-  echo '    "url": "https://solarsailer.net/"'                   >> $name
-  echo '  },'                                                    >> $name
-  echo '  "scripts": {'                                          >> $name
-  echo '    "start": "",'                                        >> $name
-  echo '    "test": ""'                                          >> $name
-  echo '  },'                                                    >> $name
-  echo '  "dependencies": {},'                                   >> $name
-  echo '  "devDependencies": {}'                                 >> $name
-  echo '}'                                                       >> $name
+  # Find repository URL if possible.
+  set repo 'https://github.com/solarsailer/repo'
+
+  if test -d '.git'
+    set found_repo (hub browse -u ^ /dev/null)
+
+    if test $status -eq 0
+      set repo $found_repo
+    end
+  end
+
+  # Add content.
+  echo '{'                                     >> $name
+  echo '  "name": "",'                         >> $name
+  echo '  "version": "0.0.0",'                 >> $name
+  echo '  "description": "A description.",'    >> $name
+  echo '  "license": "MIT",'                   >> $name
+  echo "  \"repository\": \"$repo\","          >> $name
+  echo '  "author": {'                         >> $name
+  echo '    "name": "Matthieu Oger",'          >> $name
+  echo '    "url": "https://solarsailer.net/"' >> $name
+  echo '  },'                                  >> $name
+  echo '  "scripts": {'                        >> $name
+  echo '    "start": "",'                      >> $name
+  echo '    "test": ""'                        >> $name
+  echo '  },'                                  >> $name
+  echo '  "dependencies": {},'                 >> $name
+  echo '  "devDependencies": {}'               >> $name
+  echo '}'                                     >> $name
 end
