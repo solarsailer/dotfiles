@@ -1,0 +1,40 @@
+-- Copy in "~/Library/Application Support/Adobe/Lightroom/Metadata Field Lists/Matthieu Oger.lrtemplate"
+return {
+  version   = 1,
+  title     = "Matthieu Oger",
+  id        = "info.regex.lrmeta.v1.mo",
+  type      = "MetadataFieldList",
+
+  items = {
+    { formatter = 'com.adobe.captureDate', label="Date" },
+    { formatter = 'com.adobe.captureTime', label="Time" },
+    "com.adobe.separator",
+
+    -- Camera.
+    { formatter = 'com.adobe.model', label="Camera" },
+    "com.adobe.lens",
+    "com.adobe.separator",
+
+    -- Focal Length.
+    { formatter = "com.adobe.focalLength", label="Focal / Native" },
+    { formatter = "com.adobe.focalLength35mm", label="Focal / 35mm" },
+    "com.adobe.separator",
+
+    -- Settings.
+    { formatter = "com.adobe.apertureValue", label="Aperture" },
+    { formatter = "com.adobe.ISOSpeedRating", label="ISO" },
+    { formatter = "com.adobe.exposureTime", label="Shutter Speed" },
+    "com.adobe.separator",
+
+    -- Position.
+    { formatter = "com.adobe.location", label="Location" },
+    "com.adobe.city",
+    "com.adobe.state",
+    "com.adobe.country",
+    "com.adobe.separator",
+
+    -- Comments.
+    "com.adobe.title",
+    { formatter = "com.adobe.caption", allow_newlines=true, height_in_lines=3 },
+  }
+};
