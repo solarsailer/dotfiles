@@ -1,0 +1,139 @@
+#!/usr/bin/env bash
+
+set -e
+
+WORKINGDIR=$(pwd)
+BASEDIR=$(dirname $0)
+
+if [ -f "$WORKINGDIR/.env" ]; then
+  echo "Deployer> Found '.env' file. Using it."
+  source .env
+fi
+
+if [ -f "$WORKINGDIR/package.json" ]; then
+  echo "Deployer> Found 'package.json' file. Using it."
+  PKG_NAME=$(jq -r .name package.json)
+fi
+
+# --------------------------------------------------------------
+# Parse arguments.
+#
+# Argument parsing code from:
+# https://medium.com/@Drew_Stokes/bash-argument-parsing-54f3b81a6a8f
+# --------------------------------------------------------------
+
+PARAMS=""
+
+while (( "$#" )); do
+  case "$1" in
+    -n|--name)
+      CLI_NAME=$2
+      shift 2
+      ;;
+
+    -s|--server)
+      CLI_SERVER=$2
+      shift 2
+      ;;
+
+    --) # End argument parsing.
+      shift
+      break
+      ;;
+
+    -*|--*=) # Unsupported flags.
+      echo "Deployer> Error: Unsupported flag $1" >&2
+      exit 1
+      ;;
+
+    *) # Preserve positional arguments.
+      PARAMS="$PARAMS $1"
+      shift
+      ;;
+  esac
+done
+
+# set positional arguments in their proper place
+eval set -- "$PARAMS"
+
+# --------------------------------------------------------------
+# Check variables.
+# --------------------------------------------------------------
+
+# Search in .env…
+# Priority: 1) cli arg, 2) .env var, 3) package.json property.
+
+if [ "$CLI_NAME" ]; then
+  NAME=$CLI_NAME
+elif [ "$DEPLOY_NAME" ]; then
+  NAME=$DEPLOY_NAME
+elif [ "$PKG_NAME" ]; then
+  NAME=$PKG_NAME
+else
+  echo "Deployer> Error: missing name."
+  exit 1
+fi
+
+if [ "$CLI_SERVER" ]; then
+  SERVER=$CLI_SERVER
+elif [ "$DEPLOY_SERVER" ]; then
+  SERVER=$DEPLOY_SERVER
+else
+  echo "Deployer> Error: missing server."
+  exit 1
+fi
+
+echo ""
+echo "Deployer> Creating '$NAME' image for '$SERVER'…"
+
+# --------------------------------------------------------------
+# Create.
+# --------------------------------------------------------------
+
+
+echo ""
+echo "Deployer> Building…"
+docker build -t "$NAME" .
+echo "Deployer> Done."
+
+echo ""
+echo "Deployer> Saving…"
+docker save "$NAME" -o "./$NAME.dockerimage"
+echo "Deployer> Done."
+
+# --------------------------------------------------------------
+# Send.
+# --------------------------------------------------------------
+
+echo ""
+echo "Deployer> Sending…"
+rsync -vazh "./$NAME.dockerimage" $SERVER:/tmp
+echo "Deployer> Done."
+
+echo ""
+echo "Deployer> Cleaning…"
+rm "./$NAME.dockerimage"
+echo "Deployer> Done."
+
+# --------------------------------------------------------------
+# Run.
+# --------------------------------------------------------------
+
+echo ""
+echo "Deployer> Restarting…"
+echo ""
+
+ssh $SERVER "
+  docker stop $NAME
+  docker rm $NAME
+
+  docker load < /tmp/$NAME.dockerimage
+  docker run --name $NAME --restart always --env-file /etc/env/$NAME.env --detach $NAME
+"
+
+# --------------------------------------------------------------
+# End.
+# --------------------------------------------------------------
+
+echo ""
+echo "Deployer> All done!"
