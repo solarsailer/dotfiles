@@ -66,6 +66,10 @@
     "editor.formatOnSave": true,
   },
 
+  "html.autoClosingTags": false,
+  "javascript.autoClosingTags": false,
+  "typescript.autoClosingTags": false,
+
   // -----------------------------------------
   // Plugins.
   // -----------------------------------------
