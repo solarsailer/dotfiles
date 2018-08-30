@@ -25,5 +25,6 @@ mas install 409183694  # Keynote
 mas install 409201541  # Pages
 mas install 409203825  # Numbers
 mas install 1351639930 # Gifski
+mas install 824171161  # Affinity Designer
 
 echo "MAS> Done."
