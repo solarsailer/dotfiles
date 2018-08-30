@@ -17,7 +17,6 @@ mas install 880001334  # Reeder
 mas install 557168941  # Tweetbot
 mas install 735066709  # Pixel Winch
 mas install 918207447  # Annotate
-mas install 457622435  # Yoink
 mas install 1254981365 # Contrast
 mas install 1289583905 # Pixelmator Pro
 mas install 944693506  # Fileloupe
