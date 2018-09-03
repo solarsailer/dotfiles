@@ -67,7 +67,8 @@ brew install ranger # file browser
 brew install multimarkdown
 brew install wakeonlan
 brew install hub
-brew install ccat
+brew install ccat # better cat
+brew install bat # better cat
 brew install cheat # cheatsheet manager
 brew install youtube-dl
 brew install dockutil
