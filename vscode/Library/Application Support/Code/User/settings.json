@@ -28,14 +28,19 @@
     "**/node_modules": true,
     "**/.next": true
   },
+  "files.associations": {
+    "*.txt": "markdown",
+    "*.text": "markdown"
+  },
 
   // Workbench.
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "file-icons",
   "workbench.statusBar.feedback.visible": false,
+  "workbench.colorTheme": "Quiet Light",
 
-  // Misc.
-  "csharp.suppressDotnetInstallWarning": true,
+  // Explorer.
+  "explorer.confirmDragAndDrop": false,
 
   // -----------------------------------------
   // Languages.
@@ -67,8 +72,12 @@
   },
 
   "html.autoClosingTags": false,
+
   "javascript.autoClosingTags": false,
   "typescript.autoClosingTags": false,
+
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
 
   // -----------------------------------------
   // Plugins.
@@ -78,10 +87,4 @@
   "prettier.semi": false,
   "prettier.singleQuote": true,
   "prettier.bracketSpacing": false,
-  "explorer.confirmDragAndDrop": false,
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
-  },
 }
