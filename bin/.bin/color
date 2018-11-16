@@ -1,0 +1,194 @@
+#!/usr/bin/env node
+
+const polished = require('./lib/polished-2.3.0')
+const spawn = require('child_process').spawn
+
+try {
+  run(process.argv)
+} catch (e) {
+  error(e.message)
+}
+
+function run(program) {
+  const [, , ...args] = program
+
+  // No arg? Exit.
+  if (args.length === 0) {
+    abort('No argument provided.')
+  }
+
+  // 1 or 2 arg?
+  // Show the color in different spaces (and copy the provided space to the clipboard).
+  else if (args.length === 1 || args.length === 2) {
+    const [value, space] = args
+
+    list(fixValue(value), space)
+  }
+
+  // 3 or 4 args? Run the tint or shade command
+  // (and copy the provided space to the clipboard).
+  else if (args.length === 3 || args.length === 4) {
+    const [cmd, value, percent, space] = args
+
+    switch (cmd.trim()) {
+      case 'tint':
+        mix(polished.tint, fixValue(value), percent, space)
+        break
+      case 'shade':
+        mix(polished.shade, fixValue(value), percent, space)
+        break
+      default:
+        abort(
+          'No command matches the one you provided. Use tint or shade instead.'
+        )
+    }
+  } else {
+    abort('Too many arguments.')
+  }
+}
+
+// -------------------------------------------------------------
+// Commands.
+// -------------------------------------------------------------
+
+// Show the color in the different spaces.
+function list(value, spaceToCopy) {
+  if (!value || typeof value !== 'string') {
+    abort(
+      'No color value provided. Use a string in hex, rgb, rgba, hsl or hsla notation.'
+    )
+  }
+
+  const x = {
+    hex: toHEX(value),
+    hsl: toHSL(value),
+    rgb: toRGB(value)
+  }
+
+  displayResult('HEX', x.hex)
+  displayResult('HSL', x.hsl)
+  displayResult('RGB', x.rgb)
+
+  copyToClipboard(x, spaceToCopy)
+}
+
+// Tint or shade a color.
+function mix(fn, value, percent, spaceToCopy) {
+  const result = fn(percent, value)
+
+  // Find the biggest length to pad the result accordingly.
+  const pad = Math.max(
+    toHEX(value).length,
+    toHSL(value).length,
+    toRGB(value).length
+  )
+
+  const x = {
+    hex: toHEX(result),
+    hsl: toHSL(result),
+    rgb: toRGB(result)
+  }
+
+  displayConversion('HEX', toHEX(value), x.hex, pad)
+  displayConversion('HSL', toHSL(value), x.hsl, pad)
+  displayConversion('RGB', toRGB(value), x.rgb, pad)
+
+  copyToClipboard(x, spaceToCopy)
+}
+
+// -------------------------------------------------------------
+// Functions.
+// -------------------------------------------------------------
+
+function toHEX(value) {
+  return polished.toColorString(polished.parseToHsl(value))
+}
+
+function toHSL(value) {
+  const components = polished.parseToHsl(value)
+
+  const hue = Math.round(components.hue)
+  const saturation = Math.round(components.saturation * 100)
+  const lightness = Math.round(components.lightness * 100)
+
+  if (components.alpha) {
+    return `hsla(${hue}, ${saturation}%, ${lightness}%, ${components.alpha})`
+  }
+
+  return `hsl(${hue}, ${saturation}%, ${lightness}%)`
+}
+
+function toRGB(value) {
+  const components = polished.parseToRgb(value)
+
+  if (components.alpha) {
+    return `rgba(${components.red}, ${components.green}, ${components.blue}, ${
+      components.alpha
+    })`
+  }
+
+  return `rgb(${components.red}, ${components.green}, ${components.blue})`
+}
+
+// Prepend with a hash if the value is an hex without a hash.
+// 000 → #000
+// rgb(…) → rgb(…)
+function fixValue(value) {
+  if (typeof value !== 'string' && typeof value !== 'number') return
+
+  const IS_HEX_STRING = /^#?[0-9a-fA-F]{3,8}$/i
+  const match = value.trim().match(IS_HEX_STRING)
+
+  // If the value match the regex and does not start with a hash, add it.
+  if (match && !value.startsWith('#')) return `#${value}`
+}
+
+function copyToClipboard(values, spaceToCopy) {
+  if (!spaceToCopy) return
+
+  const result = values[spaceToCopy.trim()]
+
+  if (result && typeof result === 'string') {
+    pbcopy(result)
+
+    console.log('')
+    console.log(
+      formatInfo(`${spaceToCopy.toUpperCase()} value copied to clipboard!`)
+    )
+  }
+}
+
+// -------------------------------------------------------------
+// Helpers.
+// -------------------------------------------------------------
+
+function pbcopy(data) {
+  var proc = require('child_process').spawn('pbcopy')
+  proc.stdin.write(data)
+  proc.stdin.end()
+}
+
+function abort(msg) {
+  error(msg)
+  process.exit(-1)
+}
+
+function error(msg) {
+  console.error('\033[0;31m' + msg + '\033[0m')
+}
+
+function displayResult(header, value) {
+  console.log(`${formatHeader(header)}: ${value}`)
+}
+
+function displayConversion(header, first, second, pad) {
+  console.log(`${formatHeader(header)}: ${first.padEnd(pad)} → ${second}`)
+}
+
+function formatHeader(msg) {
+  return '\033[0;34m' + msg + '\033[0m'
+}
+
+function formatInfo(msg) {
+  return '\033[0;32m' + msg + '\033[0m'
+}
