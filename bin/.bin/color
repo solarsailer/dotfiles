@@ -14,6 +14,9 @@ function run(program) {
 
   // No arg? Exit.
   if (args.length === 0) {
+    showHelp()
+
+    console.log('')
     abort('No argument provided.')
   }
 
@@ -194,4 +197,44 @@ function formatHeader(msg) {
 
 function formatInfo(msg) {
   return '\033[0;32m' + msg + '\033[0m'
+}
+
+function formatExample(msg) {
+  return '\033[1;33m' + msg + '\033[0m'
+}
+
+// -------------------------------------------------------------
+// Help.
+// -------------------------------------------------------------
+
+function showHelp() {
+  console.log('')
+  console.log(
+    formatHeader(
+      '  Usage: display or modify a CSS color in multiple color spaces.'
+    )
+  )
+  console.log('')
+  console.log('  Examples:')
+  console.log('')
+  console.log('    - Show info:')
+  console.log(`      ${formatExample('color 000')}`)
+  console.log('')
+  console.log('    - Show info:')
+  console.log(`      ${formatExample('color "rgba(0, 0, 0, 0.5)"')}`)
+  console.log('')
+  console.log('    - Show info and copy HSL value:')
+  console.log(`      ${formatExample('color 000 hsl')}`)
+  console.log('')
+  console.log('    - Tint:')
+  console.log(`      ${formatExample('color tint "rgb(0, 0, 0)" 0.5')}`)
+  console.log('')
+  console.log('    - Tint and copy RGB value:')
+  console.log(`      ${formatExample('color tint 000 0.5 rgb')}`)
+  console.log('')
+  console.log('    - Shade:')
+  console.log(`      ${formatExample('color shade "hsl(0, 0%, 100%)" 0.5')}`)
+  console.log('')
+  console.log('    - Shade and copy HEX value:')
+  console.log(`      ${formatExample('color shade fff 0.5 hex')}`)
 }
