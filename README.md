@@ -41,6 +41,18 @@ git clone git@github.com:solarsailer/dotfiles.git
 
 ## Manual Configuration
 
+### Retina or non-retina?
+
+If you use a non-retina monitor, run this command:
+
+```
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+```
+
+macOS Mojave removed the "Use LCD font smoothing when available" option in "General". It's better for retina screen, but awful on non-retina. This command will re-activate this option.
+
+**DO NOT USE** with retina screens.
+
 ### Stow
 
 Stow is configured to use "../.." as the default target. That means that you should put the dotfiles in a folder in your home. Like "$HOME/Code/dotfiles".
