@@ -37,7 +37,6 @@
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "file-icons",
   "workbench.statusBar.feedback.visible": false,
-  "workbench.colorTheme": "Quiet Light",
 
   // Explorer.
   "explorer.confirmDragAndDrop": false,
