@@ -141,6 +141,9 @@ function fixValue(value) {
 
   // If the value match the regex and does not start with a hash, add it.
   if (match && !value.startsWith('#')) return `#${value}`
+
+  // Otherwise, just return the provided value.
+  return value
 }
 
 function copyToClipboard(values, spaceToCopy) {
