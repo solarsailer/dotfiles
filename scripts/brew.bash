@@ -44,6 +44,9 @@ brew install lame
 # Toolchain.
 brew install cmake
 
+# Swift.
+brew install mxcl/made/swift-sh
+
 # Ruby.
 brew install rbenv
 brew install ruby-build
