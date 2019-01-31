@@ -28,5 +28,6 @@ yarn global add np # npm publish, simplified
 yarn global add matcher-cli
 yarn global add emma-cli
 yarn global add speed-test
+yarn global add tagui # visual automation
 
 echo "Yarn> Done."
