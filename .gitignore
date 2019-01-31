@@ -11,6 +11,7 @@
 
 # Fish
 
+fish_variables
 fish_history
 fish_read_history
 fishd.*
