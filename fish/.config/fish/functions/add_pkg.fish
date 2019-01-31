@@ -24,21 +24,21 @@ function add_pkg
   end
 
   # Add content.
-  echo '{'                                     >> $name
-  echo '  "name": "",'                         >> $name
-  echo '  "version": "0.0.0",'                 >> $name
-  echo '  "description": "A description.",'    >> $name
-  echo '  "license": "MIT",'                   >> $name
-  echo "  \"repository\": \"$repo\","          >> $name
-  echo '  "author": {'                         >> $name
-  echo '    "name": "Matthieu Oger",'          >> $name
-  echo '    "url": "https://solarsailer.net/"' >> $name
-  echo '  },'                                  >> $name
-  echo '  "scripts": {'                        >> $name
-  echo '    "start": "",'                      >> $name
-  echo '    "test": ""'                        >> $name
-  echo '  },'                                  >> $name
-  echo '  "dependencies": {},'                 >> $name
-  echo '  "devDependencies": {}'               >> $name
-  echo '}'                                     >> $name
+  echo '{'                                      >> $name
+  echo '  "name": "",'                          >> $name
+  echo '  "version": "0.1.0",'                  >> $name
+  echo '  "description": "A description.",'     >> $name
+  echo '  "license": "MIT",'                    >> $name
+  echo "  \"repository\": \"$repo\","           >> $name
+  echo '  "author": {'                          >> $name
+  echo '    "name": "Matthieu Oger",'           >> $name
+  echo '    "url": "https://matthieuoger.com/"' >> $name
+  echo '  },'                                   >> $name
+  echo '  "scripts": {'                         >> $name
+  echo '    "start": "",'                       >> $name
+  echo '    "test": ""'                         >> $name
+  echo '  },'                                   >> $name
+  echo '  "dependencies": {},'                  >> $name
+  echo '  "devDependencies": {}'                >> $name
+  echo '}'                                      >> $name
 end
