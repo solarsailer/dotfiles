@@ -45,6 +45,16 @@
   // Languages.
   // -----------------------------------------
 
+  // CSS.
+  "[css]": {
+    "editor.formatOnSave": true,
+  },
+
+  // Sass.
+  "[scss]": {
+    "editor.formatOnSave": true,
+  },
+
   // JS.
   "[javascript]": {
     "editor.formatOnSave": true,
