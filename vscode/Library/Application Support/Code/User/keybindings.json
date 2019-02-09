@@ -63,7 +63,7 @@
     "key": "ctrl+delete",
     "command": "deleteWordPartRight",
     "when": "textInputFocus && !editorReadonly"
-  }
+  },
 
   // Multi-cursors like Atom.
   {
@@ -75,5 +75,12 @@
     "key": "ctrl+shift+up",
     "command": "editor.action.insertCursorAbove",
     "when": "editorTextFocus"
+  },
+
+  // Rename.
+  {
+    "key": "cmd+r",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   }
 ]
