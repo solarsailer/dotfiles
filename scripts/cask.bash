@@ -72,6 +72,7 @@ brew cask install skype
 brew cask install discord
 
 # Others.
+brew cask install soulver
 brew cask install taskpaper
 brew cask install deckset
 brew cask install vlc
