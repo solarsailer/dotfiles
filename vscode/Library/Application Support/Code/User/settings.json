@@ -78,6 +78,7 @@
   // JSON.
   "[json]": {
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
 
   "html.autoClosingTags": false,
