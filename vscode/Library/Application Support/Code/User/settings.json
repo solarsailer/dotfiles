@@ -30,7 +30,8 @@
   },
   "files.associations": {
     "*.txt": "markdown",
-    "*.text": "markdown"
+    "*.text": "markdown",
+    "*.mdx": "markdown"
   },
 
   // Workbench.
@@ -97,4 +98,7 @@
   "prettier.semi": false,
   "prettier.singleQuote": true,
   "prettier.bracketSpacing": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
