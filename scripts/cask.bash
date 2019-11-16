@@ -88,6 +88,7 @@ brew cask install numi
 brew cask install platypus # GUI for creating mac apps from scripts
 brew cask install gifrocket
 brew cask install hyperswitch
+brew cask install phoenix
 brew cask install turbo-boost-switcher
 
 # Tools.
