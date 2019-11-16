@@ -9,6 +9,7 @@ Phoenix.set({
 
 const horizontal = Symbol()
 const vertical = Symbol()
+
 const DELTA = 20
 
 // -------------------------------------------------------------
@@ -16,7 +17,7 @@ const DELTA = 20
 // -------------------------------------------------------------
 
 Key.on('up', ['cmd', 'alt', 'ctrl'], fillScreen)
-Key.on('down', ['cmd', 'alt', 'ctrl'], normal)
+Key.on('down', ['cmd', 'alt', 'ctrl'], reduce)
 Key.on('left', ['cmd', 'alt', 'ctrl'], leftHalf)
 Key.on('right', ['cmd', 'alt', 'ctrl'], rightHalf)
 
@@ -50,16 +51,41 @@ function fillScreen() {
   window.setFrame({x: 0, y: 0, width: screen.width, height: screen.height})
 }
 
-function normal() {
+function reduce() {
   var screen = Screen.main().flippedVisibleFrame()
   var window = Window.focused()
 
   if (!window) return
 
-  window.setSize({
-    width: screen.width * 0.85,
-    height: screen.height * 0.85
-  })
+  const isBigger = (percentX, percentY) => {
+    if (!percentY) percentY = percentX
+
+    const size = window.size()
+
+    if (
+      size.width > screen.width * percentX &&
+      size.height > screen.height * percentY
+    ) {
+      return true
+    }
+
+    return false
+  }
+
+  const resize = (percentX, percentY) => {
+    if (!percentY) percentY = percentX
+
+    window.setSize({
+      width: screen.width * percentX,
+      height: screen.height * percentY
+    })
+  }
+
+  if (isBigger(0.85)) {
+    resize(0.85)
+  } else if (isBigger(0.6, 0.65)) {
+    resize(0.6, 0.65)
+  }
 
   window.setTopLeft({
     x: screen.x + screen.width / 2 - window.frame().width / 2,
