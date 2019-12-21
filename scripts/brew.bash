@@ -31,6 +31,7 @@ brew install git
 
 brew install stow
 brew install fish
+brew install tmux
 
 # Image.
 brew install imagemagick
