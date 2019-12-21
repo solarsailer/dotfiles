@@ -75,7 +75,8 @@ brew cask install discord
 brew cask install soulver
 brew cask install taskpaper
 brew cask install deckset
-brew cask install vlc
+#brew cask install vlc
+brew cask install iina
 brew cask install bartender
 brew cask install paparazzi
 brew cask install hazel
