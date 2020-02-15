@@ -15,6 +15,7 @@ mas install 1107421413 # 1Blocker
 mas install 880001334  # Reeder
 mas install 557168941  # Tweetbot
 mas install 735066709  # Pixel Winch
+mas install 1287239339 # Color Slurp
 mas install 918207447  # Annotate
 mas install 1254981365 # Contrast
 mas install 1289583905 # Pixelmator Pro
