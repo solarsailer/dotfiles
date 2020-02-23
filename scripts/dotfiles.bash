@@ -39,6 +39,7 @@ stow -R vscode
 stow -R sublime
 stow -R tldr
 stow -R phoenix
+stow -R kakoune
 
 # Warning: `--no-folding` is mandatory for fisherman.
 # fisherman **will not work** if the _whole folder_ is symlinked.
