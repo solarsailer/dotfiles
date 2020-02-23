@@ -89,6 +89,9 @@ brew install just # task runner, like make but better.
 brew install redis
 brew install sqlite
 
+# Kakoune
+brew install kakoune
+
 # MacVim (installation via brew instead of cask because brew configure the mvim executable for shell use).
 brew install macvim --with-lua --with-override-system-vim
 
