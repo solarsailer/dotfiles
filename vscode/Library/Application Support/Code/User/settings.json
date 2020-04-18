@@ -101,4 +101,6 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "prettier.trailingComma": "none",
+  "prettier.arrowParens": "avoid",
 }
