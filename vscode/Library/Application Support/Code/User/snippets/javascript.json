@@ -20,5 +20,21 @@
       "// -------------------------------------------------------------"
     ],
     "description": "Print a section comment block"
+  },
+  "React Component": {
+    "prefix": "react",
+    "body": [
+      "import React from 'react'",
+      "import styled from 'styled-components'",
+      "",
+      "// -------------------------------------------------------------",
+      "// ${1:Title}",
+      "// -------------------------------------------------------------",
+      "",
+      "export default props => {",
+      "  return <div>{props.children}</div>",
+      "}"
+    ],
+    "description": "Create a React + Styled component"
   }
 }
