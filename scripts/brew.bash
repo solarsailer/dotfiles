@@ -39,6 +39,7 @@ brew install imagemagick
 brew install gifsicle
 brew install apngasm
 brew install exiftool
+brew install media-info
 
 # Sound.
 brew install lame
