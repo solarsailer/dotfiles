@@ -26,5 +26,6 @@ mas install 409203825  # Numbers
 mas install 1351639930 # Gifski
 mas install 824171161  # Affinity Designer
 # mas install 405399194  # Kindle
+mas install 1491071483 # Tot
 
 echo "MAS> Done."
