@@ -91,6 +91,7 @@ brew cask install gifrocket
 brew cask install hyperswitch
 brew cask install phoenix
 brew cask install turbo-boost-switcher
+brew cask install customshortcuts
 
 # Tools.
 brew cask install fastlane
