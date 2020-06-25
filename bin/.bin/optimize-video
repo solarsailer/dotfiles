@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# Compress significantly a video, while still keeping a good quality.
+
+output="$1.compressed.mp4"
+if [ ! -z "$2" ]; then
+  output="$2"
+
+  # Add extension if necessary.
+  [[ ! $output == *.* ]] && output="$output.mp4"
+fi
+
+# X265 CRF
+# 24: very good
+# 28: default
+# 30: not good but still ok
+
+echo "Compressing '$1'..."
+
+ffmpeg -hide_banner -loglevel error -i "$1" -vcodec libx265 -crf 26 -f mp4 "$output"
+
+echo 'Done.'
