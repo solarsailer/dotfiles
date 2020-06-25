@@ -2,7 +2,7 @@
 
 # Compress significantly a video, while still keeping a good quality.
 
-output="$1.compressed.mp4"
+output="compressed.$1.mp4"
 if [ ! -z "$2" ]; then
   output="$2"
 
