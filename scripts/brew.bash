@@ -60,10 +60,11 @@ brew install icdiff # better difftool
 brew install diff-so-fancy # pretty diff
 
 # Helpers.
-brew install pv # pipe viewer
-brew install the_silver_searcher # ag
-brew install httpie # http
+brew install the_silver_searcher # ag — grep replacement
+brew install sd # sed replacement
 brew install jq # json processor
+brew install pv # pipe viewer
+brew install httpie # http
 brew install pup # html processor
 brew install fzf # fuzzy finder
 brew install cloc
