@@ -24,7 +24,6 @@ echo "Stow> Linking dotfiles…"
 stow --target=$HOME -R stow
 
 # Base links:
-stow -R atom
 stow -R bash
 stow -R bin
 stow -R browserrc

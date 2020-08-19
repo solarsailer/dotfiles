@@ -1,10 +1,268 @@
 {
+  // -------------------------------------------------------------
+  // General.
+  // -------------------------------------------------------------
+
+  "Section with slash": {
+    "prefix": "section",
+    "scope": "plaintext, javascript, javascriptreact, typescript, typescriptreact, go, c, csharp, markdown, source.css.styled, jsonc, java, scss, less, swift",
+    "description": "Add // section",
+    "body": [
+      "// -------------------------------------------------------------",
+      "// ${1:Title}",
+      "// -------------------------------------------------------------"
+    ]
+  },
+  "Section with hash": {
+    "prefix": "section",
+    "scope": "shellscript, ruby, python, dockerfile",
+    "description": "Add # section",
+    "body": [
+      "# -------------------------------------------------------------",
+      "# ${1:Title}",
+      "# -------------------------------------------------------------"
+    ]
+  },
+  "Section with block": {
+    "prefix": "section",
+    "scope": "css, scss",
+    "description": "Add /* */ section",
+    "body": [
+      "/* ---------------------------------------------------------- */",
+      "/* ${1:Title}",
+      "/* ---------------------------------------------------------- */"
+    ]
+  },
+
+  // Shebangs helpers.
   "Deno Shebang": {
     "prefix": "!deno",
+    "description": "Add deno shebang",
     "body": [
       "#!/usr/bin/env -S deno run -qA",
       "",
       ""
-    ],
-  }
+    ]
+  },
+  "Bash Shebang": {
+    "prefix": "!bash",
+    "description": "Add bash shebang",
+    "body": [
+      "#!/usr/bin/env bash",
+      "",
+      ""
+    ]
+  },
+
+  // -------------------------------------------------------------
+  // JS.
+  // -------------------------------------------------------------
+
+  "React Component": {
+    "prefix": "react",
+    "scope": "javascript, javascriptreact, typescript, typescriptreact",
+    "description": "Create a React component with styled-components",
+    "body": [
+      "import React from 'react'",
+      "import styled from 'styled-components'",
+      "",
+      "// -------------------------------------------------------------",
+      "// ${1:Title}",
+      "// -------------------------------------------------------------",
+      "",
+      "export default props => {",
+      "  return <div>{props.children}</div>",
+      "}"
+    ]
+  },
+
+  // -------------------------------------------------------------
+  // C#.
+  // -------------------------------------------------------------
+
+  "Region": {
+    "prefix": "region",
+    "scope": "csharp",
+    "description": "Add C# Region",
+    "body": [
+      "#region ${1:Region}",
+      "",
+      "$2",
+      "",
+      "#endregion"
+    ]
+  },
+
+  // -------------------------------------------------------------
+  // CSS.
+  // -------------------------------------------------------------
+
+  "Default Border Box": {
+    "prefix": "borderbox",
+    "scope": "css, scss, less, source.css.styled",
+    "body": [
+      "html {",
+      "  box-sizing: border-box;",
+      "}",
+      "",
+      "*,",
+      "*::before,",
+      "*::after {",
+      "  box-sizing: inherit;",
+      "}"
+    ]
+  },
+
+  "Typography": {
+    "prefix": "typo",
+    "scope": "css, scss, less, source.css.styled",
+    "body": [
+      "html {",
+      "  font: 62.5%/1.4 Verdana, sans-serif;",
+      "}",
+      "",
+      "body {",
+      "  font-size: 1.5em;",
+      "}",
+    ]
+  },
+
+  "Normalized Body": {
+    "prefix": "body",
+    "scope": "css, scss, less, source.css.styled",
+    "body": [
+      "body {",
+      "  position: relative;",
+      "  min-height: 100vh;",
+      "  margin: 0;",
+      "}",
+    ]
+  },
+
+  "LVHA": {
+    "prefix": "lvha",
+    "scope": "css, scss, less, source.css.styled",
+    "body": [
+      "a {",
+      "  color: ${1:hsl(0, 100%, 50%)};",
+      "}",
+      "",
+      "a:visited {",
+      "  color: ${2:hsl(0, 100%, 10%)};",
+      "}",
+      "",
+      "a:hover {",
+      "  /* Lighter color. */",
+      "  color: ${3:hsl(0, 100%, 75%)};",
+      "}",
+      "",
+      "a:active,",
+      "a:focus {",
+      "  /* Darker color. */",
+      "  color: ${4:hsl(0, 100%, 25%)};",
+      "}"
+    ]
+  },
+
+  "Clearfix": {
+    "prefix": "clearfix",
+    "scope": "css, scss, less, source.css.styled",
+    "body": [
+      ".clearfix::before,",
+      ".clearfix::after {",
+      "  content: \" \"; /* Opera bug. */",
+      "  display: table; /* Preserve margin-collapsing. */",
+      "}",
+      "",
+      ".clearfix::after {",
+      "  clear: both;",
+      "}"
+    ]
+  },
+
+  "Globals": {
+    "prefix": "globals",
+    "scope": "css, scss, less, source.css.styled",
+    "body": [
+      "/* ---------------------------------------------------------- */",
+      "/* Default border box.",
+      "/* ---------------------------------------------------------- */",
+      "",
+      "html {",
+      "  box-sizing: border-box;",
+      "}",
+      "",
+      "*,",
+      "*::before,",
+      "*::after {",
+      "  box-sizing: inherit;",
+      "}",
+      "",
+      "/* ---------------------------------------------------------- */",
+      "/* Typography.",
+      "/* ---------------------------------------------------------- */",
+      "",
+      "html {",
+      "  font: 62.5%/1.4 Verdana, sans-serif;",
+      "}",
+      "",
+      "body {",
+      "  font-size: 1.5em;",
+      "}",
+      "",
+      "/* ---------------------------------------------------------- */",
+      "/* Normalized body.",
+      "/* ---------------------------------------------------------- */",
+      "",
+      "body {",
+      "  position: relative;",
+      "  min-height: 100vh;",
+      "  margin: 0;",
+      "}",
+      "",
+      "/* ---------------------------------------------------------- */",
+      "/* Colors.",
+      "/* ---------------------------------------------------------- */",
+      "",
+      "html {",
+      "  color: black;",
+      "  background: tomato;",
+      "}",
+      "",
+      "body {",
+      "  background: white;",
+      "}",
+      "",
+      "::selection {",
+      "  color: white;",
+      "  background: tomato;",
+      "}",
+    ]
+  },
+
+  // -------------------------------------------------------------
+  // HTML.
+  // -------------------------------------------------------------
+
+  "Page": {
+    "prefix": "page",
+    "scope": "html",
+    "body": [
+      "<div class=\"page\" id=\"page\">",
+      "  <header class=\"page-header\" id=\"page_header\">",
+      "  </header>",
+      "",
+      "  <main class=\"page-content\" id=\"page_content\" role=\"main\">",
+      "    ${2:Text}",
+      "  </main>",
+      "",
+      "  <footer class=\"page-footer\" id=\"page_footer\">",
+      "  </footer>",
+      "</div>",
+      "",
+      "<script>",
+      "  ${1:// GA}",
+      "</script>",
+    ]
+  },
 }

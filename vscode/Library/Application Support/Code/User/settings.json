@@ -9,8 +9,6 @@
   "editor.detectIndentation": false,
   "editor.scrollBeyondLastLine": false,
   "editor.renameOnType": true,
-
-  // Behave like Atom.
   "editor.multiCursorModifier": "ctrlCmd",
 
   // Declutter editor.
@@ -99,9 +97,9 @@
   "prettier.semi": false,
   "prettier.singleQuote": true,
   "prettier.bracketSpacing": false,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "prettier.trailingComma": "none",
   "prettier.arrowParens": "avoid",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

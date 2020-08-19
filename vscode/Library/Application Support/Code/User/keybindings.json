@@ -1,26 +1,13 @@
 [
-  // Line movements.
-  {
-    "key": "ctrl+cmd+down",
-    "command": "editor.action.moveLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+cmd+up",
-    "command": "editor.action.moveLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
+  // -------------------------------------------------------------
+  // User.
+  // -------------------------------------------------------------
 
-  // Duplications.
+  // Delete whole line.
   {
-    "key": "cmd+shift+d",
-    "command": "editor.action.copyLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+shift+u",
-    "command": "editor.action.copyLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
+    "key": "shift+cmd+backspace",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
   },
 
   // Fix cycling through tabs.
@@ -35,6 +22,16 @@
 
   // Sub word navigation (breaking at camelCase or snake_case).
   {
+    "key": "ctrl+left",
+    "command": "cursorWordPartLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+left",
+    "command": "cursorWordPartLeftSelect",
+    "when": "textInputFocus"
+  },
+  {
     "key": "ctrl+right",
     "command": "cursorWordPartRight",
     "when": "textInputFocus"
@@ -42,16 +39,6 @@
   {
     "key": "ctrl+shift+right",
     "command": "cursorWordPartRightSelect",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+left",
-    "command": "cursorWordPartStartLeft",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+shift+left",
-    "command": "cursorWordPartStartLeftSelect",
     "when": "textInputFocus"
   },
   {
@@ -65,7 +52,7 @@
     "when": "textInputFocus && !editorReadonly"
   },
 
-  // Multi-cursors like Atom.
+  // Multi-cursors.
   {
     "key": "ctrl+shift+down",
     "command": "editor.action.insertCursorBelow",
@@ -82,5 +69,175 @@
     "key": "cmd+r",
     "command": "editor.action.rename",
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "editor.action.changeAll",
+    "when": "editorTextFocus && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+d",
+    "command": "editor.action.moveSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+e",
+    "command": "editor.action.addSelectionToPreviousFindMatch"
+  },
+  {
+    "key": "alt+e",
+    "command": "editor.action.moveSelectionToPreviousFindMatch"
+  },
+
+  // Change language quickly.
+  {
+    "key": "ctrl+shift+l",
+    "command": "workbench.action.editor.changeLanguageMode"
+  },
+
+  // -------------------------------------------------------------
+  // Unmap keys.
+  // -------------------------------------------------------------
+
+  {
+    "key": "cmd+numpad0",
+    "command": "-workbench.action.zoomReset"
+  },
+  {
+    "key": "cmd+numpad_add",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "shift+cmd+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "cmd+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "cmd+numpad_subtract",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "shift+cmd+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "cmd+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-deleteLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "-deleteRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-cursorUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-cursorDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-cursorLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-cursorRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "-deleteAllRight",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+k",
+    "command": "-editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "cmd+k m",
+    "command": "-workbench.action.editor.changeLanguageMode"
+  },
+  {
+    "key": "ctrl+alt+cmd+[Minus]",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+alt+cmd+5",
+    "command": "-workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "-cursorWordPartLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+left",
+    "command": "-cursorWordPartLeftSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+alt+right",
+    "command": "-cursorWordPartRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+right",
+    "command": "-cursorWordPartRightSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+cmd+f2",
+    "command": "-editor.action.onTypeRename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "f2",
+    "command": "-editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "f1",
+    "command": "-workbench.action.showCommands"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "-workbench.view.debug"
+  },
+  {
+    "key": "cmd+f2",
+    "command": "-editor.action.changeAll",
+    "when": "editorTextFocus && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+k cmd+d",
+    "command": "-editor.action.moveSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-actions.findWithSelection"
   }
+
+  // -------------------------------------------------------------
+  // Auto.
+  // -------------------------------------------------------------
 ]
