@@ -35,7 +35,6 @@ stow -R git
 stow -R tig
 stow -R vim
 stow -R vscode
-stow -R sublime
 stow -R tldr
 stow -R phoenix
 stow -R kakoune

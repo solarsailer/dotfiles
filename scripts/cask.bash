@@ -50,7 +50,6 @@ brew cask install firefox
 
 # Code.
 brew cask install visual-studio-code
-brew cask install sublime-text
 brew cask install dash
 brew cask install gitup
 
