@@ -72,7 +72,6 @@ set shortmess+=I
 
 " Color scheme
 set background=dark
-colorscheme heroku
 
 " -------------------------------------------------------
 " Tabs.
