@@ -28,8 +28,6 @@ stow -R bash
 stow -R bin
 stow -R browserrc
 stow -R cheat
-stow -R csscomb
-stow -R hyper
 stow -R fish
 stow -R git
 stow -R tig

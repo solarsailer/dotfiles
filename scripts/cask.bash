@@ -55,7 +55,6 @@ brew cask install gitup
 
 # Terminal.
 brew cask install iterm2
-brew cask install hyper
 
 # Design.
 brew cask install sketch
