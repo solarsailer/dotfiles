@@ -3,12 +3,12 @@
   "editor.fontFamily": "Fira Code, Menlo",
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
-  "editor.lineHeight": 19.6,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.roundedSelection": false,
   "editor.detectIndentation": false,
   "editor.scrollBeyondLastLine": false,
+  "editor.renameOnType": true,
 
   // Behave like Atom.
   "editor.multiCursorModifier": "ctrlCmd",
