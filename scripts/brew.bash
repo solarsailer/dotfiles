@@ -95,7 +95,4 @@ brew install sqlite
 # Kakoune
 brew install kakoune
 
-# MacVim (installation via brew instead of cask because brew configure the mvim executable for shell use).
-brew install macvim --with-lua --with-override-system-vim
-
 echo "Brew> Done."
