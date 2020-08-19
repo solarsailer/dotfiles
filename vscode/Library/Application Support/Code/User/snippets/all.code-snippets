@@ -1,0 +1,10 @@
+{
+  "Deno Shebang": {
+    "prefix": "!deno",
+    "body": [
+      "#!/usr/bin/env -S deno run -qA",
+      "",
+      ""
+    ],
+  }
+}
