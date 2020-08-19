@@ -41,18 +41,16 @@ brew install apngasm
 brew install exiftool
 brew install media-info
 
-# Sound.
+# Audio.
 brew install lame
 
 # Toolchain.
 brew install cmake
 
-# Swift.
-brew install mxcl/made/swift-sh
-
-# Ruby.
-brew install rbenv
-brew install ruby-build
+# Languages.
+#brew install mxcl/made/swift-sh
+#brew install rbenv
+#brew install ruby-build
 
 # VCS, diff, merge.
 brew install tig
@@ -81,12 +79,12 @@ brew install youtube-dl
 brew install dockutil
 brew install heroku
 brew install mas
-brew install subliminal # Subtitles.
-brew install platypus # CLI for creating mac apps from scripts
-brew install nativefier # Convert website to native app
-brew install watchman
-brew install just # task runner, like make but better.
 brew install awscli
+brew install just # task runner, like make but better.
+#brew install watchman
+#brew install nativefier # Convert website to native app
+#brew install subliminal # Subtitles.
+#brew install platypus # CLI for creating mac apps from scripts
 
 # Databases.
 brew install redis
