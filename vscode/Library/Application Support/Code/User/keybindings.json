@@ -10,6 +10,28 @@
     "when": "textInputFocus && !editorReadonly"
   },
 
+  // Line movements.
+  {
+    "key": "ctrl+cmd+down",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+cmd+up",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+shift+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+shift+u",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+
   // Fix cycling through tabs.
   {
     "key": "ctrl+tab",
@@ -69,11 +91,6 @@
     "key": "cmd+r",
     "command": "editor.action.rename",
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+cmd+d",
-    "command": "editor.action.changeAll",
-    "when": "editorTextFocus && editorTextFocus && !editorReadonly"
   },
   {
     "key": "alt+d",
