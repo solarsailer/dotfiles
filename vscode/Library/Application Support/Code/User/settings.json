@@ -10,6 +10,7 @@
   "editor.scrollBeyondLastLine": false,
   "editor.renameOnType": true,
   "editor.multiCursorModifier": "ctrlCmd",
+  "editor.find.addExtraSpaceOnTop": false,
 
   // Declutter editor.
   "editor.codeLens": false,
@@ -36,6 +37,7 @@
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "file-icons",
   "workbench.statusBar.feedback.visible": false,
+  "workbench.settings.useSplitJSON": true,
 
   // Explorer.
   "explorer.confirmDragAndDrop": false,
