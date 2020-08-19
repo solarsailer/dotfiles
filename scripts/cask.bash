@@ -43,8 +43,6 @@ brew cask install dropbox
 brew cask install 1password
 brew cask install alfred
 brew cask install spotify
-
-# Browsers.
 brew cask install google-chrome
 brew cask install firefox
 
@@ -52,27 +50,25 @@ brew cask install firefox
 brew cask install visual-studio-code
 brew cask install dash
 brew cask install gitup
-
-# Terminal.
 brew cask install iterm2
 
 # Design.
+brew cask install figma
 brew cask install sketch
-brew cask install origami-studio
 brew cask install principle
+#brew cask install origami-studio
 
 # Communication.
 brew cask install slack
-brew cask install caprine
 brew cask install whatsapp
-brew cask install skype
-brew cask install discord
+#brew cask install caprine
+#brew cask install skype
+#brew cask install discord
 
 # Others.
 brew cask install soulver
 brew cask install taskpaper
 brew cask install deckset
-#brew cask install vlc
 brew cask install iina
 brew cask install bartender
 brew cask install paparazzi
@@ -82,24 +78,20 @@ brew cask install imageoptim
 brew cask install namechanger
 brew cask install selfcontrol
 brew cask install kap
-brew cask install numi
-brew cask install platypus # GUI for creating mac apps from scripts
-brew cask install gifrocket
 brew cask install hyperswitch
+brew cask install choosy
 brew cask install phoenix
 brew cask install turbo-boost-switcher
 brew cask install customshortcuts
+#brew cask install vlc
+#brew cask install numi
+#brew cask install platypus
+#brew cask install gifrocket
 
 # Tools.
-brew cask install fastlane
+#brew cask install fastlane
 
 # Might fail with SIP.
 brew cask install virtualbox
 
 echo "Cask> Done."
-
-# --------------------------------------------------------------
-# Archive.
-# --------------------------------------------------------------
-
-# brew cask install choosy # I use my CustomBrowser now.
