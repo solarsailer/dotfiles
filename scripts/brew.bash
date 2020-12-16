@@ -66,9 +66,7 @@ brew install httpie # http
 brew install pup # html processor
 brew install fzf # fuzzy finder
 brew install cloc
-brew install tree # tree viewer
 brew install trash
-brew install ranger # file browser
 brew install multimarkdown
 brew install wakeonlan
 brew install hub
@@ -77,20 +75,22 @@ brew install bat # better cat
 brew install cheat # cheatsheet manager
 brew install youtube-dl
 brew install dockutil
-brew install heroku
 brew install mas
 brew install awscli
 brew install just # task runner, like make but better.
-#brew install watchman
-#brew install nativefier # Convert website to native app
-#brew install subliminal # Subtitles.
-#brew install platypus # CLI for creating mac apps from scripts
+# brew install tree # tree viewer
+# brew install ranger # file browser
+# brew install heroku
+# brew install watchman
+# brew install nativefier # Convert website to native app
+# brew install subliminal # Subtitles.
+# brew install platypus # CLI for creating mac apps from scripts
 
 # Databases.
 brew install redis
 brew install sqlite
 
 # Kakoune
-brew install kakoune
+# brew install kakoune
 
 echo "Brew> Done."

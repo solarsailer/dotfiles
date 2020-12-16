@@ -24,13 +24,13 @@ brew cask install qlstephen
 brew cask install quicklook-csv
 brew cask install quicklook-json
 brew cask install wkhtmltopdf
-brew cask install colorpicker-developer
+# brew cask install colorpicker-developer
 
 echo "Cask> Installing packages…"
 
 brew cask install vagrant
-brew cask install dotnet-sdk
 brew cask install docker
+# brew cask install dotnet-sdk
 
 echo "Cask> Installing services…"
 
@@ -61,9 +61,9 @@ brew cask install principle
 # Communication.
 brew cask install slack
 brew cask install whatsapp
-#brew cask install caprine
-#brew cask install skype
-#brew cask install discord
+# brew cask install caprine
+# brew cask install skype
+# brew cask install discord
 
 # Others.
 brew cask install soulver
@@ -81,15 +81,15 @@ brew cask install kap
 brew cask install hyperswitch
 brew cask install choosy
 brew cask install phoenix
-brew cask install turbo-boost-switcher
-brew cask install customshortcuts
-#brew cask install vlc
-#brew cask install numi
-#brew cask install platypus
-#brew cask install gifrocket
+# brew cask install customshortcuts
+# brew cask install turbo-boost-switcher
+# brew cask install vlc
+# brew cask install numi
+# brew cask install platypus
+# brew cask install gifrocket
 
 # Tools.
-#brew cask install fastlane
+# brew cask install fastlane
 
 # Might fail with SIP.
 brew cask install virtualbox
