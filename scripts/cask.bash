@@ -70,7 +70,6 @@ brew cask install soulver
 brew cask install taskpaper
 brew cask install deckset
 brew cask install iina
-brew cask install bartender
 brew cask install paparazzi
 brew cask install hazel
 brew cask install daisydisk
@@ -79,8 +78,10 @@ brew cask install namechanger
 brew cask install selfcontrol
 brew cask install kap
 brew cask install hyperswitch
+brew cask install vanilla
 brew cask install choosy
 brew cask install phoenix
+# brew cask install bartender
 # brew cask install customshortcuts
 # brew cask install turbo-boost-switcher
 # brew cask install vlc
