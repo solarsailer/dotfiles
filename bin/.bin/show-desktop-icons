@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# If files and folders are hidden on the Desktop, use this command
+defaults write com.apple.finder CreateDesktop true; killall Finder
