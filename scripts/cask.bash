@@ -81,6 +81,7 @@ brew cask install hyperswitch
 brew cask install vanilla
 brew cask install choosy
 brew cask install phoenix
+brew cask install bunch
 # brew cask install bartender
 # brew cask install customshortcuts
 # brew cask install turbo-boost-switcher
