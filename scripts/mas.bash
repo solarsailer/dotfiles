@@ -20,6 +20,10 @@ mas install 409203825  # Numbers
 mas install 1287239339 # Color Slurp
 mas install 1351639930 # Gifski
 mas install 924691732  # Flare
+mas install 424389933  # Final Cut Pro
+mas install 1278508951 # Trello
+mas install 671595950  # Touch Retouch
+mas install 1522267256 # Shareful
 # mas install 918207447  # Annotate
 # mas install 1254981365 # Contrast
 # mas install 824171161  # Affinity Designer
