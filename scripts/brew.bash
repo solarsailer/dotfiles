@@ -58,6 +58,7 @@ brew install icdiff # better difftool
 brew install diff-so-fancy # pretty diff
 
 # Helpers.
+brew install up # Visual pipe helper
 brew install the_silver_searcher # ag — grep replacement
 brew install sd # sed replacement
 brew install jq # json processor

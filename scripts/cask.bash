@@ -19,8 +19,8 @@ fi
 echo "Cask> Installing plugins…"
 
 brew cask install ttscoff-mmd-quicklook # Alternative: qlmarkdown
-brew cask install qlcolorcode
-brew cask install qlstephen
+# brew cask install qlcolorcode # Does not work anymore
+# brew cask install qlstephen # Does not work anymore
 brew cask install quicklook-csv
 brew cask install quicklook-json
 brew cask install wkhtmltopdf
