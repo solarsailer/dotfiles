@@ -61,7 +61,7 @@
   committers = shortlog -nse --no-merges
 
   # sync
-  sync = !git pull --rebase=preserve && git push && echo '' && git log --oneline --decorate --max-count=3
+  sync = !git pull --rebase=merges && git push && echo '' && git log --oneline --decorate --max-count=3
 
   # amend
   amend = commit --amend -c HEAD
@@ -122,7 +122,7 @@
   default = simple
 
 [pull]
-  rebase = preserve
+  rebase = merges
 
 [merge]
   # Add the `common ancestor` markers.
