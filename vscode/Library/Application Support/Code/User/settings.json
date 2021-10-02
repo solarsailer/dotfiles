@@ -103,5 +103,6 @@
   "prettier.arrowParens": "avoid",
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "workbench.editor.untitled.hint": "hidden"
 }

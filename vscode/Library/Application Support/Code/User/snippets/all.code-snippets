@@ -67,12 +67,14 @@
       "import styled from 'styled-components'",
       "",
       "// -------------------------------------------------------------",
-      "// ${1:Title}",
+      "// ${1:Component}.",
       "// -------------------------------------------------------------",
       "",
-      "export default props => {",
+      "const ${1:Component} = props => {",
       "  return <div>{props.children}</div>",
-      "}"
+      "}",
+      "",
+      "export default ${1:Component}",
     ]
   },
 
