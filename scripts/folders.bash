@@ -15,5 +15,5 @@ function create_protected_folder {
 # Folders.
 # --------------------------------------------------------------
 
-create_protected_folder ~/Code
+create_protected_folder ~/Developer
 create_protected_folder ~/Temp

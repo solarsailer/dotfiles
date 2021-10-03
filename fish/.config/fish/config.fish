@@ -30,8 +30,8 @@ set PATH ~/.bin          $PATH
 # Go
 # --------------------------------------------------------------
 
-if test -e $HOME/Code/go
-  set -x GOPATH $HOME/Code/go
+if test -e $HOME/Developer/go
+  set -x GOPATH $HOME/Developer/go
   set -x GOHOME $GOPATH/src/github.com/solarsailer
 
   # Add to path.
@@ -109,8 +109,8 @@ end
 # --------------------------------------------------------------
 
 alias h "cd ~"
-alias f "cd ~/Code/dotfiles"
-alias c "cd ~/Code/"
+alias f "cd ~/Developer/dotfiles"
+alias c "cd ~/Developer/"
 alias d "cd ~/Desktop/"
 alias start "yarn run start"
 

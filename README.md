@@ -28,16 +28,18 @@ Then, add it on Github.
 
 ```bash
 cd ~
-mkdir Code
-chmod 700 Code
-cd Code
+mkdir Developer
+chmod 700 Developer
+cd Developer
 
 # Repo.
 git clone git@github.com:solarsailer/dotfiles.git
 
 # Wait.
-./bootstrap.bash
+./bootstrap.bash # Not finished
 ```
+
+Note: we use `Developer` instead of `Code`. macOS adds an icon to folders named "Developer".
 
 ## Manual Configuration
 
@@ -55,7 +57,7 @@ macOS Mojave removed the "Use LCD font smoothing when available" option in "Gene
 
 ### Stow
 
-Stow is configured to use "../.." as the default target. That means that you should put the dotfiles in a folder in your home. Like "$HOME/Code/dotfiles".
+Stow is configured to use "../.." as the default target. That means that you should put the dotfiles in a folder in your home. Like "$HOME/Developer/dotfiles".
 
 If you have followed the previous instructions, it should already be there, making this step useless.
 
