@@ -86,12 +86,12 @@ end
 
 function __git
   # Git is unavailable? Stop!
-  if not which git >/dev/null
+  if not which git > /dev/null
     return 1
   end
 
   # Not a repository? Stop!
-  set -l is_git_repository (command git rev-parse --is-inside-work-tree ^/dev/null)
+  set -l is_git_repository (command git rev-parse --is-inside-work-tree 2> /dev/null)
   if test -z "$is_git_repository"
     return 1
   end
@@ -132,14 +132,14 @@ end
 # https://github.com/rafaelrinaldi/pure/blob/b301cc4b2e39cefae9c2ea5cdfd0ab96032e87bd/fish_prompt.fish#L83
 function __parse_git_upstream
   # Check if there is an upstream configured.
-  command git rev-parse --abbrev-ref '@{upstream}' >/dev/null ^&1; and set -l has_upstream
+  command git rev-parse --abbrev-ref '@{upstream}' &> /dev/null; and set -l has_upstream
 
   if set -q has_upstream
-    set -l git_status (command git rev-list --left-right --count 'HEAD...@{upstream}' | sed "s/[[:blank:]]/ /" ^/dev/null)
+    set -l git_status (command git rev-list --left-right --count 'HEAD...@{upstream}' | sed "s/[[:blank:]]/ /" 2> /dev/null)
 
     # Resolve Git arrows by treating `git_status` as an array.
-    set -l git_arrow_left (command echo $git_status | cut -c 1 ^/dev/null)
-    set -l git_arrow_right (command echo $git_status | cut -c 3 ^/dev/null)
+    set -l git_arrow_left (command echo $git_status | cut -c 1 2> /dev/null)
+    set -l git_arrow_right (command echo $git_status | cut -c 3 2> /dev/null)
 
     # If arrow is not "0", it means it's dirty.
     if test $git_arrow_left != 0
@@ -156,7 +156,7 @@ end
 
 function __git_dirty
   # Dirty? It means that changes are present in the repository.
-  set -l is_git_dirty (command git status --porcelain --ignore-submodules ^/dev/null)
+  set -l is_git_dirty (command git status --porcelain --ignore-submodules 2> /dev/null)
 
   if test -n "$is_git_dirty"
     echo -n '*'

@@ -7,8 +7,8 @@ function _in_git_directory
 end
 
 function _git_branch_name_or_revision
-  set -l branch (git symbolic-ref HEAD ^ /dev/null | sed -e 's|^refs/heads/||')
-  set -l revision (git rev-parse HEAD ^ /dev/null | cut -b 1-7)
+  set -l branch (git symbolic-ref HEAD 2> /dev/null | sed -e 's|^refs/heads/||')
+  set -l revision (git rev-parse HEAD 2> /dev/null | cut -b 1-7)
 
   if test (count $branch) -gt 0
     echo $branch
@@ -22,11 +22,11 @@ function _git_upstream_configured
 end
 
 function _git_behind_upstream
-  test (git rev-list --right-only --count HEAD...@"{u}" ^ /dev/null) -gt 0
+  test (git rev-list --right-only --count HEAD...@"{u}" 2> /dev/null) -gt 0
 end
 
 function _git_ahead_of_upstream
-  test (git rev-list --left-only --count HEAD...@"{u}" ^ /dev/null) -gt 0
+  test (git rev-list --left-only --count HEAD...@"{u}" 2> /dev/null) -gt 0
 end
 
 function _git_upstream_status

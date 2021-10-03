@@ -16,7 +16,7 @@ function add_pkg
   set repo 'https://github.com/solarsailer/repo'
 
   if test -d '.git'
-    set found_repo (hub browse -u ^ /dev/null)
+    set found_repo (hub browse -u 2> /dev/null)
 
     if test $status -eq 0
       set repo $found_repo
