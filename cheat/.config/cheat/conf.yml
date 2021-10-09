@@ -1,3 +1,7 @@
+colorize: true
+
+style: base16-snazzy
+
 cheatpaths:
   - name: personal
     path: ~/.cheat/
