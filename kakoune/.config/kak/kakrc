@@ -1,7 +1,0 @@
-# Use 2-width spaces for tab characters.
-hook global InsertChar \t %{ exec -draft -itersel h@ }
-set global tabstop 2
-set global indentwidth 2
-
-# Hide assistant drawing.
-set global ui_options ncurses_assistant=none
