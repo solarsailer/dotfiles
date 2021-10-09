@@ -23,25 +23,23 @@ echo "Stow> Linking dotfiles…"
 # Restow means `DELETE` the link, then `STOW` (lin) it again.
 stow --target=$HOME -R stow
 
-# Base links:
+# Must:
+stow -R fish
 stow -R bash
 stow -R bin
-stow -R browserrc
-stow -R cheat
-stow -R fish
 stow -R git
-stow -R tig
-stow -R vim
 stow -R vscode
-stow -R tldr
-stow -R phoenix
-stow -R kakoune
+stow -R tig
 
-# Warning: `--no-folding` is mandatory for fisherman.
-# fisherman **will not work** if the _whole folder_ is symlinked.
-# We only need to link the `fishfile`. Everything else must be ignored.
-stow -R fisherman --no-folding
+# Nice:
+stow -R vim
+stow -R tldr
+stow -R cheat
 
 echo "Stow> Necessary dotfiles linked. Add the others manually."
+
+# stow -R browserrc
+# stow -R phoenix
+# stow -R kakoune
 
 echo "Stow> Done."
