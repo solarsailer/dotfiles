@@ -1,3 +1,0 @@
-# Ignore functions installed by fisher.
-__z*
-getopts.fish

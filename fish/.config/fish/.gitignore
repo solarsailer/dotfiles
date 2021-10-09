@@ -1,1 +1,5 @@
 conf.d
+
+# Ignore functions installed by fisher.
+functions/__z*
+functions/getopts.fish
