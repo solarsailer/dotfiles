@@ -98,13 +98,6 @@ defaults write com.apple.dock "show-process-indicators" -bool false
 defaults write com.apple.Safari ShowStatusBar -boolean true
 
 # --------------------------------------------------------------
-# Messages.
-# --------------------------------------------------------------
-
-# Do not convert text-emojis to real images.
-defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticEmojiSubstitutionEnablediMessage" -bool false
-
-# --------------------------------------------------------------
 # TextEdit.
 # --------------------------------------------------------------
 
