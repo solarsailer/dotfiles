@@ -36,10 +36,12 @@ stow -R vim
 stow -R tldr
 stow -R cheat
 
-echo "Stow> Necessary dotfiles linked. Add the others manually."
+echo "Stow> Done."
+
+# -------------------------------------------------------------
+# Archive.
+# -------------------------------------------------------------
 
 # stow -R browserrc
 # stow -R phoenix
 # stow -R kakoune
-
-echo "Stow> Done."
