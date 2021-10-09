@@ -36,12 +36,6 @@ end
 # Alias.
 # --------------------------------------------------------------
 
-alias h "cd ~"
-alias f "cd ~/Developer/dotfiles"
-alias c "cd ~/Developer/"
-alias d "cd ~/Desktop/"
-alias start "yarn run start"
-
 alias tree "tree -C -I 'node_modules|bower_components'"
 
 # The linux `paste` command is just a way to concat files together.
