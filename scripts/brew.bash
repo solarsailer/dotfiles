@@ -50,6 +50,7 @@ brew install cloc                # count lines of code
 brew install httpie              # http requester
 brew install jq                  # json processor
 brew install pup                 # html processor
+brew install prettier            # code formatter
 brew install multimarkdown       # markdown generator
 brew install tldr                # better man pages
 brew install cheat               # cheatsheet manager
