@@ -77,7 +77,7 @@ export PATH=/opt/homebrew/bin:$PATH
 # Install stow
 brew install stow
 
-# Configure stow (see dotfiles.bash in `scripts`)
+# Configure stow (see stow.bash in `scripts`)
 stow --target=$HOME -R stow
 
 # Configure fish
