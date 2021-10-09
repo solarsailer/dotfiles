@@ -8,7 +8,7 @@
   "editor.roundedSelection": false,
   "editor.detectIndentation": false,
   "editor.scrollBeyondLastLine": false,
-  "editor.renameOnType": true,
+  "editor.linkedEditing": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.find.addExtraSpaceOnTop": false,
 
