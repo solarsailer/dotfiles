@@ -28,72 +28,71 @@ echo "Brew> Installing environments…"
 brew install node
 brew install yarn
 brew install go
-brew install mono
+brew install mas
 
 echo "Brew> Installing packages…"
 
 # Tools.
-brew install tmux
+brew install the_silver_searcher # better grep
+brew install sd                  # better sed
+brew install tig                 # visual git in shell
+brew install fzf                 # fuzzy finder
+brew install tmux                # terminal splitter
+brew install icdiff              # better difftool
+brew install diff-so-fancy       # pretty diff
+brew install trash               # better rm -rf that moves files to the real trash
+brew install gh                  # github command-line
+brew install hub                 # old github tool
+brew install youtube-dl          # download video
+brew install dockutil            # change the dock
+brew install cloc                # count lines of code
+brew install httpie              # http requester
+brew install jq                  # json processor
+brew install pup                 # html processor
+brew install multimarkdown       # markdown generator
+brew install cheat               # cheatsheet manager
+brew install wakeonlan           # required for Alfred vnc workflow
 
 # Image.
 brew install imagemagick
 brew install gifsicle
-brew install apngasm
 brew install exiftool
 brew install media-info
+brew install apngasm
 
 # Audio.
 brew install lame
 
-# Toolchain.
-brew install cmake
+echo "Brew> Done."
 
-# Languages.
-#brew install mxcl/made/swift-sh
-#brew install rbenv
-#brew install ruby-build
+# -------------------------------------------------------------
+# Archive.
+# -------------------------------------------------------------
 
-# VCS, diff, merge.
-brew install tig
-brew install icdiff # better difftool
-brew install diff-so-fancy # pretty diff
+# brew install awscli
+# brew install redis
+# brew install sqlite
+# brew install mono
 
-# Helpers.
-brew install up # Visual pipe helper
-brew install the_silver_searcher # ag — grep replacement
-brew install sd # sed replacement
-brew install jq # json processor
-brew install pv # pipe viewer
-brew install httpie # http
-brew install pup # html processor
-brew install fzf # fuzzy finder
-brew install cloc
-brew install trash
-brew install multimarkdown
-brew install wakeonlan
-brew install github/gh/gh
-brew install hub
-brew install ccat # better cat
-brew install bat # better cat
-brew install cheat # cheatsheet manager
-brew install youtube-dl
-brew install dockutil
-brew install mas
-brew install awscli
-brew install just # task runner, like make but better.
-# brew install tree # tree viewer
-# brew install ranger # file browser
+# brew install pv # pipe viewer
+# brew install up # visual pipe helper
+
+# brew install just    # better make
+# brew install ccat    # better cat
+# brew install bat     # better cat
+# brew install ripgrep # better grep
+
+# brew install tree       # tree viewer
+# brew install ranger     # file browser
 # brew install heroku
 # brew install watchman
-# brew install nativefier # Convert website to native app
-# brew install subliminal # Subtitles.
-# brew install platypus # CLI for creating mac apps from scripts
+# brew install subliminal # subtitles
+# brew install nativefier # convert website to native app
+# brew install platypus   # CLI for creating mac apps from scripts
 
-# Databases.
-brew install redis
-brew install sqlite
+# brew install kakoune # better VIM
 
-# Kakoune
-# brew install kakoune
+# brew install mxcl/made/swift-sh
 
-echo "Brew> Done."
+# brew install rbenv
+# brew install ruby-build
