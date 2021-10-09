@@ -92,13 +92,6 @@ defaults write com.apple.dock largesize -int 72
 defaults write com.apple.dock "show-process-indicators" -bool false
 
 # --------------------------------------------------------------
-# Dashboard.
-# --------------------------------------------------------------
-
-# Deactivate dashboard.
-defaults write com.apple.dashboard "dashboard-enabled-state" -int 1
-
-# --------------------------------------------------------------
 # Safari.
 # --------------------------------------------------------------
 
