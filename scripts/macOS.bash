@@ -112,14 +112,6 @@ defaults write com.apple.TextEdit NSFont     -string Helvetica
 defaults write com.apple.TextEdit NSFontSize -int 14
 
 # --------------------------------------------------------------
-# Moom
-# --------------------------------------------------------------
-
-# Ignore the 4px space reserved to the Dock.
-# Use "Ignore Menu Bar" to remove the menubar's reserved space.
-defaults write com.manytricks.Moom "Ignore Dock" -bool YES
-
-# --------------------------------------------------------------
 # Restart.
 # --------------------------------------------------------------
 
