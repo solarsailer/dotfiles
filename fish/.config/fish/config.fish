@@ -27,10 +27,7 @@ set PATH /usr/local/sbin   $PATH
 set PATH ~/.bin            $PATH
 set PATH /opt/homebrew/bin $PATH
 
-# --------------------------------------------------------------
-# Fastlane
-# --------------------------------------------------------------
-
+# Fastlane.
 if test -e $HOME/.fastlane/bin
   set PATH $HOME/.fastlane/bin $PATH
 end
