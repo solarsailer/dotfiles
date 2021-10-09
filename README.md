@@ -41,6 +41,7 @@ For example:
 cd ~
 mkdir Developer
 chmod 700 Developer
+chmod +a "group:everyone deny delete" Developer
 cd Developer
 
 # Repo.
@@ -68,22 +69,22 @@ To set your git `user.email` & `user.name`, create a `.gitconfig` file manually 
 Move to `$HOME/Developer/dotfiles`. Then:
 
 ```bash
-# Install brew (get up-to-date method on brew.sh)
+# Install brew (get up-to-date method on brew.sh).
 open https://brew.sh
 
-# Temporarily add brew to $PATH (before using fish)
+# Temporarily add brew to $PATH (before using fish).
 export PATH=/opt/homebrew/bin:$PATH
 
-# Install stow
+# Install stow.
 brew install stow
 
-# Configure stow (see stow.bash in `scripts`)
+# Configure stow (see stow.bash in `scripts`).
 stow --target=$HOME -R stow
 
-# Configure fish
+# Configure fish.
 stow -R fish
 
-# Install fish
+# Install fish.
 brew install fish
 
 # Then, read below to setup fish as default shell.
@@ -121,6 +122,12 @@ fisher install jorgebucaran/getopts.fish
 ```
 change_computer_name $NAME
 ```
+
+## Next Steps
+
+Follow the different scripts in the `scripts` folder. Use the lines (or full script) if applicable to your situation.
+
+I don't recommend to blindly run everything, but those are a good knowledge base to bootstrap a mac.
 
 ## Bonus
 
