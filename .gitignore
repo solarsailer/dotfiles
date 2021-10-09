@@ -1,16 +1,13 @@
-# Mac
-
+# macOS
 .DS_Store
 
 # Vim
-
 */.vim/bundle/**
 *.un~
 *.swp
 *.netrwhist
 
 # Fish
-
 fish_variables
 fish_history
 fish_read_history
