@@ -105,7 +105,7 @@ defaults write com.apple.Safari ShowStatusBar -boolean true
 defaults write com.apple.TextEdit RichText -int 0
 
 # Set font to Menlo-14.
-defaults write com.apple.TextEdit NSFixedPitchFont     -string "Menlo-Regular"
+defaults write com.apple.TextEdit NSFixedPitchFont     -string "FiraCode-Regular"
 defaults write com.apple.TextEdit NSFixedPitchFontSize -int 14
 
 defaults write com.apple.TextEdit NSFont     -string Helvetica
