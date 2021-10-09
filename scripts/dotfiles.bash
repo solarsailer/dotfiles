@@ -30,8 +30,6 @@ stow -R bin
 stow -R git
 stow -R vscode
 stow -R tig
-
-# Nice:
 stow -R vim
 stow -R tldr
 stow -R cheat
@@ -41,6 +39,3 @@ echo "Stow> Done."
 # -------------------------------------------------------------
 # Archive.
 # -------------------------------------------------------------
-
-# stow -R phoenix
-# stow -R kakoune
