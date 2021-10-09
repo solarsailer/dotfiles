@@ -24,6 +24,17 @@ pbcopy < ~/.ssh/id_rsa.pub
 
 Then, add it on Github.
 
+For the name, use either:
+
+- `Private — $NAME`
+- `$COMPANY_NAME — $NAME`
+
+Where $NAME is taken from the "About This Mac" panel.
+
+For example:
+
+- `Private — MacBook Pro (15-inch, 2016)`
+
 ### Ready?
 
 ```bash
