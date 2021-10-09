@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# --------------------------------------------------------------
+# Folders.
+# --------------------------------------------------------------
+
 function create_protected_folder {
   mkdir $1
 
@@ -10,10 +14,6 @@ function create_protected_folder {
   # Same ACL as the default User's folders.
   chmod +a "group:everyone deny delete" $1
 }
-
-# --------------------------------------------------------------
-# Folders.
-# --------------------------------------------------------------
 
 create_protected_folder ~/Developer
 create_protected_folder ~/Temp
