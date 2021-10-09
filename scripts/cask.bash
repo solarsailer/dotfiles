@@ -97,3 +97,7 @@ brew cask install bunch
 brew cask install virtualbox
 
 echo "Cask> Done."
+
+# -------------------------------------------------------------
+# Archive.
+# -------------------------------------------------------------
