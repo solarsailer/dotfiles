@@ -41,6 +41,7 @@ brew install tmux                # terminal splitter
 brew install icdiff              # better difftool
 brew install diff-so-fancy       # pretty diff
 brew install trash               # better rm -rf that moves files to the real trash
+brew install tree                # tree viewer
 brew install gh                  # github command-line
 brew install hub                 # old github tool
 brew install youtube-dl          # download video
@@ -82,7 +83,6 @@ echo "Brew> Done."
 # brew install bat     # better cat
 # brew install ripgrep # better grep
 
-# brew install tree       # tree viewer
 # brew install ranger     # file browser
 # brew install heroku
 # brew install watchman
