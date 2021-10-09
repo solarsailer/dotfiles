@@ -42,6 +42,5 @@ echo "Stow> Done."
 # Archive.
 # -------------------------------------------------------------
 
-# stow -R browserrc
 # stow -R phoenix
 # stow -R kakoune
