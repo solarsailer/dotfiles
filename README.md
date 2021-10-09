@@ -130,7 +130,7 @@ Sync your contact, then in the Contacts app, choose your contact card, click on 
 
 ### Input Sources
 
-Choose an alternative keyboard in `@keyboards` and install it.
+Use the alternative (and better) French keyboard in `system/Keyboard/frenumin.keylayout` and install it.
 
 Copy the `.keylayout` to `~/Library/Keyboard Layouts/`.
 
