@@ -9,13 +9,19 @@ echo "Brew> Installing…"
 if which brew 2>/dev/null 1>/dev/null; then
   echo "Homebrew already installed."
 else
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   brew update
 fi
 
 # -------------------------------------------------------
 # Brewing.
 # -------------------------------------------------------
+
+echo "Brew> Installing essentials…"
+
+brew install git # Latest version of git with HTML documentation.
+brew install stow
+brew install fish
 
 echo "Brew> Installing environments…"
 
@@ -26,12 +32,7 @@ brew install mono
 
 echo "Brew> Installing packages…"
 
-# Latest version of git with HTML documentation.
-brew install git
-brew install github/gh/gh
-
-brew install stow
-brew install fish
+# Tools.
 brew install tmux
 
 # Image.
@@ -70,6 +71,7 @@ brew install cloc
 brew install trash
 brew install multimarkdown
 brew install wakeonlan
+brew install github/gh/gh
 brew install hub
 brew install ccat # better cat
 brew install bat # better cat
