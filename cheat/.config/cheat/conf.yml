@@ -1,0 +1,4 @@
+cheatpaths:
+  - name: personal
+    path: ~/.cheat/
+    readonly: false
