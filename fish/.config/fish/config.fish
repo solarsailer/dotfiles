@@ -28,18 +28,6 @@ set PATH ~/.bin            $PATH
 set PATH /opt/homebrew/bin $PATH
 
 # --------------------------------------------------------------
-# Go
-# --------------------------------------------------------------
-
-if test -e $HOME/Developer/go
-  set -x GOPATH $HOME/Developer/go
-  set -x GOHOME $GOPATH/src/github.com/solarsailer
-
-  # Add to path.
-  set PATH $GOPATH/bin $PATH
-end
-
-# --------------------------------------------------------------
 # Fastlane
 # --------------------------------------------------------------
 
