@@ -6,7 +6,6 @@
 
 echo "Yarn> Installing global packages…"
 
-yarn global add tldr
 yarn global add prettier
 yarn global add serve
 

@@ -51,6 +51,7 @@ brew install httpie              # http requester
 brew install jq                  # json processor
 brew install pup                 # html processor
 brew install multimarkdown       # markdown generator
+brew install tldr                # better man pages
 brew install cheat               # cheatsheet manager
 brew install wakeonlan           # required for Alfred vnc workflow
 
