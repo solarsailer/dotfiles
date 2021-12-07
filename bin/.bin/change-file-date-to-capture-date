@@ -1,0 +1,30 @@
+#!/usr/bin/env php
+
+<?php
+  $filename = $argv[1];
+
+  if (empty($filename)) {
+    exit("No file provided.");
+  }
+
+  if (!file_exists($filename)) {
+    exit("Provided file does not exist.");
+  }
+
+  if (0 == filesize($filename)) {
+    exit("Provided file is empty.");
+  }
+
+  // Touch file with original capture date.
+
+  echo "Changing '".$filename."' date to its capture date…";
+
+  date_default_timezone_set("Europe/Paris");
+
+  $date = exif_read_data($argv[1],"EXIF");
+  $date = $date["DateTimeOriginal"];
+  $time = date_parse_from_format("Y:m:d H:i:s",$date);
+  $time = mktime($time["hour"],$time["minute"],$time["second"],$time["month"],$time["day"],$time["year"]);
+
+  touch($argv[1], $time, $time);
+?>
