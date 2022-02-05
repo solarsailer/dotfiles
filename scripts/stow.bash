@@ -33,6 +33,7 @@ stow -R tig
 stow -R vim
 stow -R tldr
 stow -R cheat
+stow -R taskpaper
 
 echo "Stow> Done."
 
