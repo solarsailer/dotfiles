@@ -9,7 +9,7 @@ item[data-type=project] {
 item[data-today] {
   > run[content] {
     color: rgba(22, 160, 133, 1); // #16a085
- }
+  }
 }
 
 item[data-started] {
@@ -31,4 +31,11 @@ item[data-due] {
     color: rgba(192, 57, 43, 1); // #C0392B
     background-color: rgba(231, 76, 60, 0.1); // #E74C3C
  }
+}
+
+item[data-done] {
+  > run[content] {
+    color: inherit;
+    background-color: inherit;
+  }
 }
