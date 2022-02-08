@@ -6,6 +6,12 @@ item[data-type=project] {
   paragraph-spacing-after: 2px;
 }
 
+item[data-comex] {
+  > run[content] {
+    color: rgba(243, 156, 18, 1); // #F39C12
+  }
+}
+
 item[data-today] {
   > run[content] {
     color: rgba(22, 160, 133, 1); // #16a085
@@ -35,7 +41,7 @@ item[data-due] {
 
 item[data-done] {
   > run[content] {
-    color: inherit;
+    color: rgba(0, 0, 0, 0.4);
     background-color: inherit;
   }
 }
