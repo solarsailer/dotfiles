@@ -17,6 +17,7 @@ mas install 944693506  # Fileloupe
 mas install 671595950  # Touch Retouch
 mas install 1263070803 # Lungo
 mas install 880001334  # Reeder
+mas install 1611378436 # Pure Paste
 
 echo "MAS> Done."
 
@@ -24,14 +25,18 @@ echo "MAS> Done."
 # Optional.
 # -------------------------------------------------------------
 
+# mas install 803453959  # Slack
+# mas install 1586435171 # Actions
 # mas install 1522267256 # Shareful
 # mas install 735066709  # Pixel Winch
 # mas install 1287239339 # Color Slurp
+# mas install 1545870783 # Color Picker
 # mas install 439697913  # Icon Slate
 # mas install 1289583905 # Pixelmator Pro
 # mas install 424389933  # Final Cut Pro
 # mas install 1351639930 # Gifski
 # mas install 924691732  # Flare
+# mas install 1153157709 # Speedtest
 
 # -------------------------------------------------------------
 # Archive.
