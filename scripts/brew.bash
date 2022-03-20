@@ -32,15 +32,19 @@ brew install mas
 
 echo "Brew> Installing packages…"
 
-# Tools.
+# CLI alternatives.
 brew install the_silver_searcher # better grep
 brew install sd                  # better sed
-brew install tig                 # visual git in shell
+brew install bat                 # better cat
+brew install exa                 # better ls
 brew install fzf                 # fuzzy finder
-brew install tmux                # terminal splitter
-brew install icdiff              # better difftool
 brew install diff-so-fancy       # pretty diff
+brew install fx                  # json processor
+
+# Tools.
 brew install trash               # better rm -rf that moves files to the real trash
+brew install tig                 # visual git in shell
+brew install tmux                # terminal splitter
 brew install tree                # tree viewer
 brew install gh                  # github command-line
 brew install hub                 # old github tool
@@ -77,13 +81,15 @@ echo "Brew> Done."
 # brew install sqlite
 # brew install mono
 
-# brew install pv # pipe viewer
-# brew install up # visual pipe helper
-
-# brew install just    # better make
-# brew install ccat    # better cat
-# brew install bat     # better cat
-# brew install ripgrep # better grep
+# brew install pv       # pipe viewer
+# brew install up       # visual pipe helper
+# brew install icdiff   # better difftool
+# brew install just     # better make
+# brew install ccat     # better cat
+# brew install ripgrep  # better grep
+# brew install duf      # better df/du
+# brew install htop     # better top
+# brew install hexyl    # hex viewer
 
 # brew install ranger     # file browser
 # brew install heroku
