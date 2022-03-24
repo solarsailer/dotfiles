@@ -32,6 +32,11 @@ if test -e $HOME/.fastlane/bin
   set PATH $HOME/.fastlane/bin $PATH
 end
 
+# Dotnet.
+if test -e /usr/local/share/dotnet
+  set PATH /usr/local/share/dotnet $PATH
+end
+
 # --------------------------------------------------------------
 # Alias.
 # --------------------------------------------------------------
