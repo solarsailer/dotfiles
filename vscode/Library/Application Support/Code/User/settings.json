@@ -107,5 +107,8 @@
   "workbench.colorTheme": "GitHub Dark",
   "workbench.statusBar.visible": false,
   "editor.renderWhitespace": "none",
-  "editor.guides.indentation": false
+  "editor.guides.indentation": false,
+  "extensions.ignoreRecommendations": true,
+  "git.mergeEditor": true,
+  "window.commandCenter": true
 }
