@@ -104,5 +104,6 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.editor.untitled.hint": "hidden"
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.colorTheme": "GitHub Dark"
 }
