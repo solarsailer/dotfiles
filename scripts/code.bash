@@ -15,6 +15,7 @@ code --install-extension file-icons.file-icons
 code --install-extension bmalehorn.vscode-fish
 code --install-extension github.github-vscode-theme
 code --install-extension esbenp.prettier-vscode
+code --install-extension bradlc.vscode-tailwindcss
 code --install-extension jpoissonnier.vscode-styled-components
 
 echo "Code> Done."
