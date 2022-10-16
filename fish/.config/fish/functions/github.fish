@@ -19,5 +19,5 @@ function github -d "Open the current repository's github page"
   end
 
   # Open the repo on GitHub
-  hub browse
+  gh browse
 end

@@ -7,5 +7,5 @@ function clone --description 'Clone a Git repository.'
     exit 1
   end
 
-  hub clone $argv
+  gh repo clone $argv
 end

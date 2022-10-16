@@ -47,7 +47,6 @@ brew install tig                 # visual git in shell
 brew install tmux                # terminal splitter
 brew install tree                # tree viewer
 brew install gh                  # github command-line
-brew install hub                 # old github tool
 brew install youtube-dl          # download video
 brew install dockutil            # change the dock
 brew install cloc                # count lines of code
