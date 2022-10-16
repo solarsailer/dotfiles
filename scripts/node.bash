@@ -1,20 +1,22 @@
 #!/usr/bin/env bash
 
 # --------------------------------------------------------------
-# Yarn.
+# Node.
 # --------------------------------------------------------------
 
-echo "Yarn> Installing global packages…"
+echo "Node> Installing global packages…"
 
-yarn global add serve
+npm install -g serve
+npm install -g npm-check-updates
 
-echo "Yarn> Done."
+echo "Node> Done."
 
 # -------------------------------------------------------------
 # Archive.
 # -------------------------------------------------------------
 
 # Dev.
+# yarn global add serve
 # yarn global add webpack
 # yarn global add webpack-dev-server
 # yarn global add brunch
