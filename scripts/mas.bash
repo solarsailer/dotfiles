@@ -18,6 +18,7 @@ mas install 671595950  # Touch Retouch
 mas install 1263070803 # Lungo
 mas install 880001334  # Reeder
 mas install 1611378436 # Pure Paste
+mas install 1572202501 # Plain Text Editor
 
 echo "MAS> Done."
 
