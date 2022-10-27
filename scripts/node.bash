@@ -22,6 +22,7 @@ echo "Node> Done."
 # yarn global add brunch
 # yarn global add gulp
 # yarn global add parcel-bundler
+# yarn global add cheerio
 
 # Tools.
 # yarn global add jest
