@@ -1,0 +1,118 @@
+#!/usr/bin/env -S deno run -qA
+
+import {parse} from 'https://deno.land/std/flags/mod.ts'
+import {red, blue, green, yellow} from 'https://deno.land/std/fmt/colors.ts'
+import {resolve} from 'https://deno.land/std/path/posix.ts'
+import * as cheerio from 'https://esm.sh/cheerio'
+
+// -------------------------------------------------------------
+// Flags.
+// -------------------------------------------------------------
+
+const flags = parse(Deno.args, {
+  boolean: ['help', 'version'],
+  alias: {
+    v: 'version',
+    h: 'help'
+  }
+})
+
+if (flags.version) {
+  exitInfo('v0.1.0')
+}
+
+if (flags.help) {
+  log('html - commandline HTML query.')
+  newline()
+  info('Usage:')
+  newline()
+  log(yellow('  html [OPTIONS] PATTERN [DATA]'))
+  newline()
+  log(
+    '  - Use PATTERN as a DOM query to find the relevant fragments in the provided DATA.'
+  )
+  newline()
+  info('Examples:')
+  newline()
+  log('  html ')
+  newline()
+  info('Options:')
+  newline()
+  log('  -v, --version  Print current version number')
+  log('  -h, --help     Display help')
+  exitLog('')
+}
+
+// -------------------------------------------------------------
+// Script.
+// -------------------------------------------------------------
+
+const args = flags._
+
+if (!args) {
+  exitError('No arguments provided.')
+}
+
+if (args.length < 2) {
+  exitError('Not enough arguments provided. Expect at least PATTERN and DATA.')
+}
+
+const [pattern, data] = flags._
+
+// Test if file or text, and get the appropriate vavalue.
+const path = resolve(data)
+const isFile = await checkIfFileExistsAndReadable(path)
+const value = isFile ? await Deno.readTextFile(path) : data
+
+// Interpret pattern.
+const $ = cheerio.load(value)
+console.log($(pattern).html())
+
+// -------------------------------------------------------------
+// Helpers.
+// -------------------------------------------------------------
+
+async function checkIfFileExistsAndReadable(filename) {
+  try {
+    await Deno.stat(filename)
+    return true
+  } catch (error) {
+    // We don't check if it's because of a permission or because it's not readable.
+    return false
+  }
+}
+
+function log(msg) {
+  console.log(msg)
+}
+
+function error(msg) {
+  console.error(red(msg))
+}
+
+function info(msg) {
+  console.info(blue(msg))
+}
+
+function newline() {
+  console.log('')
+}
+
+function success(msg) {
+  console.success(green(msg))
+}
+
+function exitLog(msg) {
+  console.log(msg)
+  Deno.exit(0)
+}
+
+function exitError(msg) {
+  error(msg)
+  Deno.exit(1)
+}
+
+function exitInfo(msg) {
+  info(msg)
+  Deno.exit(0)
+}
