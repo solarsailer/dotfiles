@@ -58,6 +58,7 @@ brew install multimarkdown       # markdown generator
 brew install tldr                # better man pages
 brew install cheat               # cheatsheet manager
 brew install wakeonlan           # required for Alfred vnc workflow
+brew install pipe-rename         # rename in batch
 
 # Image.
 brew install imagemagick
