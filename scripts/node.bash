@@ -6,8 +6,9 @@
 
 echo "Node> Installing global packages…"
 
-npm install -g serve
-npm install -g npm-check-updates
+npm install -g serve               # local server
+npm install -g npm-check-updates   # updater
+npm install -g zx                  # JS CLI helper
 
 echo "Node> Done."
 
