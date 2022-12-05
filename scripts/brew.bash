@@ -32,7 +32,7 @@ brew install mas
 
 echo "Brew> Installing packages…"
 
-# CLI alternatives.
+# Alternatives.
 brew install the_silver_searcher # better grep
 brew install sd                  # better sed
 brew install bat                 # better cat
@@ -41,26 +41,31 @@ brew install fzf                 # fuzzy finder
 brew install diff-so-fancy       # pretty diff
 brew install fx                  # json processor
 
-# Tools.
-brew install trash               # better rm -rf that moves files to the real trash
+# Apps.
 brew install tig                 # visual git in shell
 brew install tmux                # terminal splitter
+brew install trash               # better rm -rf that moves files to the real trash
 brew install tree                # tree viewer
-brew install gh                  # github command-line
 brew install youtube-dl          # download video
 brew install dockutil            # change the dock
-brew install cloc                # count lines of code
+brew install tldr                # better man pages
+brew install cheat               # cheatsheet manager
+
+# Processors.
 brew install httpie              # http requester
 brew install jq                  # json processor
 brew install pup                 # html processor
-brew install prettier            # code formatter
 brew install multimarkdown       # markdown generator
-brew install tldr                # better man pages
-brew install cheat               # cheatsheet manager
-brew install wakeonlan           # required for Alfred vnc workflow
-brew install pipe-rename         # rename in batch
 
-# Image.
+# Utilities.
+brew install gh                  # github command-line
+brew install cloc                # count lines of code
+brew install prettier            # code formatter
+brew install pipe-rename         # rename in batch
+brew install gum                 # CLI utilities (write, prompt, confirm, etc.)
+brew install wakeonlan           # required for Alfred vnc workflow
+
+# Images.
 brew install imagemagick
 brew install gifsicle
 brew install exiftool
@@ -99,6 +104,7 @@ echo "Brew> Done."
 # brew install platypus   # CLI for creating mac apps from scripts
 
 # brew install kakoune # better VIM
+# brew install helix   # better VIM
 
 # brew install mxcl/made/swift-sh
 
