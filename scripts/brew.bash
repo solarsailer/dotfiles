@@ -54,6 +54,7 @@ brew install cheat               # cheatsheet manager
 # Processors.
 brew install httpie              # http requester
 brew install jq                  # json processor
+brew install miller              # CSV/JSON processor
 brew install pup                 # html processor
 brew install multimarkdown       # markdown generator
 
