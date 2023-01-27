@@ -35,6 +35,7 @@ end
 # Dotnet.
 if test -e /usr/local/share/dotnet
   set PATH /usr/local/share/dotnet $PATH
+  set PATH ~/.dotnet/tools         $PATH
 end
 
 # --------------------------------------------------------------
