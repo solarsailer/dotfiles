@@ -105,7 +105,6 @@
   },
   "workbench.editor.untitled.hint": "hidden",
   "workbench.colorTheme": "GitHub Dark",
-  "workbench.statusBar.visible": false,
   "editor.renderWhitespace": "none",
   "editor.guides.indentation": false,
   "extensions.ignoreRecommendations": true,
