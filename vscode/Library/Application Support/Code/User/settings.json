@@ -64,16 +64,19 @@
   // JS React.
   "[javascriptreact]": {
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
 
   // TypeScript.
   "[typescript]": {
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
 
   // TypeScript React.
   "[typescriptreact]": {
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
 
   // JSON.
