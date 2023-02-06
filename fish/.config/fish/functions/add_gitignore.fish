@@ -28,7 +28,7 @@ function add_gitignore
 .project
 .settings
 .tmproj
-.env
+.env*
 *.sass-cache
 nbproject
 Thumbs.db
@@ -39,5 +39,7 @@ yarn-debug.log*
 yarn-error.log*
 node_modules/
 bower_components/
+.next/
+next-env.d.ts
   " >> $name
 end
