@@ -121,6 +121,9 @@
 [push]
   default = simple
 
+  # Automatically create the upstream branch when pushing a new branch.
+  autoSetupRemote = true
+
 [pull]
   rebase = merges
 
