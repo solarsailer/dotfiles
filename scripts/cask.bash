@@ -13,6 +13,8 @@ brew install --cask alfred
 brew install --cask spotify
 brew install --cask google-chrome
 brew install --cask firefox
+brew install --cask cleanshot
+# brew install --cask thelassoapp # Not cask yet: https://thelasso.app/
 
 # Code.
 brew install --cask visual-studio-code
@@ -45,6 +47,8 @@ echo "Cask> Done."
 # -------------------------------------------------------------
 # Archive.
 # -------------------------------------------------------------
+
+# brew install --cask alt-tab # Windows-like alt-tab
 
 # brew install --cask virtualbox
 
