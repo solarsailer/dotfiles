@@ -16,6 +16,8 @@
   "editor.codeLens": false,
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": false,
+  "editor.renderWhitespace": "none",
+  "editor.guides.indentation": false,
 
   // Files.
   "files.eol": "\n",
@@ -35,6 +37,7 @@
   // Workbench.
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "file-icons",
+  "workbench.colorTheme": "GitHub Dark",
   "workbench.statusBar.feedback.visible": false,
   "workbench.settings.useSplitJSON": true,
 
@@ -48,42 +51,56 @@
   // CSS.
   "[css]": {
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   // Sass.
   "[scss]": {
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   // JS.
   "[javascript]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   // JS React.
   "[javascriptreact]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   // TypeScript.
   "[typescript]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   // TypeScript React.
   "[typescriptreact]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   // JSON.
   "[json]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+
+  // JSON with comments.
+  "[jsonc]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Tags.
 
   "html.autoClosingTags": false,
 
@@ -103,14 +120,15 @@
   "prettier.bracketSpacing": false,
   "prettier.trailingComma": "none",
   "prettier.arrowParens": "avoid",
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "workbench.editor.untitled.hint": "hidden",
-  "workbench.colorTheme": "GitHub Dark",
-  "editor.renderWhitespace": "none",
-  "editor.guides.indentation": false,
-  "extensions.ignoreRecommendations": true,
+
+  // -------------------------------------------------------------
+  // Autogen.
+  // -------------------------------------------------------------
+
   "git.mergeEditor": true,
-  "window.commandCenter": true
+  "window.commandCenter": true,
+
+  "workbench.editor.untitled.hint": "hidden",
+
+  "extensions.ignoreRecommendations": true
 }
