@@ -34,24 +34,22 @@
     ]
   },
 
+  // -------------------------------------------------------------
   // Shebangs helpers.
+  // -------------------------------------------------------------
+
+  // Deno.
   "Deno Shebang": {
     "prefix": "!deno",
     "description": "Add deno shebang",
-    "body": [
-      "#!/usr/bin/env -S deno run -qA",
-      "",
-      ""
-    ]
+    "body": ["#!/usr/bin/env -S deno run -qA", "", ""]
   },
+
+  // Bash.
   "Bash Shebang": {
     "prefix": "!bash",
     "description": "Add bash shebang",
-    "body": [
-      "#!/usr/bin/env bash",
-      "",
-      ""
-    ]
+    "body": ["#!/usr/bin/env bash", "", ""]
   },
 
   // -------------------------------------------------------------
@@ -70,11 +68,29 @@
       "// ${1:Component}.",
       "// -------------------------------------------------------------",
       "",
+      "export default function ${1:Component}(props) {",
+      "  return <div>{props.children}</div>",
+      "}"
+    ]
+  },
+
+  "React Component (Old)": {
+    "prefix": "reactold",
+    "scope": "javascript, javascriptreact, typescript, typescriptreact",
+    "description": "Create a React component with styled-components",
+    "body": [
+      "import React from 'react'",
+      "import styled from 'styled-components'",
+      "",
+      "// -------------------------------------------------------------",
+      "// ${1:Component}.",
+      "// -------------------------------------------------------------",
+      "",
       "const ${1:Component} = props => {",
       "  return <div>{props.children}</div>",
       "}",
       "",
-      "export default ${1:Component}",
+      "export default ${1:Component}"
     ]
   },
 
@@ -126,13 +142,7 @@
     "prefix": "region",
     "scope": "csharp",
     "description": "Add C# Region",
-    "body": [
-      "#region ${1:Region}",
-      "",
-      "$2",
-      "",
-      "#endregion"
-    ]
+    "body": ["#region ${1:Region}", "", "$2", "", "#endregion"]
   },
 
   // -------------------------------------------------------------
@@ -165,7 +175,7 @@
       "",
       "body {",
       "  font-size: 1.5em;",
-      "}",
+      "}"
     ]
   },
 
@@ -177,7 +187,7 @@
       "  position: relative;",
       "  min-height: 100vh;",
       "  margin: 0;",
-      "}",
+      "}"
     ]
   },
 
@@ -278,7 +288,7 @@
       "::selection {",
       "  color: white;",
       "  background: tomato;",
-      "}",
+      "}"
     ]
   },
 
@@ -304,7 +314,7 @@
       "",
       "<script>",
       "  ${1:// GA}",
-      "</script>",
+      "</script>"
     ]
-  },
+  }
 }
