@@ -1,0 +1,56 @@
+return {
+  version   = 1,
+  title     = 'Essentials',
+  id        = 'com.mytagsets.tagset2',
+  type      = 'MetadataFieldList',
+  sortOrder = -9,
+  items = {
+		'com.adobe.filename',
+		'com.adobe.copyname',
+		'com.adobe.folder',
+		'com.adobe.sidecars',
+		'com.adobe.separator',
+		
+		'com.adobe.captureDate',
+		'com.adobe.captureTime',
+		'com.adobe.separator',
+		
+		'com.adobe.jobIdentifier',
+		'com.adobe.colorLabels',
+		'com.adobe.rating',
+		'com.adobe.metadataStatus',
+		'com.adobe.separator',
+		
+		{formatter = 'com.adobe.model', label = 'Camera' },
+		'com.adobe.lens',
+		'com.adobe.focalLength',
+		'com.adobe.separator',
+		
+		'com.adobe.exposureAndISO',
+		"com.adobe.exposureProgram",
+		"com.adobe.exposureBiasValue",
+		'com.adobe.meteringMode',
+		'com.adobe.flash',
+		'com.adobe.separator',
+		
+		'com.adobe.imageFileDimensions',
+		'com.adobe.imageCroppedDimensions',
+		'com.adobe.separator',
+		
+		'com.adobe.headline',
+		'com.adobe.title',
+		{ formatter = 'com.adobe.caption', heightInLines=4, height_in_lines=4 },
+		'com.adobe.separator',
+		
+		{ formatter = 'com.adobe.location', label='Location' },
+		'com.adobe.city',
+		'com.adobe.country',
+		'com.adobe.GPS',
+		'com.adobe.separator',
+
+		'com.adobe.copyright',
+		'com.adobe.copyrightState',
+		{ formatter = 'com.adobe.rightsUsageTerms', heightInLines=3, height_in_lines=3 },
+		'com.adobe.copyrightInfoURL'
+	}
+};

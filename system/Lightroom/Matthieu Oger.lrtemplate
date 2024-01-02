@@ -1,4 +1,5 @@
 -- Copy in "~/Library/Application Support/Adobe/Lightroom/Metadata Field Lists/Matthieu Oger.lrtemplate"
+-- Doc: https://paulmaguirephoto.com/2019/how-to-customise-the-metadata-panel-in-lightroom/
 return {
   version   = 1,
   title     = "Matthieu Oger",
@@ -6,12 +7,12 @@ return {
   type      = "MetadataFieldList",
 
   items = {
-    { formatter = 'com.adobe.captureDate', label="Date" },
-    { formatter = 'com.adobe.captureTime', label="Time" },
+    { formatter = "com.adobe.captureDate", label="Date" },
+    { formatter = "com.adobe.captureTime", label="Time" },
     "com.adobe.separator",
 
     -- Camera.
-    { formatter = 'com.adobe.model', label="Camera" },
+    { formatter = "com.adobe.model", label="Camera" },
     "com.adobe.lens",
     "com.adobe.separator",
 
@@ -29,12 +30,31 @@ return {
     -- Position.
     { formatter = "com.adobe.location", label="Location" },
     "com.adobe.city",
-    "com.adobe.state",
-    "com.adobe.country",
+    { formatter = "com.adobe.state", label="Region" },
+    { formatter = "com.adobe.country", label="Country" },
     "com.adobe.separator",
 
     -- Comments.
     "com.adobe.title",
-    { formatter = "com.adobe.caption", allow_newlines=true, height_in_lines=3 },
+    { formatter = "com.adobe.caption", allow_newlines=true, height_in_lines=4 },
+    "com.adobe.separator",
+
+    -- GPS.
+    { formatter = "com.adobe.GPS", height_in_lines=3 },
+    "com.adobe.separator",
+
+    -- Dimensions.
+    "com.adobe.megapixels",
+    "com.adobe.imageFileDimensions",
+    "com.adobe.imageCroppedDimensions",
+    "com.adobe.separator",
+
+    -- Filename (to edit manually).
+    { formatter = "com.adobe.filename", height_in_lines=4, label="File" },
+    "com.adobe.separator",
+
+    -- Copyright.
+    "com.adobe.creator",
+    { formatter = "com.adobe.copyright", height_in_lines=4 },
   }
 };
