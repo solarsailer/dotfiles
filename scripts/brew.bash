@@ -46,7 +46,7 @@ brew install tig                 # visual git in shell
 brew install tmux                # terminal splitter
 brew install trash               # better rm -rf that moves files to the real trash
 brew install tree                # tree viewer
-brew install youtube-dl          # download video
+brew install yt-dlp              # download video - the new youtube-dl
 brew install dockutil            # change the dock
 brew install tldr                # better man pages
 brew install cheat               # cheatsheet manager
