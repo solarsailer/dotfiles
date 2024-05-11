@@ -32,8 +32,12 @@ return {
     "com.adobe.separator",
 
     -- Comments.
-    "com.adobe.title",
     { formatter = "com.adobe.caption", allow_newlines=true, height_in_lines=4 },
+    "com.adobe.headline",
+    "com.adobe.separator",
+
+    -- Photo.
+    "com.adobe.title",
     "com.adobe.separator",
 
     -- GPS.
