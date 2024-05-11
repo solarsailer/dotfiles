@@ -2,8 +2,8 @@
 -- Doc: https://paulmaguirephoto.com/2019/how-to-customise-the-metadata-panel-in-lightroom/
 return {
   version   = 1,
-  title     = "Matthieu Oger",
-  id        = "com.matthieuoger.default",
+  title     = "Matthieu Oger Location",
+  id        = "com.matthieuoger.location",
   type      = "MetadataFieldList",
 
   items = {
@@ -29,6 +29,9 @@ return {
 
     -- Position.
     { formatter = "com.adobe.location", label="Location" },
+    "com.adobe.city",
+    { formatter = "com.adobe.state", label="Region" },
+    { formatter = "com.adobe.country", label="Country" },
     "com.adobe.separator",
 
     -- Comments.

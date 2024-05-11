@@ -1,14 +1,16 @@
-# Change Lightroom Classic shortcuts
+# Lightroom Classic
+
+## Change Lightroom Classic shortcuts
 
 For `en` macOS with `fr` keyboard layout.
 
-## Install
+### Install
 
 Add `TranslatedStrings_Lr_en_US.txt` to `/Applications/Adobe Lightroom Classic CC/Adobe Lightroom Classic CC.app/Contents/Resources/en.lproj/`.
 
 For reference, open the file in `fr.lproj` and find the item you want to change.
 
-## Explanation
+### Explanation
 
 ```
 "$$$/AgDevelop/Menu/View/BeforeAfter/Before/Key=@"
@@ -20,3 +22,9 @@ For reference, open the file in `fr.lproj` and find the item you want to change.
 - `=@`: we assign `@` to the menu item.
 
 If we don't specify `/Key`, the assignment will have an effect on the label, not the keyboard shortcut.
+
+## Metadata Panels
+
+- Copy to: `~/Library/Application Support/Adobe/Lightroom/Metadata Field Lists/` folder
+- Generator: http://regex.info/Lightroom/Meta/
+- `readOnly=true`
