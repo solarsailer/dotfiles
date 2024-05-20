@@ -131,6 +131,12 @@ I don't recommend to blindly run everything, but those are a good knowledge base
 
 ## Bonus
 
+### Proxy Icon
+
+Go to: `Accessibility > Display > Show window title icons`.
+
+![Show proxy icon](./images/proxy-icon.png)
+
 ### Contact Card
 
 Sync your contact, then in the Contacts app, choose your contact card, click on the "Card" menu, then "Make this my card".
