@@ -128,7 +128,6 @@
   "git.mergeEditor": true,
   "window.commandCenter": true,
 
-  "workbench.editor.untitled.hint": "hidden",
-
-  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true,
+  "workbench.editor.empty.hint": "hidden"
 }
