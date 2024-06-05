@@ -40,9 +40,16 @@
   "workbench.colorTheme": "GitHub Dark",
   "workbench.statusBar.feedback.visible": false,
   "workbench.settings.useSplitJSON": true,
+  "workbench.editor.empty.hint": "hidden",
 
   // Explorer.
   "explorer.confirmDragAndDrop": false,
+
+  // -------------------------------------------------------------
+  // Git.
+  // -------------------------------------------------------------
+
+  "git.mergeEditor": true,
 
   // -----------------------------------------
   // Languages.
@@ -111,8 +118,10 @@
   "typescript.updateImportsOnFileMove.enabled": "never",
 
   // -----------------------------------------
-  // Plugins.
+  // Extensions.
   // -----------------------------------------
+
+  "extensions.ignoreRecommendations": true,
 
   // Prettier:
   "prettier.semi": false,
@@ -121,13 +130,22 @@
   "prettier.trailingComma": "none",
   "prettier.arrowParens": "avoid",
 
+  // CodeSnap:
+  "codesnap.showLineNumbers": false,
+  "codesnap.backgroundColor": "rgba(1, 1, 1, 0)",
+  "codesnap.transparentBackground": true,
+  "codesnap.boxShadow": "rgba(0, 0, 0, 0.25) 0px 20px 20px",
+  "codesnap.showWindowControls": false,
+
+  // Copilot:
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
+
   // -------------------------------------------------------------
   // Autogen.
   // -------------------------------------------------------------
-
-  "git.mergeEditor": true,
-  "window.commandCenter": true,
-
-  "extensions.ignoreRecommendations": true,
-  "workbench.editor.empty.hint": "hidden"
 }
