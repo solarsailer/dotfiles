@@ -1,6 +1,9 @@
 # Disable greeting.
 set fish_greeting
 
+# Force language to English.
+set --export LANG "en_US.UTF-8"
+
 # Set vim as default editor.
 set --export EDITOR "vim"
 set --export GIT_EDITOR "vim"

@@ -11,6 +11,9 @@ parse_git_branch() {
 # Base.
 # --------------------------------------------------------------
 
+# Language.
+export LANG=en_US.UTF-8
+
 # Colors.
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
