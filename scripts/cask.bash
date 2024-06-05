@@ -34,6 +34,7 @@ brew install --cask daisydisk
 brew install --cask imageoptim
 brew install --cask namechanger
 brew install --cask carbon-copy-cloner
+brew install --cask platypus
 
 # Developers.
 brew install --cask vagrant
