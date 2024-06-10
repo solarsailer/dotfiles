@@ -71,6 +71,9 @@ defaults write com.apple.finder ShowHardDrivesOnDesktop         -bool false
 defaults write com.apple.finder ShowMountedServersOnDesktop     -bool false
 defaults write com.apple.finder ShowRemovableMediaOnDesktop     -bool false
 
+# Reduce the drag and drop delay over a folder.
+defaults write NSGlobalDomain com.apple.springing.delay -float 0.2
+
 # --------------------------------------------------------------
 # Dock.
 # --------------------------------------------------------------
