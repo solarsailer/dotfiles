@@ -41,6 +41,11 @@ if test -e /usr/local/share/dotnet
   set PATH ~/.dotnet/tools         $PATH
 end
 
+# Herd.
+if test -e $HOME/Library/Application\ Support/Herd/bin/
+  set PATH $HOME/Library/Application\ Support/Herd/bin/ $PATH
+end
+
 # --------------------------------------------------------------
 # Alias.
 # --------------------------------------------------------------
