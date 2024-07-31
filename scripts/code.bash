@@ -11,9 +11,11 @@ echo "Code> Installing…"
 
 code --install-extension formulahendry.auto-rename-tag # Still necessary despite VSCode own implementation
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension tamasfe.even-better-toml
 code --install-extension file-icons.file-icons
 code --install-extension bmalehorn.vscode-fish
 code --install-extension github.github-vscode-theme
+code --install-extension bmewburn.vscode-intelephense-client
 code --install-extension esbenp.prettier-vscode
 code --install-extension bradlc.vscode-tailwindcss
 code --install-extension styled-components.vscode-styled-components
