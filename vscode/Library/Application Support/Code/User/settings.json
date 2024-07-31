@@ -31,7 +31,8 @@
   "files.associations": {
     "*.txt": "markdown",
     "*.text": "markdown",
-    "*.mdx": "markdown"
+    "*.mdx": "markdown",
+    "*.module": "php"
   },
 
   // Workbench.
@@ -54,6 +55,11 @@
   // -----------------------------------------
   // Languages.
   // -----------------------------------------
+
+  // HTML.
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
   // CSS.
   "[css]": {
@@ -103,8 +109,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // PHP.
+  "[php]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
 
   // Tags.
@@ -116,6 +124,9 @@
 
   "javascript.updateImportsOnFileMove.enabled": "never",
   "typescript.updateImportsOnFileMove.enabled": "never",
+
+  "php.suggest.basic": false,
+  "php.validate.executablePath": "/opt/homebrew/bin/php",
 
   // -----------------------------------------
   // Extensions.
