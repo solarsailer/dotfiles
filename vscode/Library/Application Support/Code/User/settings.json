@@ -32,7 +32,8 @@
     "*.txt": "markdown",
     "*.text": "markdown",
     "*.mdx": "markdown",
-    "*.module": "php"
+    "*.module": "php",
+    "justfile": "makefile"
   },
 
   // Workbench.
@@ -115,7 +116,7 @@
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
 
-  // Tags.
+  // Misc.
 
   "html.autoClosingTags": false,
 
