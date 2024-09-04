@@ -19,6 +19,7 @@ mas install 1263070803 # Lungo
 mas install 880001334  # Reeder
 mas install 1611378436 # Pure Paste
 mas install 1572202501 # Plain Text Editor
+mas install 6587554858 # Camera RawX
 
 echo "MAS> Done."
 
