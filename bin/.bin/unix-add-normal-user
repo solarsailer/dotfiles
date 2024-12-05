@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+
+set -e
+
+# Check if script is run as root.
+# if [ "$EUID" -ne 0 ]; then
+#   echo "This script must be run as root. Please use sudo or switch to root."
+#   exit 1
+# fi
+
+# Check if exactly two arguments are passed.
+if [ "$#" -ne 2 ]; then
+  echo "Usage: $(basename "$0") <username> <fullname>"
+  exit 1
+fi
+
+USERNAME=$1
+FULLNAME=$2
+
+echo "Creating new user '$USERNAME', named '$FULLNAME', with '/home/$USERNAME' folder."
+
+# Sure?
+read -p "Are you sure you want to continue? (Y/n): " CONFIRMATION
+if [[ "$CONFIRMATION" != "y" && "$CONFIRMATION" != "Y" ]]; then
+  echo "Stopping…"
+  exit 1
+fi
+
+# Create user.
+adduser --gecos "$FULLNAME,,," --shell "/bin/bash" "$USERNAME"
+
+# Make sudo?
+read -p "Add to sudoers? (Y/n): " SUDO_CONFIRMATION
+if [[ "$SUDO_CONFIRMATION" == "y" || "$SUDO_CONFIRMATION" == "Y" ]]; then
+  adduser $USERNAME sudo
+  echo "Added to sudoers."
+fi
+
+# Create SSH folder with correct permissions.
+mkdir -m 700 "/home/$USERNAME/.ssh"
+touch "/home/$USERNAME/.ssh/authorized_keys"
+chmod 600 "/home/$USERNAME/.ssh/authorized_keys"
+chown "$USERNAME" -R "/home/$USERNAME/.ssh"
+chgrp "$USERNAME" -R "/home/$USERNAME/.ssh"
+echo "Created '/home/$USERNAME/.ssh' folder and 'authorized_keys' file."
+
+# Done!
+echo ""
+echo "Don't forget to add a public key!"
+
+# Also possible to import using GitHub:
+# URL: https://github.com/$USERNAME.keys
+# `curl https://github.com/$USERNAME.keys > /home/$USERNAME/.ssh/authorized_keys`
