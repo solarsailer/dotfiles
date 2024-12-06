@@ -3,10 +3,10 @@
 set -e
 
 # Check if script is run as root.
-# if [ "$EUID" -ne 0 ]; then
-#   echo "This script must be run as root. Please use sudo or switch to root."
-#   exit 1
-# fi
+if [ "$EUID" -ne 0 ]; then
+  echo "This script must be run as root. Please use sudo or switch to root."
+  exit 1
+fi
 
 # Check if exactly two arguments are passed.
 if [ "$#" -ne 2 ]; then
