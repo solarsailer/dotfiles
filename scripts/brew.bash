@@ -64,6 +64,7 @@ brew install prettier            # code formatter
 brew install pipe-rename         # rename in batch
 brew install gum                 # CLI utilities (write, prompt, confirm, etc.)
 brew install wakeonlan           # required for Alfred vnc workflow
+brew install openconnect         # vpn
 
 # Images.
 brew install imagemagick
