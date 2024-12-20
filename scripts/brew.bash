@@ -36,7 +36,6 @@ echo "Brew> Installing packages…"
 brew install the_silver_searcher # better grep
 brew install sd                  # better sed
 brew install bat                 # better cat
-brew install exa                 # better ls
 brew install fzf                 # fuzzy finder
 brew install diff-so-fancy       # pretty diff
 brew install fx                  # json processor
@@ -55,7 +54,7 @@ brew install cheat               # cheatsheet manager
 brew install httpie              # http requester
 brew install jq                  # json processor
 brew install miller              # CSV/JSON processor
-brew install pup                 # html processor
+
 brew install multimarkdown       # markdown generator
 
 # Utilities.
@@ -87,6 +86,7 @@ echo "Brew> Done."
 # brew install sqlite
 # brew install mono
 
+# brew install exa      # better ls
 # brew install pv       # pipe viewer
 # brew install up       # visual pipe helper
 # brew install icdiff   # better difftool
@@ -96,6 +96,7 @@ echo "Brew> Done."
 # brew install duf      # better df/du
 # brew install htop     # better top
 # brew install hexyl    # hex viewer
+# brew install pup      # html processor
 
 # brew install ranger     # file browser
 # brew install heroku
