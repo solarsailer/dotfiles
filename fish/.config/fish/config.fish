@@ -22,13 +22,14 @@ set --export LS_COLORS "di=1;36:ln=1;35:so=1;32:pi=1;33:ex=1;31:bd=34;46:cd=34;4
 # --------------------------------------------------------------
 
 set PATH /bin
-set PATH /sbin             $PATH
-set PATH /usr/bin          $PATH
-set PATH /usr/sbin         $PATH
-set PATH /usr/local/bin    $PATH
-set PATH /usr/local/sbin   $PATH
-set PATH ~/.bin            $PATH
-set PATH /opt/homebrew/bin $PATH
+set PATH /sbin               $PATH
+set PATH /usr/bin            $PATH
+set PATH /usr/sbin           $PATH
+set PATH /usr/local/bin      $PATH
+set PATH /usr/local/sbin     $PATH
+set PATH ~/.bin              $PATH
+set PATH /opt/homebrew/bin   $PATH
+set PATH /opt/homebrew/sbin  $PATH
 
 # Fastlane.
 if test -e $HOME/.fastlane/bin
