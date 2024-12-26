@@ -1,0 +1,5 @@
+# macOS built-in: cmd+backspace deletes all characters before the cursor.
+keybind = cmd+backspace=text:\x15
+
+# macOS built-in: cmd+delete deletes all characters after the cursor.
+keybind = cmd+delete=text:\x0B
