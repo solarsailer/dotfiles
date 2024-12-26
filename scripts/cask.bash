@@ -18,7 +18,8 @@ brew install --cask cleanshot
 
 # Code.
 brew install --cask visual-studio-code
-brew install --cask iterm2
+# brew install --cask iterm2
+brew install ghostty
 brew install --cask gitup
 brew install --cask dash
 brew install --cask utm
