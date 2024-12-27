@@ -30,6 +30,7 @@ stow -R bin
 stow -R git
 stow -R vscode
 stow -R ghostty
+stow -R starship
 stow -R tig
 stow -R vim
 stow -R tldr
