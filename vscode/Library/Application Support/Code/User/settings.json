@@ -1,6 +1,6 @@
 {
   // Editor.
-  "editor.fontFamily": "Fira Code, Menlo",
+  "editor.fontFamily": "JetBrains Mono, Fira Code, Menlo",
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.tabSize": 2,

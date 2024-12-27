@@ -123,6 +123,11 @@ fisher install jorgebucaran/getopts.fish
 change_computer_name $NAME
 ```
 
+## Typography
+
+- Family: [JetBrains Mono](https://www.jetbrains.com/lp/mono/) ([Fira Code](https://github.com/tonsky/FiraCode) as fallback)
+- Size: `14`
+
 ## Next Steps
 
 Follow the different scripts in the `scripts` folder. Use the lines (or full script) if applicable to your situation.
