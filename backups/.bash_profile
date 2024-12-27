@@ -1,0 +1,13 @@
+# -------------------------------------------------------------
+# Bash prompt with Git branch parsing and some colors.
+# -------------------------------------------------------------
+
+# Get the current Git branch.
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+# Prompt:
+#   - Without colors:  name@hostname path/to/dir (branch) $
+#   - With colors:     [bright green](name@hostname) [bright blue](~) [bright yellow](branch) [bright purple]$
+export PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]\$(parse_git_branch) \[\033[01;35m\]\$\[\033[00m\] "
