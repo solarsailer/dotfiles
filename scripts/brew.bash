@@ -22,6 +22,7 @@ echo "Brew> Installing essentials…"
 brew install git # Latest version of git with HTML documentation.
 brew install stow
 brew install fish
+brew install neovim
 brew install starship
 
 echo "Brew> Installing environments…"

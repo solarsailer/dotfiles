@@ -33,6 +33,7 @@ stow -R ghostty
 stow -R starship
 stow -R tig
 stow -R vim
+stow -R nvim
 stow -R tldr
 stow -R cheat
 stow -R taskpaper
