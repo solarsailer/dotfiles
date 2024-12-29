@@ -11,6 +11,8 @@ unfocused-split-opacity = 0.5
 selection-foreground = white
 selection-background = 6B9027
 
+window-step-resize = true
+
 # --------------------------------------------------------------
 # Window.
 # --------------------------------------------------------------
