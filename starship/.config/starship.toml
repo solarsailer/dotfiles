@@ -1,1 +1,6 @@
 "$schema" = 'https://starship.rs/config-schema.json'
+
+# Starship does not handle the newline gracefully (eg. it adds a newline after a `clear`).
+# To fix this, we are adding the newline through the shell config, and not the prompt.
+# See `fish.config`.
+add_newline = false

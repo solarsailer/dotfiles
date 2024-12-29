@@ -18,7 +18,7 @@ set --export LSCOLORS "GxFxCxDxBxegedabagaced"
 set --export LS_COLORS "di=1;36:ln=1;35:so=1;32:pi=1;33:ex=1;31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=34;43"
 
 # --------------------------------------------------------------
-# Path
+# PATH.
 # --------------------------------------------------------------
 
 set PATH /bin
@@ -48,7 +48,7 @@ if test -e $HOME/Library/Application\ Support/Herd/bin/
 end
 
 # --------------------------------------------------------------
-# Alias.
+# Aliases.
 # --------------------------------------------------------------
 
 alias tree "tree -C -I 'node_modules|bower_components'"
@@ -75,4 +75,22 @@ alias agf "ag -g -i" # Find files matching pattern.
 # iTerm shell integration.
 # --------------------------------------------------------------
 
-test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
+test -e {$HOME}/.iterm2_shell_integration.fish; and source {$HOME}/.iterm2_shell_integration.fish
+
+# --------------------------------------------------------------
+# Prompt.
+# --------------------------------------------------------------
+
+# Use Starship prompt.
+# https://starship.rs/
+starship init fish | source
+
+# We have disabled `add_newline` in Starship config because Starship cannot handle
+# `clear` or `ctrl-l` correctly (ie. removing the preceding newline in those cases).
+# See: https://github.com/starship/starship/issues/560
+#
+# This is hacky but it works well: add a newline after each exec, except when it's `clear`.
+# With `add_newline` to `false`, `ctrl-l` works out of the box, so nothing to do in that case.
+function hack_starship_add_newline --on-event fish_postexec
+  if test "$argv[1]" != 'clear'; echo;  end
+end

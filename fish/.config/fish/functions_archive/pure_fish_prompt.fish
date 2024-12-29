@@ -1,3 +1,5 @@
+# Not sure where this was coming from. Fish pure prompt implmentation probably?
+
 function _pwd_with_tilde
   echo $PWD | sed 's|^'$HOME'\(.*\)$|~\1|'
 end

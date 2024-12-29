@@ -3,7 +3,13 @@
 # And its port for fish:
 #   https://github.com/rafaelrinaldi/pure
 
+# --------------------------------------------------------------
+# Main prompt.
+# --------------------------------------------------------------
+
 # New terminal window or tab! The shell is, by consequence, brand new.
+# This is used to add a newline (or not) before the prompt.
+# See __show_newline function.
 set -g new_shell 1
 
 function fish_prompt
@@ -19,7 +25,7 @@ function fish_prompt
 end
 
 # --------------------------------------------------------------
-# Prompts.
+# Sub prompts.
 # --------------------------------------------------------------
 
 function __prompt_main
@@ -164,7 +170,7 @@ function __git_dirty
 end
 
 # --------------------------------------------------------------
-# Presentation.
+# Aliases.
 # --------------------------------------------------------------
 
 function __space

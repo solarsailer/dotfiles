@@ -1,7 +1,6 @@
 # Prompt :
 # name@machine ~/path/to/dir [(git branch if in a repo)] $
 function fish_prompt
-
   # Parse git branch
   function parse_git_branch
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
