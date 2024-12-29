@@ -15,12 +15,12 @@
   },
   "Section with hash": {
     "prefix": "section",
-    "scope": "shellscript, ruby, python, dockerfile",
+    "scope": "shellscript, ruby, python, dockerfile, fish",
     "description": "Add # section",
     "body": [
-      "# -------------------------------------------------------------",
+      "# --------------------------------------------------------------",
       "# ${1:Title}",
-      "# -------------------------------------------------------------"
+      "# --------------------------------------------------------------"
     ]
   },
   "Section with block": {
