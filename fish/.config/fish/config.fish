@@ -16,31 +16,35 @@ set --export GIT_EDITOR "nvim"
 # PATH.
 # --------------------------------------------------------------
 
-set PATH /bin
-set PATH /sbin               $PATH
-set PATH /usr/bin            $PATH
-set PATH /usr/sbin           $PATH
-set PATH /usr/local/bin      $PATH
-set PATH /usr/local/sbin     $PATH
-set PATH /opt/homebrew/bin   $PATH
-set PATH /opt/homebrew/sbin  $PATH
-set PATH ~/.bin              $PATH
+# First: empty $PATH. Ensure that no unused directories are added.
+set PATH
+
+# Then, use `fish_add_path` with `--path` to directly update the $PATH variable in a clean way.
+# `fish_add_path` ignores non-existing folder, so no need to test them beforehand.
+
+fish_add_path --path /bin
+fish_add_path --path /sbin
+fish_add_path --path /usr/bin
+fish_add_path --path /usr/sbin
+fish_add_path --path /usr/local/bin
+fish_add_path --path /usr/local/sbin
+fish_add_path --path /opt/homebrew/bin
+fish_add_path --path /opt/homebrew/sbin
+fish_add_path --path ~/.bin
+
+# ---------
+# Dev envs.
+# ---------
 
 # Fastlane.
-if test -e $HOME/.fastlane/bin
-  set PATH $HOME/.fastlane/bin $PATH
-end
+fish_add_path --path ~/.fastlane/bin
 
 # Dotnet.
-if test -e /usr/local/share/dotnet
-  set PATH /usr/local/share/dotnet $PATH
-  set PATH ~/.dotnet/tools         $PATH
-end
+fish_add_path --path /usr/local/share/dotnet
+fish_add_path --path ~/.dotnet/tools
 
-# Herd.
-if test -e $HOME/Library/Application\ Support/Herd/bin/
-  set PATH $HOME/Library/Application\ Support/Herd/bin/ $PATH
-end
+# PHP.
+fish_add_path --path ~/Library/Application\ Support/Herd/bin
 
 # --------------------------------------------------------------
 # Aliases.
