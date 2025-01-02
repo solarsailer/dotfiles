@@ -1,0 +1,9 @@
+# Non-retina adjustments.
+font-thicken = true
+adjust-cursor-thickness = 1
+
+# Then, copy this file in "~/Library/Application Support/com.mitchellh.ghostty/" as `config`.
+# NB: the folder does not exist by default.
+#
+# Why? This will preserve a "correct" default XDG config (which is symlinked via `stow` and committed with the correct name),
+# while allowing the overwrite of some properties specific to a single computer.
