@@ -1,6 +1,12 @@
-# Don't stow .DS_Store files
-
+# Don't stow .DS_Store files.
 \.DS_Store
 
-# Ignore editor temp files
+# Ignore editor temp files.
 .+~
+
+# Ignore backup files.
+.*\.bak$
+
+# View default here:
+# https://www.gnu.org/software/stow/manual/html_node/Types-And-Syntax-Of-Ignore-Lists.html
+# Note that README.* files are ignored by default.
