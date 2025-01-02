@@ -4,3 +4,9 @@ bind generic = @open --reveal %(file)
 set wrap-lines = yes
 set diff-highlight = yes
 set git-colors = no
+
+# --------------------------------------------------------------
+# Appearance.
+# --------------------------------------------------------------
+
+color cursor default green
