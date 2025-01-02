@@ -29,14 +29,14 @@ stow -R bash
 stow -R bin
 stow -R git
 stow -R vscode
-stow -R ghostty
-stow -R starship
 stow -R tig
 stow -R vim
-stow -R nvim
 stow -R tldr
 stow -R cheat
 stow -R taskpaper
+stow -R ghostty
+stow -R starship
+stow -R nvim
 
 echo "Stow> Done."
 
