@@ -2,16 +2,15 @@
 # Appearance.
 # --------------------------------------------------------------
 
-background = 000000
-background-opacity = 0.8
-background-blur-radius = 10
-
-unfocused-split-opacity = 0.5
-
+# General colors.
+background = 000
 selection-foreground = white
 selection-background = 6B9027
 
-window-step-resize = true
+# Opacity and blur.
+background-opacity = 0.8
+background-blur-radius = 10
+unfocused-split-opacity = 0.5
 
 # --------------------------------------------------------------
 # Window.
@@ -20,6 +19,9 @@ window-step-resize = true
 # Add a little bit of padding to make the prompt not glued to the window.
 window-padding-x = 8
 window-padding-y = 8
+
+# Ensure that the window size is always based on a cell size. Prevent empty spaces.
+window-step-resize = true
 
 # --------------------------------------------------------------
 # Cursor.
