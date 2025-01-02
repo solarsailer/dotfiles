@@ -4,3 +4,6 @@
 # To fix this, we are adding the newline through the shell config, and not the prompt.
 # See `fish.config`.
 add_newline = false
+
+[directory]
+truncation_length = 0 # Disable truncation.
