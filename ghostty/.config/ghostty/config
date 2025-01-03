@@ -47,11 +47,19 @@ quick-terminal-position = bottom
 # Keybindings.
 # --------------------------------------------------------------
 
-# macOS built-in: cmd+backspace deletes all characters before the cursor.
+# macOS built-in: `cmd+backspace` deletes all characters before the cursor.
 keybind = cmd+backspace=text:\x15
 
-# macOS built-in: cmd+delete deletes all characters after the cursor.
+# macOS built-in: `cmd+delete` deletes all characters after the cursor.
 keybind = cmd+delete=text:\x0B
+
+# macOS built-in: `opt+delete` deletes the next word.
+# For a weird reason, this one was not handled correctly by Ghostty.
+# (eg. opt+backspace was working out of the box.)
+keybind = opt+delete=esc:d
 
 # Launch Quick Terminal.
 keybind = global:f4=toggle_quick_terminal
+
+# To quickly test a keybinding _sequence_, use this boilerplate:
+# keybind = SEQUENCE=toggle_quick_terminal
