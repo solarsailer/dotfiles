@@ -1,0 +1,9 @@
+# Find all files containing $SEARCH:
+find $PATH -type f -exec grep -l "$SEARCH" {} +
+
+# Alternative with grep:
+grep -rl "$SEARCH" $PATH
+
+# Alternative with ag:
+ag -li "$SEARCH"
+ag -li $SEARCH $PATH
