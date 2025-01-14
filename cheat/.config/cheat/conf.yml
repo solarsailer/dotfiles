@@ -1,7 +1,5 @@
 colorize: true
-
-style: base16-snazzy
-
+style: catppuccin-frappe
 cheatpaths:
   - name: personal
     path: ~/.cheat/
