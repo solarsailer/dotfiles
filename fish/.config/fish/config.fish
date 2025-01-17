@@ -31,6 +31,7 @@ fish_add_path --path /usr/local/sbin
 fish_add_path --path /opt/homebrew/bin
 fish_add_path --path /opt/homebrew/sbin
 fish_add_path --path ~/.bin
+fish_add_path --path ~/.sbin
 
 # ---------
 # Dev envs.
