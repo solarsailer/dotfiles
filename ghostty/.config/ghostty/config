@@ -17,11 +17,12 @@ unfocused-split-opacity = 0.5
 # --------------------------------------------------------------
 
 # Add a little bit of padding to make the prompt not glued to the window.
-window-padding-x = 8,2
-window-padding-y = 8,2
+window-padding-x = 8
+window-padding-y = 8
 
-# Ensure that the window size is always based on a cell size. Prevent empty spaces.
+# Ensure that the window size is always based on a cell size. Prevent ugly empty spaces.
 window-step-resize = true
+window-padding-balance = true
 window-padding-color = extend
 
 # --------------------------------------------------------------
