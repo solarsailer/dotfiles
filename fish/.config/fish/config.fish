@@ -72,6 +72,22 @@ alias agi "ag -l -i" # Print files containing pattern.
 alias agf "ag -g -i" # Find files matching pattern.
 
 # --------------------------------------------------------------
+# Abbrevations.
+# --------------------------------------------------------------
+
+# Replay last command.
+function __last_history; echo $history[1]; end
+abbr --add "!!" --position anywhere --function __last_history
+
+# Print all arguments of the last command, except the command itself.
+function __last_history_without_cmd; echo (string split ' ' -- $history[1])[2..-1]; end
+abbr --add "@@" --position anywhere --function __last_history_without_cmd
+
+# Print all arguments of the last command, and put the cursor at the beginning.
+function __last_history_with_cmd_marker; echo "%" (string split ' ' -- $history[1])[2..-1]; end
+abbr --add "??" --position anywhere --set-cursor --function __last_history_with_cmd_marker
+
+# --------------------------------------------------------------
 # iTerm shell integration.
 # --------------------------------------------------------------
 
