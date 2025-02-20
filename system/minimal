@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+# Note: this is for a Debian/Ubuntu-like system.
+
+# --------------------------------------------------------------
+# Z.
+# --------------------------------------------------------------
+
+curl -o ~/bin/z.sh https://raw.githubusercontent.com/rupa/z/refs/heads/master/z.sh
+chmod +x ~/bin/z.sh
+echo ". ~/bin/z.sh" >> ~/.bashrc
+
+# --------------------------------------------------------------
+# FZF.
+# --------------------------------------------------------------
+
+sudo apt install fzf
+
+# Import correct Bash configuration for FZF.
+# Use "--bash" if >= 0.48.0
+FZF_VERSION=$(fzf --version | awk '{print $1}')
+if python3 \
+  -c 'import sys; v1, v2 = sys.argv[1].split("."), sys.argv[2].split("."); sys.exit(0 if tuple(map(int, v1)) >= tuple(map(int, v2)) else 1)' \
+  "$FZF_VERSION" \
+  "0.48.0"
+then
+  echo 'FZF >= 0.48.0, use --bash option.'
+  echo 'eval "$(fzf --bash)"' >> ~/.bashrc
+else
+  echo 'FZF < 0.48.0, import from examples.'
+  echo 'source /usr/share/doc/fzf/examples/key-bindings.bash' >> ~/.bashrc
+fi
