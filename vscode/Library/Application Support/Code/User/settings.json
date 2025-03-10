@@ -121,7 +121,9 @@
   // PHP.
   "[php]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "files.insertFinalNewline": false,
+    "files.trimFinalNewlines": true
   },
 
   // Python.
