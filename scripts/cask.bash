@@ -6,6 +6,8 @@
 
 echo "Cask> Installing apps…"
 
+# `--cask` is not needed anymore, but as this script is a reference, we'll keep it for clarity.
+
 # Essentials.
 brew install --cask dropbox
 brew install --cask 1password
@@ -14,12 +16,13 @@ brew install --cask spotify
 brew install --cask google-chrome
 brew install --cask firefox
 brew install --cask cleanshot
-# brew install --cask thelassoapp # Not cask yet: https://thelasso.app/
+
+# Utilities
+brew install --cask hyperkey
 
 # Code.
 brew install --cask visual-studio-code
-# brew install --cask iterm2
-brew install ghostty
+brew install --cask ghostty
 brew install --cask gitup
 brew install --cask dash
 brew install --cask utm
@@ -27,7 +30,7 @@ brew install --cask utm
 # Design.
 brew install --cask figma
 brew install --cask sketch
-brew install --cask principle
+
 
 # Others.
 brew install --cask soulver
@@ -39,8 +42,9 @@ brew install --cask carbon-copy-cloner
 brew install --cask platypus
 
 # Developers.
-brew install --cask vagrant
-brew install --cask docker
+# brew install --cask vagrant
+# brew install --cask docker
+brew install --cask orbstack
 
 # Plugins.
 brew install --cask quicklook-json
@@ -51,18 +55,14 @@ echo "Cask> Done."
 # Archive.
 # -------------------------------------------------------------
 
-# brew install --cask alt-tab # Windows-like alt-tab
-
+# brew install --cask alt-tab
 # brew install --cask virtualbox
-
 # brew install --cask slack
 # brew install --cask caprine
 # brew install --cask skype
 # brew install --cask discord
-
 # brew install --cask fastlane
 # brew install --cask dotnet-sdk
-
 # brew install --cask taskpaper
 # brew install --cask hazel
 # brew install --cask bunch
@@ -82,7 +82,8 @@ echo "Cask> Done."
 # brew install --cask platypus
 # brew install --cask gifrocket
 # brew install --cask origami-studio
-
+# brew install --cask iterm2
+# brew install --cask principle
 # brew install --cask wkhtmltopdf
 # brew install --cask quicklook-csv
 # brew install --cask markdown-service-tools
