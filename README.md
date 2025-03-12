@@ -9,17 +9,44 @@
 
 Open the terminal:
 
-```
+```bash
 xcode-select --install
 ```
 
 This will download all the CLI devtools necessary.
 
+### Requirement: Homebrew
+
+```bash
+# Install brew (get up-to-date method on brew.sh).
+open https://brew.sh
+```
+
+### Requirement: Dropbox
+
+```bash
+brew install dropbox
+```
+
+- In "Backups", disable everything
+- In "Sync"…
+  - If possible, stick to the old Dropbox location (`/Users/$user/Dropbox/`)
+  - Set "Default sync state for new files" to "Available offline"
+
+> [!CAUTION]
+> Then, let Dropbox sync **completely**. Don't do anything. This can take a lot of time.
+
+### Requirement: 1Password
+
+```bash
+brew install 1Password
+```
+
 ### Requirement: SSH Key
 
 Generate a new key:
 
-```
+```bash
 ssh-keygen -t rsa -b 4096 -C "krokmou@berk.com"
 pbcopy < ~/.ssh/id_rsa.pub
 ```
@@ -92,9 +119,6 @@ To set your git `user.email` & `user.name`, create a `.gitconfig` file manually 
 Move to `$HOME/Developer/dotfiles`. Then:
 
 ```bash
-# Install brew (get up-to-date method on brew.sh).
-open https://brew.sh
-
 # Temporarily add brew to $PATH (before using fish).
 export PATH=/opt/homebrew/bin:$PATH
 
