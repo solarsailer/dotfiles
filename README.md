@@ -54,6 +54,27 @@ Note: we use `Developer` instead of `Code`. macOS adds an icon to folders named 
 
 ## Manual Configuration
 
+### Alfred
+
+First, you need to activate Alfred's Powerpack.
+
+Then, authorize Dropbox's Apps folder to be used for syncing Alfred:
+
+```bash
+defaults write com.runningwithcrayons.Alfred-Preferences dropbox.allowappsfolder -bool TRUE
+```
+
+Finally, a few settings to set manually on a per-Mac basis:
+- General
+  - Set `⌘ + Space` as launcher shortcut
+  - In permissions, add Alfred to "Accessibility" and "Full Disk Access"
+- Appearance
+  - In Light Mode, go to Appearance, set "Solar Sailer v4 (L)"
+  - Switch to Dark Mode, set "Solar Sailer v4 (D)"
+  - Switch back to Light Mode
+- Features, Snippets:
+  - Activate "Automatically expand snippets by keyword"
+
 ### Git
 
 To set your git `user.email` & `user.name`, create a `.gitconfig` file manually in your `$HOME` folder and copy those values there:
