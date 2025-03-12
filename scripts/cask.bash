@@ -15,6 +15,7 @@ brew install font-fira-code
 # Essentials.
 brew install --cask dropbox
 brew install --cask 1password
+brew install 1password-cli
 brew install --cask alfred
 brew install --cask spotify
 brew install --cask google-chrome
