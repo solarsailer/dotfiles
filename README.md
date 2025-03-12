@@ -1,17 +1,19 @@
-dotfiles
-========
+# dotfiles
 
 ## Bootstrap
 
-### Requirement: Xcode
+### Requirement: Unix devtools
 
-Install Xcode through the Mac App Store.
+> [!IMPORTANT]
+> DO NOT INSTALL XCODE! It's not necessary anymore.
 
-Then, open the terminal and type:
+Open the terminal:
 
 ```
-sudo xcodebuild -license
+xcode-select --install
 ```
+
+This will download all the CLI devtools necessary.
 
 ### Requirement: SSH Key
 
