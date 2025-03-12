@@ -8,6 +8,10 @@ echo "Cask> Installing apps…"
 
 # `--cask` is not needed anymore, but as this script is a reference, we'll keep it for clarity.
 
+# Fonts.
+brew install font-jetbrains-mono
+brew install font-fira-code
+
 # Essentials.
 brew install --cask dropbox
 brew install --cask 1password
