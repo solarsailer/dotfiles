@@ -114,6 +114,13 @@ defaults write com.apple.TextEdit NSFont     -string Helvetica
 defaults write com.apple.TextEdit NSFontSize -int 14
 
 # --------------------------------------------------------------
+# Screenshots
+# --------------------------------------------------------------
+
+# Disable floating thumbnails.
+defaults write com.apple.screencapture show-thumbnail -bool FALSE
+
+# --------------------------------------------------------------
 # Restart.
 # --------------------------------------------------------------
 
