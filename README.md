@@ -170,6 +170,16 @@ fisher install jorgebucaran/getopts.fish
 change_computer_name $NAME
 ```
 
+### Python
+
+Use pyenv to manage Python/pip properly:
+
+```
+pyenv install 3.$X
+pyenv global 3.$X
+pip install --upgrade pip
+```
+
 ## Typography
 
 - Family: [JetBrains Mono](https://www.jetbrains.com/lp/mono/) ([Fira Code](https://github.com/tonsky/FiraCode) as fallback)

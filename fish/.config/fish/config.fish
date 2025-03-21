@@ -47,6 +47,10 @@ fish_add_path --path ~/.dotnet/tools
 # PHP.
 fish_add_path --path ~/Library/Application\ Support/Herd/bin
 
+# Python.
+fish_add_path --path $PYENV_ROOT/bin
+pyenv init - fish | source
+
 # --------------------------------------------------------------
 # Aliases.
 # --------------------------------------------------------------
