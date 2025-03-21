@@ -75,6 +75,9 @@ alias lla "ls -1a" # Show invisibles as list.
 alias agi "ag -l -i" # Print files containing pattern.
 alias agf "ag -g -i" # Find files matching pattern.
 
+# Fix vim.
+alias vim "nvim"
+
 # --------------------------------------------------------------
 # Abbrevations.
 # --------------------------------------------------------------
