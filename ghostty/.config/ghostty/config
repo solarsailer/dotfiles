@@ -55,6 +55,8 @@ quick-terminal-position = bottom
 # Keybindings.
 # --------------------------------------------------------------
 
+# Note: `cmd+opt+ctrl+shift` == Hyper key.
+
 # macOS built-in: `cmd+backspace` deletes all characters before the cursor.
 keybind = cmd+backspace=text:\x15
 
@@ -67,7 +69,7 @@ keybind = cmd+delete=text:\x0B
 keybind = opt+delete=esc:d
 
 # Launch Quick Terminal.
-keybind = global:f4=toggle_quick_terminal
+keybind = global:cmd+opt+ctrl+shift+g=toggle_quick_terminal
 
 # To quickly test a keybinding _sequence_, use this boilerplate:
 # keybind = SEQUENCE=toggle_quick_terminal
