@@ -102,6 +102,7 @@ echo "Brew> Done."
 # brew install hexyl    # hex viewer
 # brew install pup      # html processor
 # brew install csvkit   # csv toolkit
+# brew install rclone   # cloud storage cloner
 
 # brew install ranger     # file browser
 # brew install heroku
