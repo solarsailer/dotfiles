@@ -51,6 +51,9 @@ brew install --cask platypus
 # brew install --cask docker
 brew install --cask orbstack
 
+brew install --cask chatgpt
+brew install --cask adobe-creative-cloud
+
 # Plugins.
 brew install --cask quicklook-json
 
