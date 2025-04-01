@@ -30,3 +30,30 @@ Open the `Keyboard` preferences and add the new input (should be found in `Other
 ## Default login keyboard and one input source
 
 See: https://raw.githubusercontent.com/mathiasbynens/custom.keylayout/master/azerty/README.md
+
+
+> You can remove any default OS X keyboard layout (that you won’t be using anymore) from the Input menu [as follows](http://osxnotes.net/keylayout-files-and-ukelele.html#disabling-other-input-sources):
+>
+> 1. Make sure the current input source is your custom keyboard layout.
+>
+> 2. Open `~/Library/Preferences/com.apple.HIToolbox.plist`. (If needed, you can convert the `plist` to XML by running `plutil -convert xml1`.)
+>
+> 3. Remove the input source or input sources you want to disable from the `AppleEnabledInputSources` dictionary. If there is an `AppleDefaultAsciiInputSource` key, remove it.
+>
+> 4. Reboot.
+
+Convert to XML:
+
+```
+plutil -convert xml1 ~/Library/Preferences/com.apple.HIToolbox.plist
+```
+
+Then edit.
+
+Then convert back to binary:
+
+```
+plutil -convert binary1 ~/Library/Preferences/com.apple.HIToolbox.plist
+```
+
+Reboot.
