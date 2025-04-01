@@ -44,6 +44,9 @@ brew install 1Password
 
 ### Requirement: SSH Key
 
+> [!CAUTION]
+> Obsolete: use 1Password to store SSH Key (using ed25519).
+
 Generate a new key:
 
 ```bash
@@ -180,16 +183,19 @@ pyenv global 3.$X
 pip install --upgrade pip
 ```
 
-## Typography
-
-- Family: [JetBrains Mono](https://www.jetbrains.com/lp/mono/) ([Fira Code](https://github.com/tonsky/FiraCode) as fallback)
-- Size: `14`
-
 ## Next Steps
 
 Follow the different scripts in the `scripts` folder. Use the lines (or full script) if applicable to your situation.
 
 I don't recommend to blindly run everything, but those are a good knowledge base to bootstrap a mac.
+
+## Typography
+
+> [!NOTE]
+> Fonts are installed with Homebrew.
+
+- Family: [JetBrains Mono](https://www.jetbrains.com/lp/mono/) ([Fira Code](https://github.com/tonsky/FiraCode) as fallback)
+- Size: `14`
 
 ## Bonus
 
