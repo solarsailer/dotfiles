@@ -2,30 +2,32 @@
 
 echo "MAS> Installing Mac App Store apps…"
 
-# FInd app_id with `mas list`.
+# Find app_id with `mas list`.
 
-mas install 975937182  # Fantastical
+# Important.
 mas install 904280696  # Things
 mas install 1487937127 # Craft
+mas install 975937182  # Fantastical
+mas install 6587554858 # Camera RawX
+mas install 1263070803 # Lungo
+
+# Nice.
 mas install 747648890  # Telegram
 mas install 1147396723 # WhatsApp
-mas install 497799835  # Xcode
 mas install 409183694  # Keynote
 mas install 409201541  # Pages
 mas install 409203825  # Numbers
 mas install 944693506  # Fileloupe
 mas install 671595950  # Touch Retouch
-mas install 1263070803 # Lungo
 mas install 880001334  # Reeder
 mas install 1611378436 # Pure Paste
-mas install 1572202501 # Plain Text Editor
-mas install 6587554858 # Camera RawX
 
 echo "MAS> Done."
 
 # -------------------------------------------------------------
 # Optional.
 # -------------------------------------------------------------
+
 
 # mas install 803453959  # Slack
 # mas install 1586435171 # Actions
@@ -44,6 +46,8 @@ echo "MAS> Done."
 # Archive.
 # -------------------------------------------------------------
 
+# mas install 1572202501 # Plain Text Editor
+# mas install 497799835  # Xcode
 # mas install 1107421413 # 1Blocker
 # mas install 1278508951 # Trello
 # mas install 918207447  # Annotate
