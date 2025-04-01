@@ -12,8 +12,8 @@ mas install 6587554858 # Camera RawX
 mas install 1263070803 # Lungo
 
 # Nice.
+mas install 310633997  # WhatsApp
 mas install 747648890  # Telegram
-mas install 1147396723 # WhatsApp
 mas install 409183694  # Keynote
 mas install 409201541  # Pages
 mas install 409203825  # Numbers
