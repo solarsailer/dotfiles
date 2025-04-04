@@ -81,9 +81,19 @@ brew install lame
 
 echo "Brew> Done."
 
+# --------------------------------------------------------------
+# Optional.
+# --------------------------------------------------------------
+
+brew install llm
+brew install ollama
+
 # -------------------------------------------------------------
 # Archive.
 # -------------------------------------------------------------
+
+# Automation
+# brew install platypus   # CLI for creating mac apps from scripts
 
 # brew install awscli
 # brew install redis
@@ -109,7 +119,6 @@ echo "Brew> Done."
 # brew install watchman
 # brew install subliminal # subtitles
 # brew install nativefier # convert website to native app
-# brew install platypus   # CLI for creating mac apps from scripts
 
 # brew install kakoune # better VIM
 # brew install helix   # better VIM
