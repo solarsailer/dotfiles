@@ -36,8 +36,8 @@ brew install --cask utm
 brew install --cask figma
 brew install --cask sketch
 
-
 # Others.
+brew install --cask obsidian
 brew install --cask soulver
 brew install --cask iina
 brew install --cask daisydisk
