@@ -56,6 +56,8 @@ brew install cheat               # cheatsheet manager
 brew install httpie              # http requester
 brew install jq                  # json processor
 brew install miller              # CSV/JSON processor
+brew install csvkit              # csv toolkit
+brew install nmap                # network
 
 brew install multimarkdown       # markdown generator
 
@@ -111,7 +113,6 @@ brew install ollama
 # brew install htop     # better top
 # brew install hexyl    # hex viewer
 # brew install pup      # html processor
-# brew install csvkit   # csv toolkit
 # brew install rclone   # cloud storage cloner
 
 # brew install ranger     # file browser
