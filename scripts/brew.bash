@@ -39,8 +39,13 @@ brew install the_silver_searcher # better grep
 brew install sd                  # better sed
 brew install bat                 # better cat
 brew install fzf                 # fuzzy finder
+brew install ast-grep            # code refactor
 brew install diff-so-fancy       # pretty diff
+brew install jq                  # json processor
+brew install jless               # json viewer
 brew install fx                  # json processor
+brew install csvkit              # csv toolkit
+brew install miller              # CSV/JSON processor
 
 # Apps.
 brew install tig                 # visual git in shell
@@ -54,9 +59,7 @@ brew install cheat               # cheatsheet manager
 
 # Processors.
 brew install httpie              # http requester
-brew install jq                  # json processor
-brew install miller              # CSV/JSON processor
-brew install csvkit              # csv toolkit
+
 brew install nmap                # network
 
 brew install multimarkdown       # markdown generator
