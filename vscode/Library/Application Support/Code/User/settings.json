@@ -128,6 +128,11 @@
     "files.trimFinalNewlines": true
   },
 
+  "[blade]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+  },
+
   // Python.
   "[python]": {
     "editor.tabSize": 4, // Align with Black's guidelines.

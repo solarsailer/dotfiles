@@ -15,11 +15,15 @@ code --install-extension tamasfe.even-better-toml
 code --install-extension file-icons.file-icons
 code --install-extension bmalehorn.vscode-fish
 code --install-extension github.github-vscode-theme
-code --install-extension bmewburn.vscode-intelephense-client
 code --install-extension esbenp.prettier-vscode
 code --install-extension bradlc.vscode-tailwindcss
 code --install-extension styled-components.vscode-styled-components
 code --install-extension waderyan.gitblame
+
+# Laravel / PHP:
+# code --install-extension bmewburn.vscode-intelephense-client
+# code --install-extension laravel.vscode-laravel
+# code --install-extension shufo.vscode-blade-formatter
 
 echo "Code> Done."
 
