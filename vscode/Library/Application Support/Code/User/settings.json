@@ -121,6 +121,7 @@
 
   // PHP.
   "[php]": {
+    "editor.tabSize": 4,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
     "files.insertFinalNewline": false,
