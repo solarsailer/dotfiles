@@ -45,6 +45,7 @@ brew install --cask imageoptim
 brew install --cask namechanger
 brew install --cask carbon-copy-cloner
 brew install --cask platypus
+brew install --cask retrobatch
 
 # Developers.
 # brew install --cask vagrant
