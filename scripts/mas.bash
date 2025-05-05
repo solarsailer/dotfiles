@@ -6,7 +6,6 @@ echo "MAS> Installing Mac App Store apps…"
 
 # Important.
 mas install 904280696  # Things
-mas install 1487937127 # Craft
 mas install 975937182  # Fantastical
 mas install 6587554858 # Camera RawX
 mas install 1263070803 # Lungo
