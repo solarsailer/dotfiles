@@ -21,6 +21,7 @@ brew install --cask spotify
 brew install --cask google-chrome
 brew install --cask firefox
 brew install --cask cleanshot
+brew install --cask alt-tab
 
 # Utilities
 brew install --cask hyperkey
@@ -71,7 +72,6 @@ echo "Cask> Done."
 # Archive.
 # -------------------------------------------------------------
 
-# brew install --cask alt-tab
 # brew install --cask virtualbox
 # brew install --cask slack
 # brew install --cask caprine
