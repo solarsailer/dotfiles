@@ -22,6 +22,7 @@ brew install --cask google-chrome
 brew install --cask firefox
 brew install --cask cleanshot
 brew install --cask alt-tab
+brew install --cask choosy
 
 # Utilities
 brew install --cask hyperkey
@@ -86,7 +87,6 @@ echo "Cask> Done."
 # brew install --cask kap
 # brew install --cask hyperswitch
 # brew install --cask phoenix
-# brew install --cask choosy
 # brew install --cask vanilla
 # brew install --cask selfcontrol
 # brew install --cask deckset
