@@ -33,7 +33,7 @@ function add_gitignore
 nbproject
 Thumbs.db
 
-# Packages.
+# JavaScript.
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -41,5 +41,17 @@ node_modules/
 bower_components/
 .next/
 next-env.d.ts
-  " >> $name
+
+# Python.
+.venv/
+*.pyc
+__pycache__/
+instance/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+" >> $name
 end
