@@ -50,7 +50,7 @@ fish_add_path --path ~/Library/Application\ Support/Herd/bin
 # Python.
 fish_add_path --path $PYENV_ROOT/bin
 pyenv init - fish | source
-function __auto_activate_venv --on-variable PWD; auto_activate_venv; end
+auto_activate_venv; function __auto_activate_venv --on-variable PWD; auto_activate_venv; end
 
 # --------------------------------------------------------------
 # Aliases.
