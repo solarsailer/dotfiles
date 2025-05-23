@@ -32,6 +32,10 @@ brew install yarn
 brew install go
 brew install mas
 
+# Python.
+brew install pyenv
+brew install uv
+
 echo "Brew> Installing packages…"
 
 # Alternatives.

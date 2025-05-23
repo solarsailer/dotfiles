@@ -1,4 +1,8 @@
 # Created by: https://alexwlchan.net/2023/fish-venv/
+# Add this to config.fish to enable:
+# ```
+# auto_activate_venv; function __auto_activate_venv --on-variable PWD; auto_activate_venv; end
+# ```
 
 # --------------------------------------------------------------
 # auto_activate_venv.fish
