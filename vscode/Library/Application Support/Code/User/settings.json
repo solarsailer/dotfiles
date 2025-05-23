@@ -137,7 +137,7 @@
   "[python]": {
     "editor.tabSize": 4, // Align with Black's guidelines.
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "charliermarsh.ruff"
   },
 
   // Misc.
