@@ -40,16 +40,19 @@ echo "Brew> Installing packages…"
 
 # Alternatives.
 brew install the_silver_searcher # better grep
+brew install ripgrep             # better grep
 brew install sd                  # better sed
 brew install bat                 # better cat
 brew install fzf                 # fuzzy finder
 brew install ast-grep            # code refactor
 brew install diff-so-fancy       # pretty diff
-brew install jq                  # json processor
-brew install jless               # json viewer
-brew install fx                  # json processor
-brew install csvkit              # csv toolkit
+brew install jq                  # JSON processor
+brew install jless               # JSON viewer
+brew install fx                  # JSON processor
+brew install csvkit              # CSV toolkit
 brew install miller              # CSV/JSON processor
+brew install f2                  # batch rename
+brew install fd                  # better find
 
 # Apps.
 brew install tig                 # visual git in shell
@@ -115,7 +118,6 @@ brew install ollama
 # brew install icdiff   # better difftool
 # brew install just     # better make
 # brew install ccat     # better cat
-# brew install ripgrep  # better grep
 # brew install duf      # better df/du
 # brew install htop     # better top
 # brew install hexyl    # hex viewer
