@@ -68,6 +68,7 @@ brew install cheat               # cheatsheet manager
 brew install httpie              # http requester
 
 brew install nmap                # network
+brew install nuclei              # security scanner
 
 brew install multimarkdown       # markdown generator
 
