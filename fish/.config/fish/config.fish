@@ -73,6 +73,7 @@ alias lla  "eza -lgaao"
 alias lt   "eza -lgaoh --tree --git-ignore"
 alias lr   "eza -lgao --recurse --git-ignore"
 
+# `tree` is faster than `eza --tree`, so we keep this variant alive for massive directories:
 alias tree "tree -Ca --gitignore -I '.git'"
 
 # ag aliases.
