@@ -43,6 +43,7 @@ brew install the_silver_searcher # better grep
 brew install ripgrep             # better grep
 brew install sd                  # better sed
 brew install bat                 # better cat
+brew install eza                 # better ls
 brew install fzf                 # fuzzy finder
 brew install ast-grep            # code refactor
 brew install diff-so-fancy       # pretty diff
@@ -113,7 +114,6 @@ brew install ollama
 # brew install sqlite
 # brew install mono
 
-# brew install exa      # better ls
 # brew install pv       # pipe viewer
 # brew install up       # visual pipe helper
 # brew install icdiff   # better difftool

@@ -55,8 +55,6 @@ pyenv init - fish | source
 # Aliases.
 # --------------------------------------------------------------
 
-alias tree "tree -C -I 'node_modules|bower_components'"
-
 # The linux `paste` command is just a way to concat files together.
 # Rename it, otherwise it's not clear at all on its purpose.
 # `command` is a way to use the true `paste`, even if we alias `paste` below.
@@ -67,9 +65,15 @@ alias concat "command paste"
 alias paste "pbpaste"
 
 # ls aliases.
-alias la  "ls -a"  # Show invisibles.
-alias ll  "ls -1"  # Show as list.
-alias lla "ls -1a" # Show invisibles as list.
+alias l  "ls -1"
+
+# ls++
+alias ll   "eza -lgo"
+alias lla  "eza -lgaao"
+alias lt   "eza -lgaoh --tree --git-ignore"
+alias lr   "eza -lgao --recurse --git-ignore"
+
+alias tree "tree -Ca --gitignore -I '.git'"
 
 # ag aliases.
 alias agi "ag -l -i" # Print files containing pattern.
