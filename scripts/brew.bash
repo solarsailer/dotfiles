@@ -114,6 +114,8 @@ brew install ollama
 # brew install sqlite
 # brew install mono
 
+# brew install yazi     # rust-based file browser
+
 # brew install pv       # pipe viewer
 # brew install up       # visual pipe helper
 # brew install icdiff   # better difftool
@@ -125,11 +127,8 @@ brew install ollama
 # brew install pup      # html processor
 # brew install rclone   # cloud storage cloner
 
-# brew install ranger     # file browser
-# brew install heroku
 # brew install watchman
 # brew install subliminal # subtitles
-# brew install nativefier # convert website to native app
 
 # brew install kakoune # better VIM
 # brew install helix   # better VIM
