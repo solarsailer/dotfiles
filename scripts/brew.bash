@@ -54,6 +54,8 @@ brew install csvkit              # CSV toolkit
 brew install miller              # CSV/JSON processor
 brew install f2                  # batch rename
 brew install fd                  # better find
+brew install btop                # better top
+brew install ncdu                # interactive disk usage viewer
 
 # Apps.
 brew install tig                 # visual git in shell
