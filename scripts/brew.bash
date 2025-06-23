@@ -128,6 +128,7 @@ brew install ollama
 # brew install hexyl    # hex viewer
 # brew install pup      # html processor
 # brew install rclone   # cloud storage cloner
+# brew install pdfgrep  # like grep but for PDFs
 
 # brew install watchman
 # brew install subliminal # subtitles
