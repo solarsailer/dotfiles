@@ -73,6 +73,7 @@ echo "Cask> Done."
 # Archive.
 # -------------------------------------------------------------
 
+# brew install --cask powershell
 # brew install --cask virtualbox
 # brew install --cask slack
 # brew install --cask caprine
