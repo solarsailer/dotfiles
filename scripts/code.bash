@@ -21,6 +21,7 @@ code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
 code --install-extension dbankier.vscode-quick-select
 code --install-extension sapegin.reveal-in-ghostty
+code --install-extension timonwong.shellcheck
 
 # Copilot
 code --install-extension GitHub.copilot

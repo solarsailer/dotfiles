@@ -79,6 +79,7 @@ brew install multimarkdown       # markdown generator
 brew install gh                  # github command-line
 brew install cloc                # count lines of code
 brew install prettier            # code formatter
+brew install shellcheck          # shell script linter
 brew install pipe-rename         # rename in batch
 brew install gum                 # CLI utilities (write, prompt, confirm, etc.)
 brew install wakeonlan           # required for Alfred vnc workflow
