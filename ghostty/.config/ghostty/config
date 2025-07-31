@@ -39,6 +39,8 @@ window-padding-color = extend
 
 cursor-style = bar
 cursor-style-blink = false
+cursor-click-to-move = true
+
 adjust-cursor-thickness = 3
 
 # --------------------------------------------------------------
