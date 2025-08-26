@@ -57,8 +57,13 @@ brew install fd                  # better find
 brew install btop                # better top
 brew install ncdu                # interactive disk usage viewer
 
-# Apps.
+# TUIs.
 brew install tig                 # visual git in shell
+brew install lazygit             # git manager
+brew install lazydocker          # docker manager
+brew install lazyjournal         # view and filter logs
+
+# Apps.
 brew install tmux                # terminal splitter
 brew install trash               # better rm -rf that moves files to the real trash
 brew install tree                # tree viewer
