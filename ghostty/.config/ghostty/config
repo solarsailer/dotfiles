@@ -33,6 +33,8 @@ window-step-resize = true
 window-padding-balance = true
 window-padding-color = extend
 
+undo-timeout = 20s
+
 # --------------------------------------------------------------
 # Cursor.
 # --------------------------------------------------------------
