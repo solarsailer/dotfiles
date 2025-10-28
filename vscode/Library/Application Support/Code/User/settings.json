@@ -33,7 +33,8 @@
     "*.text": "markdown",
     "*.mdx": "markdown",
     "*.module": "php",
-    "justfile": "makefile"
+    "justfile": "makefile",
+    "*.tcss": "scss"
   },
 
   // Workbench.
@@ -179,7 +180,8 @@
     "plaintext": false,
     "markdown": false,
     "scminput": false
-  }
+  },
+  "github.copilot.nextEditSuggestions.enabled": true
 
   // -------------------------------------------------------------
   // Autogen.
