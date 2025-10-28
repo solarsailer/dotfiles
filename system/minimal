@@ -10,9 +10,10 @@ sudo apt update
 sudo apt install -y \
   curl \
   tmux \
+  eza \
+  tree \
   ripgrep \
   btop \
-  tree \
   ncdu \
   restic \
   gum \
