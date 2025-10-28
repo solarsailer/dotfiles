@@ -124,7 +124,8 @@ brew install ollama
 # brew install sqlite
 # brew install mono
 
-# brew install yazi     # rust-based file browser
+# brew install yazi      # rust-based file browser
+# brew install superfile # another file manager
 
 # brew install pv       # pipe viewer
 # brew install up       # visual pipe helper
