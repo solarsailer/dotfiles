@@ -3,18 +3,61 @@
 # Note: this is for a Debian/Ubuntu-like system.
 
 # --------------------------------------------------------------
-# Z.
+# Core.
 # --------------------------------------------------------------
 
-curl -o ~/bin/z.sh https://raw.githubusercontent.com/rupa/z/refs/heads/master/z.sh
-chmod +x ~/bin/z.sh
-echo ". ~/bin/z.sh" >> ~/.bashrc
+sudo apt update
+sudo apt install -y \
+  curl \
+  tmux \
+  ripgrep \
+  btop \
+  tree \
+  ncdu \
+  restic \
+  gum \
+  fzf \
 
 # --------------------------------------------------------------
-# FZF.
+# Source .bashrc from .bash_profile + set Aliases.
 # --------------------------------------------------------------
 
-sudo apt install fzf
+cat << 'EOF' >> ~/.bash_profile
+if [ -f ~/.bashrc ]; then
+  source ~/.bashrc
+fi
+EOF
+
+cat << 'EOF' >> ~/.bash_aliases
+alias ll='ls -l'
+alias lla='ls -la'
+alias tree='tree -C'
+alias treed='tree -C -pug'
+alias fd='fdfind'
+EOF
+
+# --------------------------------------------------------------
+# Install and configure z.
+# --------------------------------------------------------------
+
+z_file="$HOME/bin/z.sh"
+checksum="a74bc5976b7dd1adc9efdda3b2b79eaff2bef7d227cf3139959f8df2b89beb72"
+
+curl -o $z_file https://raw.githubusercontent.com/rupa/z/refs/heads/master/z.sh
+
+# Verify checksum before installing the file.
+sha256sum $z_file | grep -q "^$checksum" && {
+  echo "z.sh checksum verified."
+
+  chmod +x $z_file
+  echo ". $z_file" >> ~/.bashrc
+} || {
+  echo "z.sh checksum verification failed! Aborting automatic z installation." >&2
+}
+
+# --------------------------------------------------------------
+# Configure fzf.
+# --------------------------------------------------------------
 
 # Import correct Bash configuration for FZF.
 # Use "--bash" if >= 0.48.0
@@ -30,3 +73,18 @@ else
   echo 'FZF < 0.48.0, import from examples.'
   echo 'source /usr/share/doc/fzf/examples/key-bindings.bash' >> ~/.bashrc
 fi
+
+# --------------------------------------------------------------
+# Configure tmux.
+# --------------------------------------------------------------
+
+# Add tmux configuration to .bash_profile.
+cat << 'EOF' >> ~/.bash_profile
+# Auto-tmux.
+if [[ $- =~ i ]] && [[ -z "$TMUX" ]] && [[ -n "$SSH_TTY" ]]; then
+  tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux
+fi
+EOF
+
+# Configure tmux mouse support.
+echo "set -g mouse on" >> ~/.tmux.conf
