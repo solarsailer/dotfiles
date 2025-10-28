@@ -82,6 +82,9 @@ alias treed "tree -Capug --gitignore -I '.git'"
 alias agi "ag -l -i" # Print files containing pattern.
 alias agf "ag -g -i" # Find files matching pattern.
 
+alias du "du -h"
+alias disk "df -h"
+
 # Fix vim.
 alias vim "nvim"
 
