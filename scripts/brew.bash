@@ -47,6 +47,7 @@ brew install eza                 # better ls
 brew install fzf                 # fuzzy finder
 brew install ast-grep            # code refactor
 brew install diff-so-fancy       # pretty diff
+brew install gron                # JSON grepping
 brew install jq                  # JSON processor
 brew install jless               # JSON viewer
 brew install fx                  # JSON processor
