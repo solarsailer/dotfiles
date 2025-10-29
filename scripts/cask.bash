@@ -23,6 +23,7 @@ brew install --cask firefox
 brew install --cask cleanshot
 brew install --cask alt-tab
 brew install --cask choosy
+brew install --cask fastmail
 
 # Utilities
 brew install --cask hyperkey
