@@ -85,8 +85,9 @@ alias agf "ag -g -i" # Find files matching pattern.
 alias du "du -h"
 alias disk "df -h"
 
-# Fix vim.
+# Rename programs.
 alias vim "nvim"
+alias ledger "hledger"
 
 # --------------------------------------------------------------
 # Abbrevations.
