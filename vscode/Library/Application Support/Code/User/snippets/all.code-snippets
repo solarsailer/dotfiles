@@ -15,7 +15,7 @@
   },
   "Section with hash": {
     "prefix": "section",
-    "scope": "shellscript, ruby, python, dockerfile, fish, powershell",
+    "scope": "shellscript, ruby, python, dockerfile, fish, powershell, hledger",
     "description": "Add # section",
     "body": [
       "# --------------------------------------------------------------",
