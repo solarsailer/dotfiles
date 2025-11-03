@@ -92,6 +92,7 @@ brew install wakeonlan           # required for Alfred vnc workflow
 brew install openconnect         # vpn
 brew install osquery             # query OS as database
 brew install restic              # backup tool
+brew install tabiew              # table viewer
 
 # Images.
 brew install imagemagick
