@@ -8,9 +8,9 @@ set fish_greeting
 # Force language to English.
 set --export LANG "en_US.UTF-8"
 
-# Force nvim as default editor.
-set --export EDITOR "nvim"
-set --export GIT_EDITOR "nvim"
+# Force Helix as default editor.
+set --export EDITOR "hx"
+set --export GIT_EDITOR "hx"
 
 # --------------------------------------------------------------
 # PATH.
