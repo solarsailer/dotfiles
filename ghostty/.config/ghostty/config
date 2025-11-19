@@ -9,6 +9,11 @@ confirm-close-surface = false
 
 macos-non-native-fullscreen = true
 
+# Use left-alt as a dedicated modifier key for the terminal. Especially useful for Vim/Helix.
+# Then rebind some very specific key combos to revert them to their original behavior on macOS.
+macos-option-as-alt = left
+keybind = alt+shift+/=text:\\ # A-S-/ => \ (antislash)
+
 # --------------------------------------------------------------
 # Appearance.
 # --------------------------------------------------------------
