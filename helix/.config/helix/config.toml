@@ -12,3 +12,7 @@ select = "underline"
 mode.normal = "⭘ NORMAL"
 mode.insert = "⏽ INSERT"
 mode.select = "⏼ SELECT"
+
+[keys.normal]
+S-h = ":buffer-previous"
+S-l = ":buffer-next"
