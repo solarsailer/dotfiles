@@ -93,6 +93,7 @@ brew install openconnect         # vpn
 brew install osquery             # query OS as database
 brew install restic              # backup tool
 brew install tabiew              # table viewer
+brew install yazi                # rust-based file browser
 
 # Images.
 brew install imagemagick
@@ -125,7 +126,6 @@ brew install ollama
 # brew install sqlite
 # brew install mono
 
-# brew install yazi      # rust-based file browser
 # brew install superfile # another file manager
 
 # brew install pv       # pipe viewer
