@@ -42,6 +42,7 @@ window-padding-balance = true
 window-padding-color = extend
 
 undo-timeout = 20s
+scrollback-limit = 125000
 
 # --------------------------------------------------------------
 # Cursor.
