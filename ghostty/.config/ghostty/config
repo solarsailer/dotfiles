@@ -5,8 +5,6 @@
 # Behavior.
 # --------------------------------------------------------------
 
-confirm-close-surface = false
-
 macos-non-native-fullscreen = true
 
 # Use left-alt as a dedicated modifier key for the terminal. Especially useful for Vim/Helix.
