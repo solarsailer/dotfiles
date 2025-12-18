@@ -17,6 +17,7 @@ code --install-extension file-icons.file-icons
 code --install-extension bmalehorn.vscode-fish
 code --install-extension waderyan.gitblame
 code --install-extension github.github-vscode-theme
+code --install-extension Catppuccin.catppuccin-vsc
 code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
 code --install-extension dbankier.vscode-quick-select

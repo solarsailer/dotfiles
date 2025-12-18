@@ -40,7 +40,7 @@
   // Workbench.
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "file-icons",
-  "workbench.colorTheme": "GitHub Dark",
+  "workbench.colorTheme": "Catppuccin Frappé",
   "workbench.statusBar.feedback.visible": false,
   "workbench.settings.useSplitJSON": true,
   "workbench.editor.empty.hint": "hidden",
