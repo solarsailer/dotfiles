@@ -12,6 +12,9 @@ set --export LANG "en_US.UTF-8"
 set --export EDITOR "hx"
 set --export GIT_EDITOR "hx"
 
+# Disable Homebrew's hints.
+set --export HOMEBREW_NO_ENV_HINTS "1"
+
 # --------------------------------------------------------------
 # PATH.
 # --------------------------------------------------------------
