@@ -24,6 +24,7 @@ brew install --cask cleanshot
 brew install --cask alt-tab
 brew install --cask choosy
 brew install --cask fastmail
+brew install --cask antinote
 
 # Utilities
 brew install --cask hyperkey
