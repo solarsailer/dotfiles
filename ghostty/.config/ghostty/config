@@ -87,10 +87,6 @@ keybind = cmd+delete=text:\x0B
 # (eg. opt+backspace was working out of the box.)
 keybind = opt+delete=esc:d
 
-# macOS built-in: `opt+backspace` deletes the previous word.
-# This was supported natively by Ghostty before version 1.2.0.
-keybind = opt+backspace=text:\x17
-
 # Launch Quick Terminal.
 keybind = global:cmd+opt+ctrl+shift+g=toggle_quick_terminal
 
