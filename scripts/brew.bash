@@ -70,7 +70,7 @@ brew install trash               # better rm -rf that moves files to the real tr
 brew install tree                # tree viewer
 brew install yt-dlp              # download video - the new youtube-dl
 brew install dockutil            # change the dock
-brew install tldr                # better man pages
+brew install tlrc                # better man pages
 brew install cheat               # cheatsheet manager
 
 # Processors.
