@@ -118,9 +118,6 @@ brew install ollama
 # Archive.
 # -------------------------------------------------------------
 
-# Automation
-# brew install platypus   # CLI for creating mac apps from scripts
-
 # brew install awscli
 # brew install redis
 # brew install sqlite

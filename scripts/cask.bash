@@ -48,7 +48,6 @@ brew install --cask daisydisk
 brew install --cask imageoptim
 brew install --cask namechanger
 brew install --cask carbon-copy-cloner
-brew install --cask platypus
 brew install --cask retrobatch
 
 # Developers.
@@ -98,7 +97,7 @@ echo "Cask> Done."
 # brew install --cask turbo-boost-switcher
 # brew install --cask vlc
 # brew install --cask numi
-# brew install --cask platypus
+# brew install --cask platypus               # CLI for creating mac apps from scripts
 # brew install --cask gifrocket
 # brew install --cask origami-studio
 # brew install --cask iterm2
