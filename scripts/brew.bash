@@ -95,6 +95,10 @@ brew install restic              # backup tool
 brew install tabiew              # table viewer
 brew install yazi                # rust-based file browser
 
+# Docker.
+brew install dive
+brew install grype
+
 # Images.
 brew install imagemagick
 brew install gifsicle
