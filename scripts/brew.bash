@@ -99,6 +99,9 @@ brew install yazi                # rust-based file browser
 brew install dive
 brew install grype
 
+# Networks.
+brew install snitch
+
 # Images.
 brew install imagemagick
 brew install gifsicle
