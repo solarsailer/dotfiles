@@ -70,13 +70,13 @@ brew install trash               # better rm -rf that moves files to the real tr
 brew install tree                # tree viewer
 brew install yt-dlp              # download video - the new youtube-dl
 brew install dockutil            # change the dock
-brew install tlrc                # better man pages
+brew install tlrc                # better man pages (improved tldr)
 brew install cheat               # cheatsheet manager
 
 # Processors.
 brew install httpie              # http requester
 
-brew install nmap                # network
+brew install nmap                # network scanner + improved ncat
 brew install nuclei              # security scanner
 
 brew install multimarkdown       # markdown generator
