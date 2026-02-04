@@ -59,6 +59,10 @@ pyenv init - fish | source
 # Aliases.
 # --------------------------------------------------------------
 
+# Rename programs.
+alias vim "nvim"
+alias ledger "hledger"
+
 # The linux `paste` command is just a way to concat files together.
 # Rename it, otherwise it's not clear at all on its purpose.
 # `command` is a way to use the true `paste`, even if we alias `paste` below.
@@ -85,12 +89,13 @@ alias treed "tree -Capug --gitignore -I '.git'"
 alias agi "ag -l -i" # Print files containing pattern.
 alias agf "ag -g -i" # Find files matching pattern.
 
+# disk aliases.
 alias du "du -h"
 alias disk "df -h"
 
-# Rename programs.
-alias vim "nvim"
-alias ledger "hledger"
+# nc/ncat helpers.
+alias ncs "ncat --ssl"
+alias nc-quickscan "ncat -vnz -w 1"
 
 # --------------------------------------------------------------
 # Abbrevations.
