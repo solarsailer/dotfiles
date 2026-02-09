@@ -199,6 +199,15 @@ I don't recommend to blindly run everything, but those are a good knowledge base
 
 ## Bonus
 
+### Safari @ 120hz
+
+1. Open Safari preferences
+2. In "Advanced" tab, turn on "Show features for web developers"
+3. Open "Feature Flags" tab
+4. **Disable** "Prefer Page Rendering Updates near 60fps" flag
+
+Source: https://birchtree.me/blog/how-to-enable-120hz-mode-in-safari-mac-iphone-and-ipad/
+
 ### Proxy Icon
 
 Go to: `Accessibility > Display > Show window title icons`.
