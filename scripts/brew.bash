@@ -108,6 +108,7 @@ brew install gifsicle
 brew install exiftool
 brew install media-info
 brew install apngasm
+brew install imageoptim-cli
 
 # Audio.
 brew install lame
