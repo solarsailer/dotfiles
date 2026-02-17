@@ -77,6 +77,7 @@ brew install cheat               # cheatsheet manager
 brew install httpie              # http requester
 
 brew install nmap                # network scanner + improved ncat
+brew install socat               # better netcat with SSL, proxy, etc. + device emulation
 brew install nuclei              # security scanner
 
 brew install multimarkdown       # markdown generator
