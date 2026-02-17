@@ -95,6 +95,7 @@ brew install osquery             # query OS as database
 brew install restic              # backup tool
 brew install tabiew              # table viewer
 brew install yazi                # rust-based file browser
+brew install mkcert              # Create local-only TLS certificates
 
 # Docker.
 brew install dive
