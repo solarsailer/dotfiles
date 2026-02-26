@@ -97,6 +97,8 @@ alias disk "df -h"
 alias ncs "ncat --ssl"
 alias nc-quickscan "ncat -vnz -w 1"
 
+alias add_agent "touch AGENTS.md; ln -s AGENTS.md CLAUDE.md"
+
 # --------------------------------------------------------------
 # Abbrevations.
 # --------------------------------------------------------------
