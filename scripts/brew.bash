@@ -23,6 +23,8 @@ brew install git # Latest version of git with HTML documentation.
 brew install stow
 brew install fish
 brew install neovim
+brew install helix
+brew install micro
 brew install starship
 
 echo "Brew> Installing environments…"
@@ -151,7 +153,6 @@ brew install ollama
 # brew install subliminal # subtitles
 
 # brew install kakoune # better VIM
-# brew install helix   # better VIM
 
 # brew install mxcl/made/swift-sh
 
