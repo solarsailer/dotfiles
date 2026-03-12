@@ -141,6 +141,12 @@
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
 
+  "[caddyfile]": {
+    "editor.tabSize": 8,
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true
+  },
+
   // Misc.
 
   "html.autoClosingTags": false,
