@@ -77,7 +77,7 @@ alias l  "ls -1"
 
 # ls++
 alias ll   "eza -lgo"
-alias lla  "eza -lgaao"
+alias lla  "eza -lgao"
 alias lt   "eza -lgaoh --tree --git-ignore"
 alias lr   "eza -lgao --recurse --git-ignore"
 
