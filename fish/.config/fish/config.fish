@@ -100,6 +100,44 @@ alias nc-quickscan "ncat -vnz -w 1"
 alias add_agent "touch AGENTS.md; ln -s AGENTS.md CLAUDE.md"
 
 # --------------------------------------------------------------
+# Docker.
+# --------------------------------------------------------------
+
+# Make docker CLI more bearable…
+
+alias dps  'docker ps'
+alias dpsa 'docker ps -a'
+alias di   'docker images'
+alias dia  'docker images -a'
+
+alias dlogs 'docker logs -f'
+alias dexec 'docker exec -it'
+
+alias dstart   'docker start'
+alias dstop    'docker stop'
+alias drestart 'docker restart'
+
+alias drm  'docker rm'
+alias drmf 'docker rm --force'
+alias drmi 'docker rmi'
+
+# Cleanup.
+alias d-container-prune  'docker container prune --force'
+alias d-image-prune      'docker image prune --force'
+alias d-image-prune-all  'docker image prune --force --all'
+alias d-system-prune     'docker system prune --force'
+alias d-system-prune-all 'docker system prune --force --all --volumes'
+
+# Functions.
+function dsh --argument-names container --description "Run a shell in a running container."
+    docker exec -it $argv[1] sh
+end
+
+function dbash --argument-names container --description "Run a bash shell in a running container."
+    docker exec -it $argv[1] bash
+end
+
+# --------------------------------------------------------------
 # Abbrevations.
 # --------------------------------------------------------------
 
