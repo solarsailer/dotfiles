@@ -138,6 +138,20 @@ function dbash --argument-names container --description "Run a bash shell in a r
 end
 
 # --------------------------------------------------------------
+# Navi.
+# --------------------------------------------------------------
+
+if type --query navi
+  navi widget fish | source
+
+  if not test -d ~/.local/share/navi/cheats/solarsailer__navi.cheat/
+    echo 'Install custom cheatsheets:'
+    echo '  $ ln -sf path/to/navi.cheat ~/.local/share/navi/cheats/solarsailer__navi.cheat'
+    echo '  $ navi repo add solarsailer/navi.cheat'
+  end
+end
+
+# --------------------------------------------------------------
 # Abbrevations.
 # --------------------------------------------------------------
 

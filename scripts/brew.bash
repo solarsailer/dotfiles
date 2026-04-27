@@ -98,6 +98,7 @@ brew install restic              # backup tool
 brew install tabiew              # table viewer
 brew install yazi                # rust-based file browser
 brew install mkcert              # Create local-only TLS certificates
+brew install navi                # Interactive cheatsheet tool
 
 # Docker.
 brew install dive
