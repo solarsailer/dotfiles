@@ -160,6 +160,11 @@
   "php.suggest.basic": false,
   "php.validate.executablePath": "/opt/homebrew/bin/php",
 
+  // In our cheatsheets, the final whitespace(s) is significant, so we don't remove automatically:
+  "[navi-cheatsheet]": {
+    "files.trimTrailingWhitespace": false
+  },
+
   // -----------------------------------------
   // Extensions.
   // -----------------------------------------
