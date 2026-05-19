@@ -30,7 +30,7 @@ brew install starship
 echo "Brew> Installing environments…"
 
 brew install node
-brew install yarn
+brew install pnpm && pnpm config set minimumReleaseAge=10080
 brew install go
 brew install mas
 
