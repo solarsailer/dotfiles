@@ -1,0 +1,16 @@
+{
+  "Section": {
+    "prefix": "section",
+    "description": "# section header",
+    "body": [
+      "# --------------------------------------------------------------",
+      "# ${1:Title}",
+      "# --------------------------------------------------------------"
+    ]
+  },
+  "Bash Shebang": {
+    "prefix": "!bash",
+    "description": "Add bash shebang",
+    "body": ["#!/usr/bin/env bash", "", ""]
+  }
+}

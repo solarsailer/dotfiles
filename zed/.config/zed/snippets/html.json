@@ -1,0 +1,22 @@
+{
+  "Page": {
+    "prefix": "page",
+    "body": [
+      "<div class=\"page\" id=\"page\">",
+      "  <header class=\"page-header\" id=\"page_header\">",
+      "  </header>",
+      "",
+      "  <main class=\"page-content\" id=\"page_content\" role=\"main\">",
+      "    ${2:Text}",
+      "  </main>",
+      "",
+      "  <footer class=\"page-footer\" id=\"page_footer\">",
+      "  </footer>",
+      "</div>",
+      "",
+      "<script>",
+      "  ${1:// GA}",
+      "</script>"
+    ]
+  }
+}

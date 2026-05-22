@@ -1,0 +1,52 @@
+{
+  "Section": {
+    "prefix": "section",
+    "description": "// section header",
+    "body": [
+      "// -------------------------------------------------------------",
+      "// ${1:Title}",
+      "// -------------------------------------------------------------"
+    ]
+  },
+  "Deno Shebang": {
+    "prefix": "!deno",
+    "description": "Add deno shebang",
+    "body": ["#!/usr/bin/env -S deno run -qA", "", ""]
+  },
+  "Fetch GET": {
+    "prefix": "fetch-get",
+    "description": "Create a GET fetch",
+    "body": [
+      "const url = new URL('URL')",
+      "const params = {}",
+      "",
+      "Object.entries(params).forEach(([key, value]) =>",
+      "  url.searchParams.append(key, value)",
+      ")",
+      "",
+      "const response = await fetch(url, {",
+      "  method: 'GET',",
+      "  headers: {",
+      "    'Content-Type': 'application/json'",
+      "  }",
+      "})",
+      "",
+      "const json = await response.json()"
+    ]
+  },
+  "Fetch POST": {
+    "prefix": "fetch-post",
+    "description": "Create a POST fetch",
+    "body": [
+      "const response = await fetch('URL', {",
+      "  method: 'POST',",
+      "  headers: {",
+      "    'Content-Type': 'application/json'",
+      "  },",
+      "  body: JSON.stringify({})",
+      "})",
+      "",
+      "const json = await response.json()"
+    ]
+  }
+}

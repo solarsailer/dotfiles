@@ -1,0 +1,83 @@
+// Zed keymap — migrated from VS Code.
+// Docs: https://zed.dev/docs/key-bindings
+//
+// Zed groups bindings by `context` instead of using a per-binding `when`.
+// Set a value to null to disable a default binding.
+[
+  // -----------------------------------------------------------
+  // Editor (read or write).
+  // -----------------------------------------------------------
+  {
+    "context": "Editor",
+    "bindings": {
+      // Sub-word navigation (stops at camelCase / snake_case boundaries).
+      "ctrl-left":        "editor::MoveToPreviousSubwordStart",
+      "ctrl-right":       "editor::MoveToNextSubwordEnd",
+      "ctrl-shift-left":  "editor::SelectToPreviousSubwordStart",
+      "ctrl-shift-right": "editor::SelectToNextSubwordEnd",
+
+      // Multi-cursor stacking.
+      "ctrl-shift-up":   "editor::AddSelectionAbove",
+      "ctrl-shift-down": "editor::AddSelectionBelow",
+
+      // Find: extend selection to next/previous occurrence.
+      // Zed doesn't expose a separate "skip current and move to next";
+      // SelectNext / SelectPrevious are the closest equivalents.
+      "alt-d": "editor::SelectNext",
+      "cmd-e": "editor::SelectPrevious",
+
+      // Rename symbol.
+      "cmd-r": "editor::Rename"
+    }
+  },
+
+  // -----------------------------------------------------------
+  // Editor (writable only).
+  // -----------------------------------------------------------
+  {
+    "context": "Editor && !read_only",
+    "bindings": {
+      // Delete whole line.
+      "shift-cmd-backspace": "editor::DeleteLine",
+
+      // Line movement.
+      "ctrl-cmd-down": "editor::MoveLineDown",
+      "ctrl-cmd-up":   "editor::MoveLineUp",
+
+      // Line duplication.
+      "cmd-shift-d": "editor::DuplicateLineDown",
+      "cmd-shift-u": "editor::DuplicateLineUp",
+
+      // Sub-word delete.
+      "ctrl-backspace": "editor::DeleteToPreviousSubwordStart",
+      "ctrl-delete":    "editor::DeleteToNextSubwordEnd"
+    }
+  },
+
+  // -----------------------------------------------------------
+  // Workspace / panes.
+  // -----------------------------------------------------------
+  {
+    "context": "Workspace",
+    "bindings": {
+      // Cycle tabs (VS Code's ctrl-tab quick-pick gets replaced
+      // by next/prev item, matching the VS Code override).
+      "ctrl-tab":       "pane::ActivateNextItem",
+      "ctrl-shift-tab": "pane::ActivatePrevItem",
+
+      // Change language.
+      "ctrl-shift-l": "language_selector::Toggle"
+    }
+  }
+
+  // -----------------------------------------------------------
+  // Not carried over from the VS Code unmap block:
+  // -----------------------------------------------------------
+  //
+  // ctrl-h / ctrl-d / ctrl-p / ctrl-n / ctrl-b / ctrl-f / ctrl-k —
+  //   VS Code's Emacs-style defaults; Zed doesn't bind these.
+  // cmd-numpad zoom controls — Zed uses cmd-= / cmd-- already.
+  // shift-cmd-d (debug view) — Zed doesn't bind it; the
+  //   editor::DuplicateLineDown rebind above takes effect natively.
+  // f1 / f2 / cmd-f2 / shift-cmd-f2 — not VS Code-style in Zed.
+]

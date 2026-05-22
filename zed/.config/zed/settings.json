@@ -1,0 +1,135 @@
+// Zed settings — migrated from VS Code.
+// Docs: https://zed.dev/docs/configuring-zed
+{
+  // -----------------------------------------------------------
+  // Editor.
+  // -----------------------------------------------------------
+
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_size": 14,
+  "buffer_font_features": { "calt": true, "liga": true },
+
+  "scroll_beyond_last_line": "off",
+  "linked_edits": true, // auto-rename paired HTML/JSX tags
+  "multi_cursor_modifier": "cmd_or_ctrl", // cmd-click adds a cursor
+
+  // Declutter.
+  "minimap": { "show": "never" },
+  "show_whitespaces": "none",
+  "indent_guides": { "enabled": false },
+
+  // Indent.
+  "tab_size": 2,
+  "hard_tabs": false,
+
+  // -----------------------------------------------------------
+  // Files.
+  // -----------------------------------------------------------
+
+  "ensure_final_newline_on_save": true,
+  "remove_trailing_whitespace_on_save": true,
+
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/node_modules",
+    "**/.next"
+  ],
+
+  // VS Code: files.associations — note the inverted mapping (language → extensions).
+  "file_types": {
+    "Markdown": ["txt", "text", "mdx"]
+  },
+
+  // -----------------------------------------------------------
+  // Workbench.
+  // -----------------------------------------------------------
+
+  "theme": "Catppuccin Frappé", // install the Catppuccin extension first
+  // "icon_theme": "Catppuccin Frappé", // optional — install Catppuccin Icons extension
+
+  // -----------------------------------------------------------
+  // Terminal.
+  // -----------------------------------------------------------
+
+  "terminal": {
+    "cursor_shape": "bar",
+    "font_size": 14
+  },
+
+  // -----------------------------------------------------------
+  // AI.
+  // -----------------------------------------------------------
+
+  // Built-in Copilot, no extension required.
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+
+  // -----------------------------------------------------------
+  // Languages.
+  // -----------------------------------------------------------
+  //
+  // format_on_save: "on" runs the configured formatter.
+  // formatter: "prettier" uses Zed's bundled Prettier (no extension).
+  //            "language_server" uses the active LSP's formatter.
+
+  "languages": {
+    "HTML":       { "format_on_save": "on", "formatter": "prettier" },
+    "CSS":        { "format_on_save": "on", "formatter": "prettier" },
+    "SCSS":       { "format_on_save": "on", "formatter": "prettier" },
+    "JavaScript": { "format_on_save": "on", "formatter": "prettier" },
+    "TypeScript": { "format_on_save": "on", "formatter": "prettier" },
+    "JSON":       { "format_on_save": "on", "formatter": "prettier" },
+    "JSONC":      { "format_on_save": "on", "formatter": "prettier" },
+    "Python":     {
+      "format_on_save": "on",
+      "formatter": "language_server", // requires the Ruff extension
+      "tab_size": 4
+    },
+
+    // Caddyfile uses hard tabs of width 8 (install the Caddyfile extension).
+    "Caddyfile":  {
+      "tab_size": 8,
+      "hard_tabs": true,
+      "format_on_save": "on"
+    },
+
+    // Disable Copilot in prose.
+    "Markdown":   { "show_edit_predictions": false },
+    "Plain Text": { "show_edit_predictions": false }
+  },
+
+  // -----------------------------------------------------------
+  // Prettier overrides.
+  // -----------------------------------------------------------
+  //
+  // A project-level .prettierrc takes precedence over these.
+
+  "prettier": {
+    "options": {
+      "semi": false,
+      "singleQuote": true,
+      "bracketSpacing": false,
+      "trailingComma": "none",
+      "arrowParens": "avoid"
+    }
+  }
+
+  // -----------------------------------------------------------
+  // Dropped from the VS Code config:
+  // -----------------------------------------------------------
+  //
+  // editor.codeLens / editor.roundedSelection / editor.detectIndentation
+  //   editor.find.addExtraSpaceOnTop — no Zed equivalent.
+  // files.eol / files.encoding — Zed defaults to LF + UTF-8.
+  // workbench.startupEditor / workbench.editor.empty.hint /
+  //   workbench.settings.useSplitJSON / workbench.statusBar.feedback —
+  //   no Zed equivalents (settings is a single file, no welcome page).
+  // git.mergeEditor / git.confirmSync — Zed has its own merge UI.
+  // html/javascript/typescript.autoClosingTags — not language-scoped in Zed.
+  // javascript/typescript.updateImportsOnFileMove — no equivalent.
+  // PHP / Blade / Intelephense — removed (no longer used).
+  // JSX / TSX language overrides — removed (no longer used).
+  // CodeSnap — no Zed equivalent (use Silicon, Carbon, or freeze).
+  // file-icons theme — replaced by Catppuccin Icons (optional).
+}

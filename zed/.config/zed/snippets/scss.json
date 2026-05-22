@@ -1,0 +1,84 @@
+{
+  "Section": {
+    "prefix": "section",
+    "description": "/* */ section header",
+    "body": [
+      "/* ---------------------------------------------------------- */",
+      "/* ${1:Title}",
+      "/* ---------------------------------------------------------- */"
+    ]
+  },
+  "Default Border Box": {
+    "prefix": "borderbox",
+    "body": [
+      "html {",
+      "  box-sizing: border-box;",
+      "}",
+      "",
+      "*,",
+      "*::before,",
+      "*::after {",
+      "  box-sizing: inherit;",
+      "}"
+    ]
+  },
+  "Typography": {
+    "prefix": "typo",
+    "body": [
+      "html {",
+      "  font: 62.5%/1.4 Verdana, sans-serif;",
+      "}",
+      "",
+      "body {",
+      "  font-size: 1.5em;",
+      "}"
+    ]
+  },
+  "Normalized Body": {
+    "prefix": "body",
+    "body": [
+      "body {",
+      "  position: relative;",
+      "  min-height: 100vh;",
+      "  margin: 0;",
+      "}"
+    ]
+  },
+  "LVHA": {
+    "prefix": "lvha",
+    "body": [
+      "a {",
+      "  color: ${1:hsl(0, 100%, 50%)};",
+      "}",
+      "",
+      "a:visited {",
+      "  color: ${2:hsl(0, 100%, 10%)};",
+      "}",
+      "",
+      "a:hover {",
+      "  /* Lighter color. */",
+      "  color: ${3:hsl(0, 100%, 75%)};",
+      "}",
+      "",
+      "a:active,",
+      "a:focus {",
+      "  /* Darker color. */",
+      "  color: ${4:hsl(0, 100%, 25%)};",
+      "}"
+    ]
+  },
+  "Clearfix": {
+    "prefix": "clearfix",
+    "body": [
+      ".clearfix::before,",
+      ".clearfix::after {",
+      "  content: \" \"; /* Opera bug. */",
+      "  display: table; /* Preserve margin-collapsing. */",
+      "}",
+      "",
+      ".clearfix::after {",
+      "  clear: both;",
+      "}"
+    ]
+  }
+}
