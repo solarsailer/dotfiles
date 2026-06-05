@@ -49,6 +49,7 @@ brew install --cask imageoptim
 brew install --cask namechanger
 brew install --cask carbon-copy-cloner
 brew install --cask retrobatch
+brew install --cask losslesscut
 
 # Developers.
 # brew install --cask vagrant
