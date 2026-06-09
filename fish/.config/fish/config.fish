@@ -9,8 +9,8 @@ set fish_greeting
 set --export LANG "en_US.UTF-8"
 
 # Force Helix as default editor.
-set --export EDITOR "hx"
-set --export GIT_EDITOR "hx"
+set --export EDITOR "nvim"
+set --export GIT_EDITOR "nvim"
 
 # Disable Homebrew's hints.
 set --export HOMEBREW_NO_ENV_HINTS "1"
