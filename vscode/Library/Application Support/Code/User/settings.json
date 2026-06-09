@@ -147,6 +147,13 @@
     "editor.formatOnSave": true
   },
 
+  "[diff]": {
+    "editor.formatOnSave": false,
+    "editor.insertSpaces": false,
+    "files.insertFinalNewline": false,
+    "files.trimFinalNewlines": false
+  }
+
   // Misc.
 
   "html.autoClosingTags": false,
