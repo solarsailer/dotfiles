@@ -20,6 +20,7 @@ mas install 944693506  # Fileloupe
 mas install 671595950  # Touch Retouch
 mas install 880001334  # Reeder
 mas install 1611378436 # Pure Paste
+mas install 6787414592 # Marked QL
 
 echo "MAS> Done."
 
