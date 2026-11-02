@@ -68,6 +68,7 @@ brew install lazyjournal         # view and filter logs
 
 # Apps.
 brew install tmux                # terminal splitter
+brew install neurosnap/tap/zmx   # session attach/detach for the terminal
 brew install trash               # better rm -rf that moves files to the real trash
 brew install tree                # tree viewer
 brew install yt-dlp              # download video - the new youtube-dl
@@ -99,6 +100,7 @@ brew install tabiew              # table viewer
 brew install yazi                # rust-based file browser
 brew install mkcert              # Create local-only TLS certificates
 brew install navi                # Interactive cheatsheet tool
+brew install floatpane/matcha/matcha # email client
 
 # Docker.
 brew install dive
