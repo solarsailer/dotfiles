@@ -11,12 +11,15 @@ if [ ! -z "$2" ]; then
 fi
 
 # X265 CRF
-# 24: very good
-# 28: default
+# 22: good
+# 26: balanced
+# (28: default)
 # 30: not good but still ok
+
+# `-tag:v hvc1` ensures compatibility with macOS Finder and Quick Look.
 
 echo "Compressing '$1'..."
 
-ffmpeg -hide_banner -loglevel error -i "$1" -vcodec libx265 -crf 26 -f mp4 "$output"
+ffmpeg -hide_banner -loglevel error -i "$1" -c:v libx265 -preset medium -crf 22 -tag:v hvc1 -c:a aac -b:a 192k -f mp4 "$output"
 
 echo 'Done.'
